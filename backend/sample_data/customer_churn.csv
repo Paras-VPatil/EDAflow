@@ -1,0 +1,1205 @@
+customerID,gender,SeniorCitizen,Partner,Dependents,tenure,PhoneService,InternetService,TechSupport,Contract,PaymentMethod,MonthlyCharges,TotalCharges,Churn,DataVersion
+7590-VHVEG0000,Female,0,No,No,52,Yes,DSL,No internet service,One year,Bank transfer,21.75,1148.3,No,v1.0
+7590-VHVEG0001,Female,0,No,Yes,15,Yes,DSL,No,Two year,Mailed check,116.8,1830.88,No,v1.0
+7590-VHVEG0002,Female,1,Yes,Yes,61,Yes,Fiber optic,No internet service,Two year,Mailed check,61.92,3815.25,No,v1.0
+7590-VHVEG0003,Female,0,Yes,No,21,Yes,Fiber optic,No,Two year,Mailed check,57.66,1240.44,No,v1.0
+7590-VHVEG0004,Female,0,No,No,24,Yes,Fiber optic,Yes,Month-to-month,Mailed check,86.61,2079.83,No,v1.0
+7590-VHVEG0005,Male,0,Yes,No,3,Yes,No,No,Month-to-month,Mailed check,41.39,125.83,Yes,v1.0
+7590-VHVEG0006,Male,0,Yes,No,22,No,Fiber optic,Yes,Month-to-month,Bank transfer,113.1,2381.36,Yes,v1.0
+7590-VHVEG0007,Female,0,Yes,No,53,Yes,No,No,Month-to-month,Bank transfer,97.06,5017.93,No,v1.0
+7590-VHVEG0008,Female,0,Yes,Yes,2,Yes,DSL,No,One year,Mailed check,28.76,56.73,No,v1.0
+7590-VHVEG0009,Male,0,Yes,No,30,Yes,Fiber optic,No,Month-to-month,Bank transfer,60.92,1822.66,No,v1.0
+7590-VHVEG0010,Female,1,Yes,Yes,38,Yes,No,Yes,Two year,Bank transfer,106.15,3850.56,No,v1.0
+7590-VHVEG0011,Female,0,Yes,No,2,Yes,DSL,Yes,One year,Mailed check,112.58,217.06,Yes,v1.0
+7590-VHVEG0012,Female,0,No,Yes,64,Yes,DSL,No,One year,Credit card,65.81,4117.55,No,v1.0
+7590-VHVEG0013,Female,0,Yes,No,60,Yes,No,No internet service,Month-to-month,Bank transfer,80.11,5033.52,No,v1.0
+7590-VHVEG0014,Female,0,No,Yes,21,Yes,Fiber optic,No,Month-to-month,Credit card,36.37,750.87,Yes,v1.0
+7590-VHVEG0015,Male,0,Yes,No,33,Yes,Fiber optic,No,Month-to-month,Bank transfer,117.13,3858.5,Yes,v1.0
+7590-VHVEG0016,Male,0,No,Yes,58,Yes,DSL,No,Month-to-month,Bank transfer,42.7,2401.55,No,v1.0
+7590-VHVEG0017,Female,0,Yes,No,22,Yes,Fiber optic,No,Month-to-month,Mailed check,112.39,2499.92,Yes,v1.0
+7590-VHVEG0018,Male,0,No,Yes,49,Yes,Fiber optic,Yes,One year,Bank transfer,83.67,4009.69,No,v1.0
+7590-VHVEG0019,Female,0,Yes,No,59,Yes,Fiber optic,No,Two year,Electronic check,79.56,4556.4,No,v1.0
+7590-VHVEG0020,Female,0,No,No,42,Yes,Fiber optic,Yes,Two year,Electronic check,70.24,2955.12,No,v1.0
+7590-VHVEG0021,Female,0,Yes,No,60,Yes,DSL,No internet service,One year,Mailed check,42.61,2429.93,No,v1.0
+7590-VHVEG0022,Female,0,Yes,No,15,Yes,Fiber optic,Yes,Month-to-month,Credit card,37.3,531.95,No,v1.0
+7590-VHVEG0023,Female,0,No,No,62,Yes,DSL,No,Two year,Credit card,41.61,2507.2,No,v1.0
+7590-VHVEG0024,Female,0,No,No,62,Yes,DSL,Yes,Two year,Credit card,38.27,2262.87,No,v1.0
+7590-VHVEG0025,Female,0,Yes,No,47,No,Fiber optic,Yes,Month-to-month,Electronic check,96.4,4353.17,Yes,v1.0
+7590-VHVEG0026,Female,0,No,No,62,Yes,Fiber optic,No,One year,Credit card,54.31,3313.1,No,v1.0
+7590-VHVEG0027,Female,0,No,Yes,51,Yes,DSL,Yes,Month-to-month,Credit card,25.67,1348.71,No,v1.0
+7590-VHVEG0028,Male,0,Yes,No,55,Yes,Fiber optic,Yes,Two year,Mailed check,114.97,6369.02,No,v1.0
+7590-VHVEG0029,Female,0,No,Yes,64,Yes,DSL,No,Two year,Credit card,106.61,6831.75,No,v1.0
+7590-VHVEG0030,Male,1,Yes,No,3,Yes,No,Yes,Month-to-month,Electronic check,110.92,325.89,Yes,v1.0
+7590-VHVEG0031,Male,0,No,Yes,51,Yes,Fiber optic,Yes,Two year,Electronic check,117.5,6251.28,Yes,v1.0
+7590-VHVEG0032,Female,0,Yes,No,7,Yes,DSL,No internet service,One year,Electronic check,37.04,256.62,Yes,v1.0
+7590-VHVEG0033,Male,0,No,Yes,21,Yes,DSL,No,Two year,Mailed check,58.83,1184.45,No,v1.0
+7590-VHVEG0034,Female,1,Yes,No,39,Yes,Fiber optic,No internet service,Month-to-month,Mailed check,94.31,3721.04,No,v1.0
+7590-VHVEG0035,Female,1,Yes,No,18,Yes,No,No internet service,Two year,Bank transfer,88.21,1526.47,No,v1.0
+7590-VHVEG0036,Female,0,No,No,4,Yes,No,No,Month-to-month,Credit card,35.08,,No,v1.0
+7590-VHVEG0037,Female,0,No,Yes,60,No,Fiber optic,Yes,Month-to-month,Mailed check,99.95,,Yes,v1.0
+7590-VHVEG0038,Male,1,Yes,No,14,Yes,DSL,No,Month-to-month,Electronic check,42.0,609.93,Yes,v1.0
+7590-VHVEG0039,Male,0,Yes,No,9,Yes,No,No internet service,Two year,Electronic check,41.93,377.16,No,v1.0
+7590-VHVEG0040,Female,0,No,No,53,Yes,No,No,Two year,Mailed check,72.62,3926.9,No,v1.0
+7590-VHVEG0041,Male,0,No,Yes,2,Yes,DSL,No,Two year,Mailed check,78.11,163.91,Yes,v1.0
+7590-VHVEG0042,Male,0,No,No,60,Yes,DSL,Yes,Two year,Mailed check,76.85,4440.99,No,v1.0
+7590-VHVEG0043,Male,0,No,No,71,Yes,Fiber optic,No internet service,Month-to-month,Bank transfer,28.97,2010.24,Yes,v1.0
+7590-VHVEG0044,Female,0,No,Yes,44,Yes,No,No,Month-to-month,Electronic check,105.99,4614.45,No,v1.0
+7590-VHVEG0045,Male,0,No,Yes,8,No,Fiber optic,No internet service,Month-to-month,Bank transfer,46.03,365.35,Yes,v1.0
+7590-VHVEG0046,Male,0,Yes,No,47,Yes,DSL,Yes,Month-to-month,Bank transfer,32.69,1522.87,No,v1.0
+7590-VHVEG0047,Male,0,No,No,35,Yes,Fiber optic,Yes,Month-to-month,Credit card,107.1,3901.2,Yes,v1.0
+7590-VHVEG0048,Female,0,No,Yes,36,Yes,Fiber optic,Yes,Month-to-month,Electronic check,113.65,4179.11,No,v1.0
+7590-VHVEG0049,Male,0,No,No,50,Yes,Fiber optic,No,Month-to-month,Electronic check,104.49,5280.8,Yes,v1.0
+7590-VHVEG0050,Male,0,No,Yes,4,Yes,No,Yes,Month-to-month,Mailed check,99.33,389.76,Yes,v1.0
+7590-VHVEG0051,Female,0,Yes,No,2,Yes,Fiber optic,Yes,Month-to-month,Mailed check,84.21,173.88,No,v1.0
+7590-VHVEG0052,Male,1,Yes,No,6,Yes,DSL,No internet service,Month-to-month,Credit card,73.98,464.1,Yes,v1.0
+7590-VHVEG0053,Female,0,Yes,Yes,54,Yes,Fiber optic,Yes,Two year,Bank transfer,28.52,1589.81,No,v1.0
+7590-VHVEG0054,Female,0,Yes,No,4,Yes,Fiber optic,No internet service,One year,Mailed check,60.03,228.15,No,v1.0
+7590-VHVEG0055,Female,0,No,No,54,Yes,Fiber optic,No,Two year,Mailed check,56.52,,No,v1.0
+7590-VHVEG0056,Female,0,Yes,No,63,Yes,DSL,No internet service,Month-to-month,Electronic check,45.46,2735.18,No,v1.0
+7590-VHVEG0057,Female,0,No,Yes,18,Yes,Fiber optic,No,Month-to-month,Electronic check,90.9,1596.45,Yes,v1.0
+7590-VHVEG0058,Female,1,No,Yes,44,Yes,Fiber optic,No internet service,One year,Mailed check,68.6,2885.27,No,v1.0
+7590-VHVEG0059,Male,0,Yes,No,34,Yes,Fiber optic,No internet service,Month-to-month,Electronic check,27.94,959.91,Yes,v1.0
+7590-VHVEG0060,Female,0,Yes,Yes,62,Yes,Fiber optic,Yes,Month-to-month,Credit card,41.58,2625.93,No,v1.0
+7590-VHVEG0061,Male,0,No,No,14,Yes,No,Yes,Month-to-month,Mailed check,86.96,1170.5,Yes,v1.0
+7590-VHVEG0062,Male,0,Yes,Yes,48,Yes,No,Yes,Month-to-month,Electronic check,27.46,,No,v1.0
+7590-VHVEG0063,Female,0,Yes,No,15,Yes,Fiber optic,No,Month-to-month,Credit card,103.42,1544.49,No,v1.0
+7590-VHVEG0064,Male,0,No,Yes,62,No,DSL,No internet service,Month-to-month,Electronic check,68.52,4192.88,Yes,v1.0
+7590-VHVEG0065,Male,0,No,No,40,Yes,No,No,One year,Electronic check,67.1,2582.19,No,v1.0
+7590-VHVEG0066,Male,1,No,No,53,Yes,Fiber optic,No,Month-to-month,Electronic check,78.06,4103.44,Yes,v1.0
+7590-VHVEG0067,Female,0,No,Yes,24,Yes,No,Yes,Month-to-month,Mailed check,100.82,2480.43,Yes,v1.0
+7590-VHVEG0068,Male,0,No,No,26,Yes,No,No internet service,Two year,Bank transfer,54.09,1345.89,Yes,v1.0
+7590-VHVEG0069,Male,0,Yes,No,60,Yes,Fiber optic,No internet service,Month-to-month,Electronic check,86.45,4968.99,No,v1.0
+7590-VHVEG0070,Female,0,No,Yes,41,Yes,Fiber optic,Yes,Month-to-month,Credit card,75.44,3048.19,Yes,v1.0
+7590-VHVEG0071,Male,0,No,No,29,No,No,No,Two year,Mailed check,46.17,1398.04,No,v1.0
+7590-VHVEG0072,Male,0,No,No,15,Yes,DSL,Yes,Month-to-month,Mailed check,106.11,1618.42,Yes,v1.0
+7590-VHVEG0073,Male,0,Yes,Yes,45,Yes,Fiber optic,No,Month-to-month,Credit card,98.15,4495.56,Yes,v1.0
+7590-VHVEG0074,Female,1,No,Yes,65,Yes,Fiber optic,No,Month-to-month,Electronic check,84.53,5418.47,No,v1.0
+7590-VHVEG0075,Male,0,No,No,71,Yes,Fiber optic,Yes,Month-to-month,Bank transfer,103.36,7407.08,Yes,v1.0
+7590-VHVEG0076,Male,0,Yes,No,9,Yes,DSL,No,One year,Electronic check,104.99,898.66,No,v1.0
+7590-VHVEG0077,Female,1,No,No,1,Yes,DSL,No,Two year,Credit card,89.42,90.64,Yes,v1.0
+7590-VHVEG0078,Female,0,No,Yes,8,Yes,No,No,Month-to-month,Mailed check,102.03,849.95,Yes,v1.0
+7590-VHVEG0079,Female,0,No,No,63,Yes,Fiber optic,No,One year,Bank transfer,88.35,5628.85,Yes,v1.0
+7590-VHVEG0080,Male,0,Yes,Yes,11,Yes,DSL,Yes,Month-to-month,Mailed check,86.65,988.81,Yes,v1.0
+7590-VHVEG0081,Female,0,Yes,No,8,Yes,DSL,No,Month-to-month,Credit card,80.62,659.44,Yes,v1.0
+7590-VHVEG0082,Female,0,No,Yes,35,Yes,Fiber optic,No,One year,Electronic check,93.77,3157.29,No,v1.0
+7590-VHVEG0083,Female,0,No,No,35,Yes,Fiber optic,No,Month-to-month,Bank transfer,35.54,1294.08,Yes,v1.0
+7590-VHVEG0084,Male,0,No,No,33,Yes,No,Yes,Month-to-month,Mailed check,106.33,3356.61,No,v1.0
+7590-VHVEG0085,Female,0,Yes,No,5,Yes,No,No,Month-to-month,Mailed check,105.44,528.99,No,v1.0
+7590-VHVEG0086,Female,0,Yes,No,41,Yes,DSL,No internet service,Month-to-month,Mailed check,22.87,903.97,Yes,v1.0
+7590-VHVEG0087,Female,0,Yes,No,28,Yes,DSL,Yes,Month-to-month,Electronic check,100.93,2688.05,Yes,v1.0
+7590-VHVEG0088,Female,0,Yes,No,7,Yes,Fiber optic,No,Two year,Bank transfer,32.63,226.62,Yes,v1.0
+7590-VHVEG0089,Female,0,Yes,No,12,Yes,DSL,Yes,Month-to-month,Electronic check,52.84,621.1,Yes,v1.0
+7590-VHVEG0090,Male,1,Yes,Yes,34,Yes,DSL,No,Month-to-month,Electronic check,92.86,3152.95,Yes,v1.0
+7590-VHVEG0091,Male,1,No,No,33,Yes,DSL,Yes,Month-to-month,Electronic check,35.75,1189.01,No,v1.0
+7590-VHVEG0092,Female,0,Yes,No,48,Yes,No,No,One year,Credit card,100.16,4588.36,No,v1.0
+7590-VHVEG0093,Female,0,No,Yes,23,Yes,DSL,No,One year,Credit card,101.55,2247.58,Yes,v1.0
+7590-VHVEG0094,Female,0,Yes,Yes,62,Yes,Fiber optic,No,One year,Credit card,69.73,4348.73,No,v1.0
+7590-VHVEG0095,Male,0,No,No,37,Yes,DSL,No,One year,Bank transfer,20.63,751.19,No,v1.0
+7590-VHVEG0096,Male,0,Yes,Yes,44,Yes,Fiber optic,No,Two year,Electronic check,48.13,2166.24,No,v1.0
+7590-VHVEG0097,Male,0,No,No,35,Yes,Fiber optic,No,Month-to-month,Electronic check,80.46,2858.95,Yes,v1.0
+7590-VHVEG0098,Male,0,No,No,65,Yes,Fiber optic,Yes,Month-to-month,Credit card,116.16,7811.09,No,v1.0
+7590-VHVEG0099,Female,0,No,No,47,Yes,Fiber optic,Yes,Two year,Electronic check,81.92,3924.25,No,v1.0
+7590-VHVEG0100,Female,0,Yes,Yes,3,No,DSL,No internet service,Two year,Electronic check,45.46,135.43,No,v1.0
+7590-VHVEG0101,Female,0,Yes,No,1,Yes,DSL,Yes,Two year,Mailed check,82.13,83.55,Yes,v1.0
+7590-VHVEG0102,Female,0,Yes,No,5,Yes,DSL,No,Month-to-month,Electronic check,72.92,356.4,Yes,v1.0
+7590-VHVEG0103,Male,0,No,No,14,Yes,DSL,No internet service,Month-to-month,Mailed check,96.42,1323.8,Yes,v1.0
+7590-VHVEG0104,Female,1,No,Yes,27,Yes,Fiber optic,Yes,Month-to-month,Electronic check,30.48,846.86,No,v1.0
+7590-VHVEG0105,Male,0,No,No,9,No,No,No,One year,Bank transfer,94.58,846.67,No,v1.0
+7590-VHVEG0106,Male,0,Yes,No,15,Yes,Fiber optic,No,Month-to-month,Credit card,73.04,1128.35,Yes,v1.0
+7590-VHVEG0107,Female,0,Yes,No,42,Yes,Fiber optic,No internet service,Month-to-month,Mailed check,114.37,,Yes,v1.0
+7590-VHVEG0108,Male,0,No,No,51,Yes,DSL,No internet service,Two year,Credit card,53.5,2826.24,Yes,v1.0
+7590-VHVEG0109,Male,0,Yes,Yes,63,Yes,Fiber optic,No,Month-to-month,Mailed check,82.0,5381.03,No,v1.0
+7590-VHVEG0110,Female,0,Yes,No,52,Yes,Fiber optic,Yes,Two year,Mailed check,111.34,5749.66,Yes,v1.0
+7590-VHVEG0111,Male,0,Yes,No,4,Yes,DSL,No,Month-to-month,Mailed check,30.05,118.01,No,v1.0
+7590-VHVEG0112,Male,0,Yes,No,23,Yes,DSL,No,Month-to-month,Bank transfer,111.85,2593.66,Yes,v1.0
+7590-VHVEG0113,Female,0,No,No,15,Yes,Fiber optic,No,Month-to-month,Electronic check,87.41,1294.3,Yes,v1.0
+7590-VHVEG0114,Male,0,Yes,No,43,Yes,No,Yes,One year,Mailed check,26.65,1157.45,No,v1.0
+7590-VHVEG0115,Male,0,Yes,No,29,Yes,DSL,Yes,Month-to-month,Bank transfer,49.49,1464.85,Yes,v1.0
+7590-VHVEG0116,Female,1,No,Yes,36,Yes,No,No,Month-to-month,Mailed check,89.4,3279.07,Yes,v1.0
+7590-VHVEG0117,Male,0,No,Yes,13,Yes,Fiber optic,No,Two year,Electronic check,26.6,341.47,No,v1.0
+7590-VHVEG0118,Female,0,Yes,No,32,Yes,DSL,No,Month-to-month,Mailed check,77.05,2383.54,Yes,v1.0
+7590-VHVEG0119,Male,0,Yes,No,71,Yes,No,No,One year,Bank transfer,53.9,3800.07,No,v1.0
+7590-VHVEG0120,Male,0,Yes,No,59,Yes,DSL,No internet service,One year,Electronic check,80.85,4599.65,No,v1.0
+7590-VHVEG0121,Female,0,Yes,No,28,Yes,DSL,No,Month-to-month,Bank transfer,24.48,712.26,No,v1.0
+7590-VHVEG0122,Female,0,No,Yes,66,Yes,Fiber optic,Yes,One year,Electronic check,105.41,6849.88,Yes,v1.0
+7590-VHVEG0123,Male,1,No,No,42,Yes,Fiber optic,Yes,Month-to-month,Electronic check,115.4,4679.4,No,v1.0
+7590-VHVEG0124,Female,1,No,No,45,Yes,DSL,Yes,One year,Credit card,114.95,4927.28,No,v1.0
+7590-VHVEG0125,Male,0,Yes,No,62,No,Fiber optic,No internet service,Month-to-month,Credit card,93.47,5879.39,Yes,v1.0
+7590-VHVEG0126,Female,0,Yes,No,57,Yes,No,No,One year,Credit card,32.75,1892.22,No,v1.0
+7590-VHVEG0127,Male,0,No,No,6,Yes,Fiber optic,No,Month-to-month,Electronic check,94.31,556.84,Yes,v1.0
+7590-VHVEG0128,Male,0,Yes,No,28,Yes,No,No,One year,Mailed check,22.41,600.59,Yes,v1.0
+7590-VHVEG0129,Male,0,No,No,28,Yes,No,No,Month-to-month,Bank transfer,22.17,,No,v1.0
+7590-VHVEG0130,Male,0,No,Yes,44,Yes,Fiber optic,No internet service,Month-to-month,Bank transfer,51.71,2232.45,No,v1.0
+7590-VHVEG0131,Male,1,No,No,30,Yes,Fiber optic,No,Month-to-month,Bank transfer,67.89,2072.68,Yes,v1.0
+7590-VHVEG0132,Female,0,No,No,62,Yes,No,Yes,Month-to-month,Credit card,95.5,5983.63,Yes,v1.0
+7590-VHVEG0133,Female,0,No,No,62,Yes,No,Yes,Two year,Electronic check,86.96,5318.7,No,v1.0
+7590-VHVEG0134,Male,0,No,No,1,Yes,Fiber optic,No,Month-to-month,Credit card,63.7,61.9,No,v1.0
+7590-VHVEG0135,Male,1,No,No,27,Yes,Fiber optic,No internet service,Two year,Mailed check,46.82,1325.7,No,v1.0
+7590-VHVEG0136,Female,0,Yes,No,62,Yes,DSL,No,Two year,Electronic check,117.72,7264.96,Yes,v1.0
+7590-VHVEG0137,Female,0,No,Yes,3,Yes,DSL,No internet service,One year,Bank transfer,61.77,188.79,No,v1.0
+7590-VHVEG0138,Female,0,No,Yes,70,Yes,Fiber optic,No,Month-to-month,Credit card,64.24,4334.89,Yes,v1.0
+7590-VHVEG0139,Female,0,Yes,No,27,Yes,DSL,Yes,Month-to-month,Credit card,36.04,971.55,Yes,v1.0
+7590-VHVEG0140,Female,0,No,No,9,Yes,Fiber optic,Yes,One year,Mailed check,97.89,839.4,No,v1.0
+7590-VHVEG0141,Male,1,Yes,Yes,62,Yes,Fiber optic,Yes,Month-to-month,Mailed check,87.98,5457.79,Yes,v1.0
+7590-VHVEG0142,Male,0,No,No,37,Yes,Fiber optic,No,Month-to-month,Credit card,41.64,1611.99,No,v1.0
+7590-VHVEG0143,Female,0,Yes,No,51,Yes,Fiber optic,Yes,One year,Mailed check,28.07,1415.16,No,v1.0
+7590-VHVEG0144,Female,0,Yes,Yes,44,Yes,Fiber optic,No,Two year,Bank transfer,86.69,3638.47,No,v1.0
+7590-VHVEG0145,Female,0,Yes,No,24,Yes,DSL,No,One year,Mailed check,84.14,1924.69,No,v1.0
+7590-VHVEG0146,Female,0,No,Yes,59,Yes,Fiber optic,No,Month-to-month,Mailed check,46.78,2729.07,No,v1.0
+7590-VHVEG0147,Female,0,Yes,No,32,No,Fiber optic,Yes,One year,Credit card,113.18,3498.77,Yes,v1.0
+7590-VHVEG0148,Female,1,No,No,52,Yes,Fiber optic,No,Month-to-month,Credit card,34.8,1723.53,No,v1.0
+7590-VHVEG0149,Female,0,No,No,62,Yes,No,No,Month-to-month,Electronic check,62.37,3965.94,No,v1.0
+7590-VHVEG0150,Female,0,No,No,58,Yes,Fiber optic,No,Two year,Electronic check,112.47,6496.46,No,v1.0
+7590-VHVEG0151,Female,0,No,Yes,52,Yes,Fiber optic,No internet service,Month-to-month,Credit card,61.13,3111.93,No,v1.0
+7590-VHVEG0152,Male,0,No,No,12,Yes,DSL,Yes,Month-to-month,Mailed check,82.58,1030.55,No,v1.0
+7590-VHVEG0153,Female,0,No,No,39,No,No,No internet service,Month-to-month,Mailed check,58.96,2211.33,No,v1.0
+7590-VHVEG0154,Female,0,No,No,2,No,Fiber optic,No,Two year,Electronic check,46.87,98.02,No,v1.0
+7590-VHVEG0155,Male,0,Yes,No,3,Yes,DSL,No,One year,Electronic check,116.43,342.79,No,v1.0
+7590-VHVEG0156,Male,0,No,No,56,Yes,DSL,No,One year,Electronic check,60.11,3497.18,No,v1.0
+7590-VHVEG0157,Male,0,No,No,59,Yes,DSL,No,One year,Bank transfer,107.62,,No,v1.0
+7590-VHVEG0158,Female,0,Yes,Yes,2,Yes,Fiber optic,Yes,Month-to-month,Bank transfer,42.54,87.85,Yes,v1.0
+7590-VHVEG0159,Female,0,No,No,2,Yes,DSL,No,Month-to-month,Electronic check,40.88,85.73,Yes,v1.0
+7590-VHVEG0160,Female,1,Yes,No,54,Yes,Fiber optic,No,Month-to-month,Mailed check,23.05,1218.42,No,v1.0
+7590-VHVEG0161,Female,0,Yes,No,1,Yes,DSL,No,Month-to-month,Electronic check,83.86,87.73,Yes,v1.0
+7590-VHVEG0162,Male,1,No,No,19,Yes,DSL,No,Month-to-month,Bank transfer,56.12,1054.41,Yes,v1.0
+7590-VHVEG0163,Female,0,No,Yes,2,Yes,Fiber optic,No internet service,Two year,Mailed check,104.71,207.02,No,v1.0
+7590-VHVEG0164,Female,0,Yes,No,53,Yes,No,No,Month-to-month,Bank transfer,66.37,3461.7,No,v1.0
+7590-VHVEG0165,Male,0,No,No,44,Yes,Fiber optic,Yes,Month-to-month,Mailed check,114.88,5075.78,Yes,v1.0
+7590-VHVEG0166,Female,0,Yes,No,32,Yes,No,No,Month-to-month,Bank transfer,38.18,1179.55,No,v1.0
+7590-VHVEG0167,Female,0,Yes,No,70,Yes,DSL,No,Month-to-month,Mailed check,105.13,7398.28,No,v1.0
+7590-VHVEG0168,Female,0,No,No,32,Yes,Fiber optic,No,Two year,Mailed check,96.11,3088.23,No,v1.0
+7590-VHVEG0169,Female,0,Yes,Yes,68,No,Fiber optic,No,Month-to-month,Mailed check,95.55,6667.59,Yes,v1.0
+7590-VHVEG0170,Male,0,No,No,55,No,No,No internet service,Month-to-month,Mailed check,102.79,5842.01,Yes,v1.0
+7590-VHVEG0171,Male,0,No,No,56,Yes,Fiber optic,Yes,One year,Credit card,94.58,5264.95,No,v1.0
+7590-VHVEG0172,Male,1,Yes,No,17,Yes,Fiber optic,No,Month-to-month,Bank transfer,81.37,1355.94,Yes,v1.0
+7590-VHVEG0173,Male,0,Yes,No,38,Yes,Fiber optic,No internet service,Month-to-month,Bank transfer,32.86,1218.7,No,v1.0
+7590-VHVEG0174,Female,0,No,No,24,Yes,DSL,No internet service,Month-to-month,Credit card,23.19,539.51,Yes,v1.0
+7590-VHVEG0175,Female,0,No,No,69,Yes,DSL,No,One year,Mailed check,110.24,7270.29,Yes,v1.0
+7590-VHVEG0176,Female,1,No,No,70,Yes,Fiber optic,No internet service,Two year,Mailed check,80.43,5541.52,Yes,v1.0
+7590-VHVEG0177,Male,0,Yes,No,11,Yes,Fiber optic,Yes,One year,Bank transfer,374.77,1053.88,Yes,v1.0
+7590-VHVEG0178,Male,0,No,Yes,16,Yes,Fiber optic,No internet service,Month-to-month,Credit card,67.19,1125.17,No,v1.0
+7590-VHVEG0179,Male,0,Yes,No,59,Yes,Fiber optic,No,Two year,Mailed check,31.5,1869.0,No,v1.0
+7590-VHVEG0180,Female,0,Yes,No,70,Yes,Fiber optic,Yes,Month-to-month,Mailed check,32.27,2224.28,Yes,v1.0
+7590-VHVEG0181,Female,0,Yes,Yes,3,No,DSL,Yes,Month-to-month,Mailed check,87.19,263.66,Yes,v1.0
+7590-VHVEG0182,Male,0,No,No,20,Yes,Fiber optic,No,Month-to-month,Electronic check,62.17,,Yes,v1.0
+7590-VHVEG0183,Male,1,Yes,No,59,Yes,Fiber optic,Yes,Month-to-month,Credit card,39.65,2326.34,No,v1.0
+7590-VHVEG0184,Female,1,No,No,36,Yes,Fiber optic,No,Month-to-month,Mailed check,68.18,2485.33,Yes,v1.0
+7590-VHVEG0185,Female,0,Yes,Yes,19,Yes,No,Yes,One year,Electronic check,26.29,499.0,Yes,v1.0
+7590-VHVEG0186,Female,0,No,No,67,Yes,No,Yes,Two year,Credit card,77.03,5110.53,No,v1.0
+7590-VHVEG0187,Male,0,No,No,19,Yes,No,No,Month-to-month,Mailed check,46.36,924.37,Yes,v1.0
+7590-VHVEG0188,Male,1,Yes,Yes,20,Yes,Fiber optic,No,Month-to-month,Bank transfer,98.16,2037.88,Yes,v1.0
+7590-VHVEG0189,Male,0,No,No,71,Yes,Fiber optic,No,Month-to-month,Electronic check,50.42,3623.67,Yes,v1.0
+7590-VHVEG0190,Male,0,Yes,Yes,52,Yes,Fiber optic,No,Month-to-month,Electronic check,64.61,3383.11,No,v1.0
+7590-VHVEG0191,Female,1,Yes,No,33,Yes,Fiber optic,No internet service,One year,Mailed check,21.14,706.0,No,v1.0
+7590-VHVEG0192,Female,1,Yes,No,40,Yes,DSL,No,Month-to-month,Mailed check,27.1,1051.61,No,v1.0
+7590-VHVEG0193,Female,0,Yes,Yes,39,Yes,DSL,No,Two year,Electronic check,58.46,2256.2,No,v1.0
+7590-VHVEG0194,Male,0,Yes,Yes,1,Yes,No,No,Month-to-month,Bank transfer,67.03,63.95,Yes,v1.0
+7590-VHVEG0195,Female,0,Yes,No,11,Yes,No,Yes,Month-to-month,Bank transfer,78.8,864.7,Yes,v1.0
+7590-VHVEG0196,Female,0,Yes,No,57,Yes,Fiber optic,Yes,Month-to-month,Credit card,48.58,,Yes,v1.0
+7590-VHVEG0197,Female,0,No,Yes,50,Yes,DSL,No,Month-to-month,Mailed check,88.11,,No,v1.0
+7590-VHVEG0198,Female,0,Yes,No,23,Yes,Fiber optic,No internet service,Month-to-month,Bank transfer,104.29,2510.02,Yes,v1.0
+7590-VHVEG0199,Female,0,Yes,Yes,31,Yes,Fiber optic,Yes,One year,Credit card,96.43,3111.58,No,v1.0
+7590-VHVEG0200,Male,0,No,Yes,42,Yes,DSL,Yes,Month-to-month,Bank transfer,23.88,1025.35,No,v1.0
+7590-VHVEG0201,Female,0,No,No,7,Yes,Fiber optic,Yes,One year,Mailed check,67.09,471.2,No,v1.0
+7590-VHVEG0202,Female,0,Yes,No,16,Yes,Fiber optic,No internet service,Month-to-month,Credit card,30.28,502.46,Yes,v1.0
+7590-VHVEG0203,Male,0,Yes,No,60,Yes,Fiber optic,No,Month-to-month,Credit card,43.72,2526.34,No,v1.0
+7590-VHVEG0204,Male,0,Yes,Yes,2,Yes,DSL,Yes,Month-to-month,Credit card,116.69,240.17,Yes,v1.0
+7590-VHVEG0205,Female,0,No,Yes,1,Yes,DSL,No,Two year,Bank transfer,33.96,32.69,No,v1.0
+7590-VHVEG0206,Female,0,Yes,No,48,Yes,Fiber optic,No,Month-to-month,Mailed check,68.89,3404.06,Yes,v1.0
+7590-VHVEG0207,Female,0,No,Yes,12,Yes,No,No,One year,Credit card,80.58,945.27,Yes,v1.0
+7590-VHVEG0208,Female,0,Yes,No,69,Yes,Fiber optic,Yes,Month-to-month,Electronic check,88.84,6361.23,Yes,v1.0
+7590-VHVEG0209,Male,0,Yes,Yes,37,Yes,Fiber optic,No internet service,One year,Mailed check,74.85,2892.25,No,v1.0
+7590-VHVEG0210,Female,0,No,No,32,Yes,DSL,No,Month-to-month,Electronic check,327.65,647.09,No,v1.0
+7590-VHVEG0211,Male,0,Yes,Yes,9,Yes,DSL,No,One year,Electronic check,51.99,466.19,Yes,v1.0
+7590-VHVEG0212,Female,0,Yes,No,19,Yes,No,Yes,One year,Credit card,70.74,1408.62,No,v1.0
+7590-VHVEG0213,Female,0,Yes,No,48,Yes,Fiber optic,No,Two year,Credit card,28.61,1371.05,No,v1.0
+7590-VHVEG0214,Female,0,No,No,3,Yes,DSL,No,Month-to-month,Bank transfer,54.36,169.01,Yes,v1.0
+7590-VHVEG0215,Male,0,Yes,Yes,20,Yes,DSL,No,Month-to-month,Bank transfer,23.25,469.2,Yes,v1.0
+7590-VHVEG0216,Female,0,Yes,No,24,Yes,No,Yes,Month-to-month,Bank transfer,27.7,656.53,Yes,v1.0
+7590-VHVEG0217,Female,1,No,Yes,54,Yes,Fiber optic,No,Two year,Mailed check,58.9,3112.39,No,v1.0
+7590-VHVEG0218,Male,0,No,No,33,Yes,DSL,Yes,Month-to-month,Bank transfer,33.01,1056.88,Yes,v1.0
+7590-VHVEG0219,Female,1,Yes,No,24,Yes,DSL,No,One year,Electronic check,75.62,1862.37,No,v1.0
+7590-VHVEG0220,Male,0,Yes,Yes,36,Yes,Fiber optic,No internet service,Month-to-month,Bank transfer,87.57,3116.67,Yes,v1.0
+7590-VHVEG0221,Female,0,No,No,38,Yes,DSL,No,Month-to-month,Credit card,98.46,3745.6,Yes,v1.0
+7590-VHVEG0222,Male,1,Yes,No,25,Yes,Fiber optic,No,Month-to-month,Bank transfer,39.61,989.61,No,v1.0
+7590-VHVEG0223,Male,0,Yes,No,18,Yes,DSL,No,Two year,Mailed check,36.41,660.5,No,v1.0
+7590-VHVEG0224,Male,0,No,No,66,Yes,No,No,One year,Mailed check,30.25,2069.33,No,v1.0
+7590-VHVEG0225,Female,0,Yes,Yes,54,Yes,DSL,No internet service,Two year,Electronic check,82.37,4661.82,No,v1.0
+7590-VHVEG0226,Male,1,Yes,No,35,Yes,DSL,Yes,Month-to-month,Mailed check,89.23,3094.35,No,v1.0
+7590-VHVEG0227,Male,0,No,No,61,Yes,DSL,No,One year,Bank transfer,23.1,1454.96,No,v1.0
+7590-VHVEG0228,Female,0,Yes,No,41,Yes,Fiber optic,No,One year,Credit card,111.75,4702.9,No,v1.0
+7590-VHVEG0229,Male,0,Yes,No,33,No,Fiber optic,No,Month-to-month,Mailed check,25.09,834.16,Yes,v1.0
+7590-VHVEG0230,Female,0,Yes,No,68,Yes,DSL,No,Two year,Electronic check,73.05,5193.73,No,v1.0
+7590-VHVEG0231,Female,0,No,Yes,33,No,Fiber optic,No,Two year,Bank transfer,89.49,2864.65,Yes,v1.0
+7590-VHVEG0232,Male,0,Yes,Yes,14,Yes,Fiber optic,No internet service,Two year,Electronic check,105.35,1417.34,No,v1.0
+7590-VHVEG0233,Male,0,No,No,21,Yes,DSL,No internet service,One year,Mailed check,89.98,1956.48,Yes,v1.0
+7590-VHVEG0234,Female,0,No,No,48,Yes,Fiber optic,No,Month-to-month,Mailed check,98.57,4702.54,No,v1.0
+7590-VHVEG0235,Male,0,Yes,No,20,Yes,Fiber optic,No,Month-to-month,Electronic check,53.27,1102.29,Yes,v1.0
+7590-VHVEG0236,Male,0,No,No,8,Yes,DSL,No internet service,Two year,Bank transfer,99.85,830.22,No,v1.0
+7590-VHVEG0237,Male,0,Yes,No,7,Yes,Fiber optic,Yes,Month-to-month,Mailed check,27.85,186.43,No,v1.0
+7590-VHVEG0238,Male,0,Yes,No,67,Yes,No,Yes,One year,Credit card,107.69,7492.05,No,v1.0
+7590-VHVEG0239,Female,0,Yes,No,17,Yes,No,No,One year,Mailed check,73.66,1245.82,No,v1.0
+7590-VHVEG0240,Female,0,No,Yes,33,Yes,DSL,No internet service,One year,Bank transfer,100.1,3306.59,Yes,v1.0
+7590-VHVEG0241,Male,0,Yes,No,48,Yes,Fiber optic,No internet service,Two year,Mailed check,64.33,3126.79,Yes,v1.0
+7590-VHVEG0242,Female,0,Yes,Yes,59,Yes,DSL,No,Month-to-month,Electronic check,83.07,5110.14,Yes,v1.0
+7590-VHVEG0243,Male,0,Yes,Yes,22,No,No,Yes,Month-to-month,Mailed check,71.59,1499.19,No,v1.0
+7590-VHVEG0244,Male,0,No,No,30,Yes,DSL,No,Month-to-month,Mailed check,91.7,2744.5,Yes,v1.0
+7590-VHVEG0245,Male,0,No,Yes,38,Yes,Fiber optic,Yes,Month-to-month,Bank transfer,28.0,1083.96,Yes,v1.0
+7590-VHVEG0246,Male,0,Yes,Yes,51,Yes,DSL,Yes,Month-to-month,Electronic check,25.91,1351.07,No,v1.0
+7590-VHVEG0247,Female,0,Yes,Yes,54,No,No,No,Month-to-month,Bank transfer,44.22,2433.64,No,v1.0
+7590-VHVEG0248,Male,1,Yes,Yes,8,Yes,DSL,Yes,Two year,Mailed check,35.64,274.66,No,v1.0
+7590-VHVEG0249,Female,0,Yes,No,27,Yes,DSL,No internet service,Two year,Credit card,105.43,2789.63,Yes,v1.0
+7590-VHVEG0250,Male,0,No,Yes,27,Yes,DSL,No,Month-to-month,Mailed check,41.48,1104.22,Yes,v1.0
+7590-VHVEG0251,Female,0,No,No,21,No,DSL,No,Month-to-month,Bank transfer,115.63,2502.26,No,v1.0
+7590-VHVEG0252,Female,1,No,No,30,Yes,Fiber optic,Yes,Two year,Credit card,53.02,1555.29,No,v1.0
+7590-VHVEG0253,Female,0,No,No,28,Yes,DSL,No,Month-to-month,Bank transfer,37.85,1029.07,No,v1.0
+7590-VHVEG0254,Female,0,No,No,64,Yes,Fiber optic,Yes,Month-to-month,Bank transfer,97.39,6518.12,No,v1.0
+7590-VHVEG0255,Male,0,No,No,69,Yes,Fiber optic,No internet service,Month-to-month,Electronic check,84.55,5547.64,No,v1.0
+7590-VHVEG0256,Female,0,No,Yes,61,Yes,Fiber optic,No internet service,One year,Credit card,68.82,4407.21,No,v1.0
+7590-VHVEG0257,Male,0,Yes,No,48,Yes,DSL,No,Month-to-month,Mailed check,74.43,3635.6,No,v1.0
+7590-VHVEG0258,Female,0,Yes,No,19,Yes,Fiber optic,Yes,Two year,Bank transfer,90.48,1775.62,No,v1.0
+7590-VHVEG0259,Female,0,Yes,No,4,Yes,DSL,No internet service,Month-to-month,Mailed check,42.39,,No,v1.0
+7590-VHVEG0260,Female,1,Yes,No,35,Yes,DSL,No,Month-to-month,Electronic check,117.64,3917.45,Yes,v1.0
+7590-VHVEG0261,Male,0,Yes,Yes,64,Yes,Fiber optic,Yes,Month-to-month,Electronic check,115.53,7569.78,Yes,v1.0
+7590-VHVEG0262,Female,0,Yes,No,49,Yes,Fiber optic,No,Month-to-month,Credit card,83.73,4239.96,Yes,v1.0
+7590-VHVEG0263,Male,0,No,Yes,17,Yes,Fiber optic,No internet service,One year,Electronic check,39.56,688.61,No,v1.0
+7590-VHVEG0264,Male,0,Yes,No,44,Yes,No,Yes,One year,Electronic check,86.66,3676.96,No,v1.0
+7590-VHVEG0265,Male,0,No,No,30,Yes,DSL,Yes,One year,Mailed check,27.08,832.85,No,v1.0
+7590-VHVEG0266,Female,0,Yes,No,46,Yes,DSL,No internet service,One year,Electronic check,23.0,1086.64,No,v1.0
+7590-VHVEG0267,Female,0,No,No,6,Yes,Fiber optic,Yes,Two year,Electronic check,45.25,275.82,No,v1.0
+7590-VHVEG0268,Female,1,No,No,37,No,DSL,Yes,Two year,Bank transfer,65.34,2481.8,No,v1.0
+7590-VHVEG0269,Female,0,Yes,No,24,No,No,No,One year,Electronic check,105.09,2609.42,No,v1.0
+7590-VHVEG0270,Female,0,Yes,Yes,46,Yes,No,No internet service,Month-to-month,Bank transfer,91.26,4245.77,Yes,v1.0
+7590-VHVEG0271,Female,0,Yes,No,53,Yes,DSL,No,Month-to-month,Electronic check,92.79,4715.31,Yes,v1.0
+7590-VHVEG0272,Female,1,Yes,No,60,Yes,Fiber optic,No internet service,Month-to-month,Electronic check,61.7,3697.32,Yes,v1.0
+7590-VHVEG0273,Male,0,Yes,No,63,Yes,Fiber optic,No,One year,Credit card,53.9,,No,v1.0
+7590-VHVEG0274,Female,0,No,No,32,Yes,Fiber optic,Yes,Month-to-month,Credit card,56.36,1786.9,No,v1.0
+7590-VHVEG0275,Male,1,Yes,No,33,Yes,Fiber optic,No internet service,Month-to-month,Bank transfer,116.79,3818.26,No,v1.0
+7590-VHVEG0276,Male,0,No,No,67,Yes,Fiber optic,No,Two year,Electronic check,23.93,1533.77,No,v1.0
+7590-VHVEG0277,Female,0,No,Yes,18,Yes,Fiber optic,Yes,Two year,Mailed check,104.97,1860.88,No,v1.0
+7590-VHVEG0278,Female,0,No,No,25,Yes,Fiber optic,No,Two year,Credit card,76.71,1843.15,Yes,v1.0
+7590-VHVEG0279,Male,1,Yes,No,54,Yes,No,No,Month-to-month,Mailed check,62.98,3505.99,No,v1.0
+7590-VHVEG0280,Male,0,Yes,No,58,No,DSL,Yes,One year,Credit card,91.08,5518.85,Yes,v1.0
+7590-VHVEG0281,Female,0,Yes,No,67,Yes,No,Yes,Month-to-month,Credit card,67.69,4341.49,No,v1.0
+7590-VHVEG0282,Male,0,Yes,No,46,Yes,DSL,No,Month-to-month,Electronic check,105.6,5078.46,No,v1.0
+7590-VHVEG0283,Male,0,Yes,No,24,Yes,Fiber optic,No internet service,Month-to-month,Credit card,108.27,2604.32,Yes,v1.0
+7590-VHVEG0284,Male,1,Yes,No,32,Yes,DSL,No,Month-to-month,Mailed check,61.33,1923.18,No,v1.0
+7590-VHVEG0285,Male,0,No,No,47,Yes,Fiber optic,No internet service,Month-to-month,Credit card,47.13,,Yes,v1.0
+7590-VHVEG0286,Female,0,Yes,No,23,Yes,DSL,Yes,Two year,Bank transfer,78.05,1795.27,Yes,v1.0
+7590-VHVEG0287,Female,1,No,Yes,66,Yes,Fiber optic,Yes,Month-to-month,Electronic check,109.41,7433.84,No,v1.0
+7590-VHVEG0288,Male,0,No,Yes,27,Yes,No,Yes,One year,Electronic check,40.64,1120.14,No,v1.0
+7590-VHVEG0289,Male,0,Yes,No,2,No,Fiber optic,Yes,Month-to-month,Bank transfer,81.05,154.81,Yes,v1.0
+7590-VHVEG0290,Male,1,Yes,Yes,17,No,Fiber optic,Yes,Month-to-month,Bank transfer,81.89,1332.72,Yes,v1.0
+7590-VHVEG0291,Female,0,Yes,No,33,Yes,No,No,Month-to-month,Bank transfer,91.85,3001.45,Yes,v1.0
+7590-VHVEG0292,Female,0,Yes,Yes,9,No,Fiber optic,No internet service,Month-to-month,Credit card,32.89,289.98,Yes,v1.0
+7590-VHVEG0293,Male,0,Yes,Yes,43,Yes,DSL,No internet service,One year,Electronic check,90.15,3772.75,No,v1.0
+7590-VHVEG0294,Male,0,Yes,No,48,Yes,DSL,Yes,Month-to-month,Bank transfer,109.09,5121.42,Yes,v1.0
+7590-VHVEG0295,Male,1,No,No,39,Yes,No,No internet service,Month-to-month,Credit card,37.61,1511.26,No,v1.0
+7590-VHVEG0296,Female,0,No,Yes,42,Yes,No,No,Month-to-month,Bank transfer,43.28,1895.75,No,v1.0
+7590-VHVEG0297,Male,0,No,Yes,26,Yes,No,Yes,Month-to-month,Mailed check,115.2,2966.69,No,v1.0
+7590-VHVEG0298,Male,0,No,Yes,50,Yes,Fiber optic,No internet service,Two year,Mailed check,37.74,,No,v1.0
+7590-VHVEG0299,Male,0,No,No,25,Yes,No,No,Month-to-month,Electronic check,103.73,2546.95,Yes,v1.0
+7590-VHVEG0300,Male,0,No,Yes,24,Yes,DSL,Yes,One year,Credit card,68.24,1633.98,No,v1.0
+7590-VHVEG0301,Male,0,Yes,No,13,No,DSL,No,One year,Mailed check,44.23,559.22,No,v1.0
+7590-VHVEG0302,Female,1,Yes,No,60,No,Fiber optic,Yes,Two year,Mailed check,105.33,6408.79,No,v1.0
+7590-VHVEG0303,Female,0,Yes,No,7,Yes,DSL,No,Two year,Credit card,63.64,466.82,No,v1.0
+7590-VHVEG0304,Female,0,No,Yes,57,Yes,No,No,One year,Bank transfer,70.45,4057.33,No,v1.0
+7590-VHVEG0305,Male,0,No,No,36,Yes,No,No internet service,One year,Credit card,55.2,1959.12,No,v1.0
+7590-VHVEG0306,Female,0,No,No,45,Yes,Fiber optic,Yes,Two year,Bank transfer,78.11,3566.87,No,v1.0
+7590-VHVEG0307,Male,0,Yes,No,20,Yes,Fiber optic,No,Month-to-month,Mailed check,36.03,693.34,Yes,v1.0
+7590-VHVEG0308,Female,0,Yes,No,65,Yes,Fiber optic,No,Month-to-month,Mailed check,58.33,3938.54,Yes,v1.0
+7590-VHVEG0309,Female,0,Yes,No,8,Yes,No,No,Month-to-month,Mailed check,115.0,920.3,Yes,v1.0
+7590-VHVEG0310,Male,0,No,Yes,16,Yes,DSL,No,Two year,Electronic check,45.3,721.08,No,v1.0
+7590-VHVEG0311,Male,0,No,No,14,Yes,DSL,No,Two year,Electronic check,84.36,1191.18,No,v1.0
+7590-VHVEG0312,Male,1,No,No,15,Yes,Fiber optic,No internet service,Month-to-month,Electronic check,51.87,787.74,No,v1.0
+7590-VHVEG0313,Female,0,Yes,No,66,Yes,Fiber optic,No internet service,One year,Credit card,95.8,6052.07,No,v1.0
+7590-VHVEG0314,Male,0,No,No,32,Yes,DSL,No internet service,Month-to-month,Mailed check,32.83,,Yes,v1.0
+7590-VHVEG0315,Female,0,Yes,No,63,Yes,No,No internet service,Month-to-month,Mailed check,115.04,7060.64,No,v1.0
+7590-VHVEG0316,Female,0,Yes,Yes,51,Yes,DSL,No,Two year,Credit card,64.47,3358.39,No,v1.0
+7590-VHVEG0317,Female,0,Yes,Yes,25,Yes,Fiber optic,No internet service,Month-to-month,Electronic check,43.13,1113.1,No,v1.0
+7590-VHVEG0318,Male,0,Yes,No,58,Yes,DSL,No,Month-to-month,Credit card,27.2,1625.71,Yes,v1.0
+7590-VHVEG0319,Male,0,Yes,No,63,Yes,Fiber optic,No,One year,Electronic check,36.64,2320.2,No,v1.0
+7590-VHVEG0320,Male,0,Yes,No,62,Yes,No,No,One year,Mailed check,70.94,4407.02,No,v1.0
+7590-VHVEG0321,Female,0,Yes,No,22,Yes,Fiber optic,No,Month-to-month,Bank transfer,53.03,1124.92,Yes,v1.0
+7590-VHVEG0322,Female,0,No,No,58,Yes,DSL,Yes,One year,Electronic check,101.23,6033.04,No,v1.0
+7590-VHVEG0323,Male,0,Yes,Yes,58,No,Fiber optic,No internet service,Month-to-month,Mailed check,62.23,3526.66,Yes,v1.0
+7590-VHVEG0324,Female,0,No,No,49,Yes,DSL,No,Month-to-month,Mailed check,44.37,2173.61,No,v1.0
+7590-VHVEG0325,Female,0,Yes,Yes,52,Yes,DSL,Yes,Month-to-month,Bank transfer,80.48,4094.69,No,v1.0
+7590-VHVEG0326,Female,0,Yes,No,42,Yes,DSL,No,One year,Mailed check,89.26,3611.81,Yes,v1.0
+7590-VHVEG0327,Male,0,Yes,No,70,Yes,Fiber optic,Yes,Month-to-month,Mailed check,36.37,2578.89,No,v1.0
+7590-VHVEG0328,Female,0,No,No,15,Yes,Fiber optic,Yes,Two year,Electronic check,36.43,522.05,No,v1.0
+7590-VHVEG0329,Female,0,Yes,No,54,Yes,Fiber optic,Yes,Two year,Electronic check,23.59,1305.74,No,v1.0
+7590-VHVEG0330,Male,0,Yes,Yes,60,Yes,DSL,No,Two year,Bank transfer,92.17,5429.17,No,v1.0
+7590-VHVEG0331,Male,0,No,Yes,8,Yes,Fiber optic,No,Month-to-month,Bank transfer,85.05,646.41,Yes,v1.0
+7590-VHVEG0332,Male,1,No,No,53,Yes,DSL,No,Two year,Mailed check,66.51,3529.16,No,v1.0
+7590-VHVEG0333,Male,0,No,No,60,Yes,No,No,Month-to-month,Electronic check,102.73,5884.41,No,v1.0
+7590-VHVEG0334,Male,0,No,No,5,No,No,No,Month-to-month,Bank transfer,98.96,483.7,Yes,v1.0
+7590-VHVEG0335,Male,1,Yes,No,68,No,Fiber optic,No,Month-to-month,Bank transfer,77.36,5369.69,No,v1.0
+7590-VHVEG0336,Female,0,Yes,No,6,Yes,DSL,No,Month-to-month,Credit card,105.09,602.97,Yes,v1.0
+7590-VHVEG0337,Female,0,No,Yes,47,No,Fiber optic,No,One year,Bank transfer,40.17,1952.18,No,v1.0
+7590-VHVEG0338,Female,0,Yes,Yes,55,Yes,DSL,Yes,Month-to-month,Mailed check,30.97,1618.74,No,v1.0
+7590-VHVEG0339,Female,0,No,No,40,Yes,No,Yes,Month-to-month,Electronic check,46.44,1810.39,No,v1.0
+7590-VHVEG0340,Male,0,No,Yes,52,Yes,Fiber optic,No,One year,Bank transfer,25.59,1362.98,No,v1.0
+7590-VHVEG0341,Female,0,No,No,16,Yes,Fiber optic,No,Month-to-month,Credit card,72.05,1131.69,No,v1.0
+7590-VHVEG0342,Male,0,Yes,No,13,Yes,No,Yes,One year,Electronic check,111.79,1395.38,No,v1.0
+7590-VHVEG0343,Male,0,No,Yes,30,Yes,No,Yes,Month-to-month,Bank transfer,23.86,705.67,Yes,v1.0
+7590-VHVEG0344,Female,0,Yes,No,19,Yes,Fiber optic,No internet service,Two year,Credit card,31.97,593.42,No,v1.0
+7590-VHVEG0345,Female,0,Yes,No,17,Yes,DSL,No internet service,Two year,Bank transfer,64.32,1130.83,No,v1.0
+7590-VHVEG0346,Male,0,Yes,No,63,Yes,Fiber optic,No,Month-to-month,Electronic check,111.52,6894.61,No,v1.0
+7590-VHVEG0347,Male,0,No,Yes,19,Yes,Fiber optic,No,Month-to-month,Electronic check,50.98,996.67,Yes,v1.0
+7590-VHVEG0348,Male,0,Yes,No,58,Yes,No,No,Month-to-month,Electronic check,69.71,4201.56,No,v1.0
+7590-VHVEG0349,Male,0,No,No,55,Yes,No,No internet service,Two year,Mailed check,24.07,1315.31,No,v1.0
+7590-VHVEG0350,Female,0,Yes,No,62,Yes,DSL,No internet service,Month-to-month,Bank transfer,34.54,2229.12,No,v1.0
+7590-VHVEG0351,Male,0,Yes,Yes,23,Yes,Fiber optic,Yes,Month-to-month,Mailed check,116.69,2650.94,Yes,v1.0
+7590-VHVEG0352,Female,1,Yes,No,9,Yes,No,No internet service,Month-to-month,Electronic check,114.58,1079.09,Yes,v1.0
+7590-VHVEG0353,Male,0,No,No,12,Yes,Fiber optic,Yes,Month-to-month,Credit card,20.48,235.71,No,v1.0
+7590-VHVEG0354,Male,0,No,No,1,Yes,Fiber optic,Yes,Month-to-month,Bank transfer,113.28,115.4,Yes,v1.0
+7590-VHVEG0355,Male,0,No,No,58,Yes,DSL,No,Two year,Mailed check,82.63,4789.79,No,v1.0
+7590-VHVEG0356,Female,0,No,No,1,Yes,Fiber optic,No,Month-to-month,Bank transfer,105.06,103.88,No,v1.0
+7590-VHVEG0357,Male,0,Yes,No,34,Yes,DSL,No internet service,Month-to-month,Credit card,64.56,2224.33,Yes,v1.0
+7590-VHVEG0358,Female,1,Yes,Yes,48,Yes,DSL,Yes,Two year,Mailed check,70.53,3454.38,No,v1.0
+7590-VHVEG0359,Female,0,No,No,1,Yes,Fiber optic,No,Two year,Electronic check,67.91,64.54,No,v1.0
+7590-VHVEG0360,Female,1,No,Yes,16,Yes,Fiber optic,No internet service,Month-to-month,Mailed check,85.35,1320.16,Yes,v1.0
+7590-VHVEG0361,Male,0,No,No,61,Yes,Fiber optic,No internet service,Month-to-month,Bank transfer,33.69,2098.61,No,v1.0
+7590-VHVEG0362,Female,0,No,No,64,Yes,Fiber optic,Yes,Month-to-month,Bank transfer,22.94,1492.42,Yes,v1.0
+7590-VHVEG0363,Female,0,Yes,No,63,Yes,DSL,No,Two year,Bank transfer,50.18,3308.48,No,v1.0
+7590-VHVEG0364,Male,0,No,No,69,Yes,No,No,Month-to-month,Bank transfer,89.06,6305.46,No,v1.0
+7590-VHVEG0365,Male,0,No,No,22,Yes,Fiber optic,Yes,Two year,Electronic check,39.78,914.65,No,v1.0
+7590-VHVEG0366,Female,0,Yes,Yes,67,Yes,Fiber optic,No internet service,One year,Mailed check,86.0,5878.46,No,v1.0
+7590-VHVEG0367,Female,0,No,No,26,No,DSL,No internet service,Month-to-month,Electronic check,115.05,2930.93,No,v1.0
+7590-VHVEG0368,Male,0,Yes,No,16,Yes,No,Yes,Month-to-month,Electronic check,29.2,448.8,Yes,v1.0
+7590-VHVEG0369,Female,0,No,No,51,Yes,Fiber optic,Yes,Month-to-month,Electronic check,85.92,4505.15,Yes,v1.0
+7590-VHVEG0370,Female,0,Yes,No,57,Yes,Fiber optic,Yes,Month-to-month,Bank transfer,63.49,3670.95,No,v1.0
+7590-VHVEG0371,Female,1,No,No,29,Yes,DSL,No internet service,Month-to-month,Bank transfer,105.08,2909.58,Yes,v1.0
+7590-VHVEG0372,Male,0,No,No,69,Yes,Fiber optic,Yes,One year,Bank transfer,37.36,2541.81,No,v1.0
+7590-VHVEG0373,Female,0,No,No,47,Yes,Fiber optic,No,Two year,Mailed check,87.88,4318.9,No,v1.0
+7590-VHVEG0374,Male,1,No,No,62,Yes,DSL,No,One year,Credit card,102.14,6332.64,Yes,v1.0
+7590-VHVEG0375,Male,0,No,No,69,No,DSL,No,One year,Bank transfer,112.57,7715.23,No,v1.0
+7590-VHVEG0376,Male,0,Yes,No,16,Yes,DSL,Yes,Month-to-month,Mailed check,86.96,1385.45,Yes,v1.0
+7590-VHVEG0377,Female,0,No,No,48,Yes,DSL,Yes,Month-to-month,Bank transfer,68.72,3202.68,Yes,v1.0
+7590-VHVEG0378,Male,0,Yes,No,39,Yes,DSL,No internet service,Month-to-month,Bank transfer,80.55,3100.17,Yes,v1.0
+7590-VHVEG0379,Female,0,Yes,No,33,Yes,Fiber optic,No internet service,One year,Electronic check,105.15,3424.86,No,v1.0
+7590-VHVEG0380,Male,0,Yes,No,23,Yes,Fiber optic,No,Two year,Electronic check,75.92,1667.99,No,v1.0
+7590-VHVEG0381,Female,0,Yes,No,10,Yes,Fiber optic,Yes,One year,Electronic check,22.98,235.93,No,v1.0
+7590-VHVEG0382,Female,0,No,No,69,Yes,Fiber optic,No,Month-to-month,Mailed check,111.23,7610.99,Yes,v1.0
+7590-VHVEG0383,Female,1,No,No,34,Yes,DSL,No,Month-to-month,Credit card,87.57,3073.43,Yes,v1.0
+7590-VHVEG0384,Male,0,No,Yes,52,Yes,No,Yes,One year,Credit card,86.3,4644.73,No,v1.0
+7590-VHVEG0385,Female,0,No,No,10,Yes,No,No internet service,Month-to-month,Mailed check,41.14,399.51,Yes,v1.0
+7590-VHVEG0386,Female,0,Yes,No,19,Yes,DSL,No,Two year,Bank transfer,84.57,1632.13,No,v1.0
+7590-VHVEG0387,Male,0,Yes,No,58,Yes,Fiber optic,Yes,Two year,Mailed check,58.6,3389.3,No,v1.0
+7590-VHVEG0388,Male,1,Yes,No,1,Yes,Fiber optic,No internet service,One year,Bank transfer,83.82,87.01,Yes,v1.0
+7590-VHVEG0389,Female,0,No,No,69,Yes,No,No internet service,Month-to-month,Mailed check,30.45,2041.07,No,v1.0
+7590-VHVEG0390,Male,1,No,No,4,Yes,DSL,Yes,Month-to-month,Mailed check,84.47,343.88,Yes,v1.0
+7590-VHVEG0391,Male,0,No,No,16,No,DSL,No,Month-to-month,Mailed check,117.94,1907.41,No,v1.0
+7590-VHVEG0392,Male,0,No,No,24,Yes,DSL,No,Month-to-month,Credit card,24.72,,Yes,v1.0
+7590-VHVEG0393,Female,0,Yes,No,2,Yes,DSL,No,Month-to-month,Electronic check,115.76,223.11,Yes,v1.0
+7590-VHVEG0394,Male,1,No,No,32,Yes,No,Yes,One year,Mailed check,59.88,1945.12,No,v1.0
+7590-VHVEG0395,Female,0,No,No,24,Yes,Fiber optic,No,One year,Credit card,105.33,2588.33,No,v1.0
+7590-VHVEG0396,Male,0,Yes,No,12,Yes,DSL,No internet service,Month-to-month,Electronic check,96.67,1138.7,Yes,v1.0
+7590-VHVEG0397,Male,0,Yes,Yes,50,Yes,No,No,Month-to-month,Electronic check,75.57,3833.1,Yes,v1.0
+7590-VHVEG0398,Female,0,No,Yes,35,Yes,Fiber optic,Yes,Month-to-month,Mailed check,92.37,3198.98,Yes,v1.0
+7590-VHVEG0399,Male,1,No,No,33,Yes,DSL,No,Month-to-month,Bank transfer,106.09,3575.77,Yes,v1.0
+7590-VHVEG0400,Male,0,Yes,No,33,No,Fiber optic,No,Two year,Bank transfer,59.61,1907.83,No,v1.0
+7590-VHVEG0401,Male,0,No,No,61,Yes,No,No internet service,Month-to-month,Bank transfer,52.05,3298.9,No,v1.0
+7590-VHVEG0402,Male,0,Yes,No,51,Yes,Fiber optic,No,Month-to-month,Mailed check,85.42,4264.01,Yes,v1.0
+7590-VHVEG0403,Female,0,Yes,No,43,Yes,DSL,Yes,Month-to-month,Bank transfer,99.17,4207.88,No,v1.0
+7590-VHVEG0404,Female,0,No,Yes,12,Yes,Fiber optic,Yes,Two year,Credit card,94.7,1086.23,No,v1.0
+7590-VHVEG0405,Female,0,Yes,No,67,Yes,DSL,No,One year,Credit card,98.19,6322.88,No,v1.0
+7590-VHVEG0406,Female,0,No,Yes,65,Yes,Fiber optic,Yes,Month-to-month,Credit card,62.69,4081.13,No,v1.0
+7590-VHVEG0407,Female,0,No,No,33,Yes,Fiber optic,No,Month-to-month,Credit card,100.15,3228.07,Yes,v1.0
+7590-VHVEG0408,Female,0,No,No,40,Yes,DSL,Yes,One year,Electronic check,31.78,1313.87,No,v1.0
+7590-VHVEG0409,Female,0,No,No,43,Yes,No,No,Two year,Credit card,73.36,3001.39,No,v1.0
+7590-VHVEG0410,Male,0,Yes,Yes,44,Yes,Fiber optic,No,Month-to-month,Bank transfer,20.56,893.89,Yes,v1.0
+7590-VHVEG0411,Female,0,No,Yes,29,Yes,Fiber optic,No internet service,Two year,Mailed check,51.81,1478.03,No,v1.0
+7590-VHVEG0412,Female,0,No,No,13,Yes,DSL,No internet service,Two year,Bank transfer,55.91,691.93,No,v1.0
+7590-VHVEG0413,Female,0,Yes,No,12,Yes,DSL,Yes,Two year,Credit card,58.82,679.38,No,v1.0
+7590-VHVEG0414,Male,0,No,Yes,46,Yes,No,No,One year,Electronic check,88.16,4020.15,No,v1.0
+7590-VHVEG0415,Female,0,No,No,2,Yes,Fiber optic,Yes,One year,Credit card,58.08,116.07,Yes,v1.0
+7590-VHVEG0416,Female,0,No,Yes,35,Yes,DSL,No,Month-to-month,Mailed check,63.97,2217.59,No,v1.0
+7590-VHVEG0417,Female,0,No,No,8,Yes,Fiber optic,No,One year,Bank transfer,43.28,347.31,No,v1.0
+7590-VHVEG0418,Male,0,Yes,Yes,26,Yes,Fiber optic,No internet service,Month-to-month,Mailed check,56.58,1485.04,Yes,v1.0
+7590-VHVEG0419,Female,1,Yes,No,34,Yes,DSL,No internet service,One year,Mailed check,42.27,1366.83,No,v1.0
+7590-VHVEG0420,Male,0,No,No,7,Yes,DSL,No,Month-to-month,Mailed check,27.17,189.53,No,v1.0
+7590-VHVEG0421,Male,0,Yes,Yes,68,Yes,DSL,No,One year,Bank transfer,79.14,5630.81,No,v1.0
+7590-VHVEG0422,Male,0,Yes,No,58,Yes,Fiber optic,No internet service,Two year,Credit card,85.48,4967.56,No,v1.0
+7590-VHVEG0423,Male,0,Yes,No,29,Yes,Fiber optic,No internet service,Month-to-month,Mailed check,80.71,2382.15,Yes,v1.0
+7590-VHVEG0424,Female,0,Yes,No,36,Yes,Fiber optic,Yes,Two year,Bank transfer,65.42,2310.9,Yes,v1.0
+7590-VHVEG0425,Male,0,No,Yes,21,Yes,No,No,Month-to-month,Electronic check,57.22,1234.52,Yes,v1.0
+7590-VHVEG0426,Male,1,Yes,No,36,Yes,Fiber optic,No,Two year,Bank transfer,104.61,3868.62,No,v1.0
+7590-VHVEG0427,Female,1,No,Yes,10,Yes,Fiber optic,Yes,Month-to-month,Electronic check,70.87,710.21,No,v1.0
+7590-VHVEG0428,Male,0,No,No,24,No,Fiber optic,Yes,Month-to-month,Bank transfer,66.96,1683.53,No,v1.0
+7590-VHVEG0429,Male,0,Yes,No,64,Yes,DSL,Yes,Two year,Credit card,22.51,1386.88,No,v1.0
+7590-VHVEG0430,Male,0,No,No,49,Yes,Fiber optic,No,Month-to-month,Mailed check,53.44,2492.18,Yes,v1.0
+7590-VHVEG0431,Male,0,Yes,No,36,Yes,No,Yes,Two year,Credit card,57.26,2117.02,No,v1.0
+7590-VHVEG0432,Male,0,No,No,24,Yes,Fiber optic,Yes,Month-to-month,Bank transfer,59.08,1461.59,No,v1.0
+7590-VHVEG0433,Male,0,No,No,23,Yes,No,Yes,Month-to-month,Mailed check,76.86,1700.57,Yes,v1.0
+7590-VHVEG0434,Female,0,Yes,Yes,62,No,Fiber optic,No internet service,Month-to-month,Electronic check,72.29,4377.1,No,v1.0
+7590-VHVEG0435,Female,0,No,Yes,37,Yes,DSL,No internet service,One year,Bank transfer,79.57,2802.22,No,v1.0
+7590-VHVEG0436,Female,1,Yes,No,12,Yes,No,No,Month-to-month,Mailed check,94.96,1115.95,No,v1.0
+7590-VHVEG0437,Female,0,No,No,55,Yes,Fiber optic,No,Month-to-month,Electronic check,99.67,5631.73,Yes,v1.0
+7590-VHVEG0438,Male,0,No,Yes,13,Yes,No,No internet service,Month-to-month,Electronic check,90.38,1177.0,Yes,v1.0
+7590-VHVEG0439,Male,0,Yes,No,23,Yes,DSL,Yes,Month-to-month,Credit card,113.64,2574.05,No,v1.0
+7590-VHVEG0440,Male,0,Yes,No,30,Yes,No,Yes,Two year,Bank transfer,21.79,645.22,No,v1.0
+7590-VHVEG0441,Female,0,Yes,No,17,Yes,DSL,Yes,Two year,Electronic check,39.19,632.95,No,v1.0
+7590-VHVEG0442,Female,0,No,Yes,62,Yes,Fiber optic,Yes,Month-to-month,Mailed check,20.74,1260.21,Yes,v1.0
+7590-VHVEG0443,Male,0,Yes,No,13,Yes,Fiber optic,No,One year,Electronic check,83.45,1100.77,No,v1.0
+7590-VHVEG0444,Male,0,Yes,Yes,59,Yes,Fiber optic,No internet service,Month-to-month,Electronic check,108.01,6674.59,Yes,v1.0
+7590-VHVEG0445,Female,1,Yes,Yes,19,No,Fiber optic,No,One year,Credit card,43.86,862.29,Yes,v1.0
+7590-VHVEG0446,Female,1,Yes,No,49,Yes,Fiber optic,No,Two year,Credit card,110.85,5172.85,No,v1.0
+7590-VHVEG0447,Female,0,No,No,12,Yes,Fiber optic,No internet service,Two year,Mailed check,25.91,323.26,No,v1.0
+7590-VHVEG0448,Female,0,No,No,61,Yes,Fiber optic,Yes,Month-to-month,Credit card,111.57,6998.81,No,v1.0
+7590-VHVEG0449,Male,0,No,Yes,19,Yes,DSL,Yes,One year,Electronic check,54.46,1063.73,Yes,v1.0
+7590-VHVEG0450,Female,0,No,No,9,Yes,Fiber optic,No,Month-to-month,Electronic check,29.94,268.32,No,v1.0
+7590-VHVEG0451,Female,1,No,Yes,71,No,Fiber optic,No,Two year,Credit card,67.62,4751.73,No,v1.0
+7590-VHVEG0452,Male,0,No,No,28,Yes,DSL,Yes,Month-to-month,Electronic check,45.16,,Yes,v1.0
+7590-VHVEG0453,Male,0,Yes,No,52,Yes,Fiber optic,No,One year,Electronic check,47.92,2383.5,No,v1.0
+7590-VHVEG0454,Male,1,No,No,16,Yes,Fiber optic,No,One year,Mailed check,50.11,780.04,No,v1.0
+7590-VHVEG0455,Female,0,Yes,No,69,Yes,Fiber optic,No,One year,Credit card,98.7,6637.5,No,v1.0
+7590-VHVEG0456,Female,1,Yes,No,12,Yes,No,No,Month-to-month,Electronic check,72.84,872.66,Yes,v1.0
+7590-VHVEG0457,Female,0,Yes,No,25,Yes,No,No,Two year,Credit card,50.51,,No,v1.0
+7590-VHVEG0458,Female,0,Yes,No,52,Yes,Fiber optic,Yes,Month-to-month,Mailed check,79.81,4139.39,No,v1.0
+7590-VHVEG0459,Male,0,No,Yes,53,Yes,DSL,No,One year,Credit card,90.18,4568.35,No,v1.0
+7590-VHVEG0460,Male,0,No,No,23,Yes,DSL,Yes,Month-to-month,Electronic check,46.72,1123.68,Yes,v1.0
+7590-VHVEG0461,Female,0,No,No,16,Yes,DSL,No internet service,Month-to-month,Credit card,60.53,1011.32,No,v1.0
+7590-VHVEG0462,Female,0,Yes,Yes,57,Yes,DSL,No,Month-to-month,Electronic check,31.94,1872.78,Yes,v1.0
+7590-VHVEG0463,Female,0,No,No,39,Yes,DSL,No,Month-to-month,Electronic check,37.75,1544.69,No,v1.0
+7590-VHVEG0464,Male,1,No,Yes,53,Yes,Fiber optic,No,Month-to-month,Electronic check,86.75,4618.18,No,v1.0
+7590-VHVEG0465,Female,0,No,No,42,Yes,Fiber optic,No,Month-to-month,Mailed check,37.78,1660.23,No,v1.0
+7590-VHVEG0466,Male,0,No,No,58,Yes,DSL,No,Month-to-month,Credit card,71.47,3969.12,Yes,v1.0
+7590-VHVEG0467,Female,0,No,No,39,Yes,No,No internet service,One year,Mailed check,89.49,3443.1,Yes,v1.0
+7590-VHVEG0468,Male,0,No,Yes,14,No,DSL,No internet service,Two year,Credit card,30.47,414.92,No,v1.0
+7590-VHVEG0469,Male,0,Yes,Yes,5,Yes,No,No,Month-to-month,Mailed check,75.6,366.49,Yes,v1.0
+7590-VHVEG0470,Female,0,Yes,Yes,35,Yes,No,Yes,Month-to-month,Bank transfer,45.14,1523.26,Yes,v1.0
+7590-VHVEG0471,Male,0,No,Yes,18,Yes,Fiber optic,No,Month-to-month,Electronic check,114.37,2083.8,No,v1.0
+7590-VHVEG0472,Male,0,Yes,No,9,Yes,DSL,No,Month-to-month,Electronic check,67.39,623.55,Yes,v1.0
+7590-VHVEG0473,Female,0,Yes,No,58,No,DSL,Yes,One year,Mailed check,98.99,5786.21,No,v1.0
+7590-VHVEG0474,Male,0,No,No,17,Yes,No,Yes,One year,Bank transfer,73.92,1212.31,No,v1.0
+7590-VHVEG0475,Female,0,Yes,No,7,Yes,No,No internet service,Month-to-month,Electronic check,24.25,175.06,Yes,v1.0
+7590-VHVEG0476,Male,1,No,No,46,Yes,DSL,Yes,Month-to-month,Credit card,82.05,3825.56,Yes,v1.0
+7590-VHVEG0477,Male,1,Yes,No,13,Yes,Fiber optic,No,Month-to-month,Mailed check,113.24,1455.62,Yes,v1.0
+7590-VHVEG0478,Male,0,No,Yes,40,Yes,DSL,No,Two year,Electronic check,78.96,3213.31,No,v1.0
+7590-VHVEG0479,Male,0,Yes,No,42,Yes,Fiber optic,No,Two year,Electronic check,100.28,4110.66,Yes,v1.0
+7590-VHVEG0480,Female,0,Yes,No,9,Yes,DSL,Yes,Month-to-month,Mailed check,106.65,945.01,No,v1.0
+7590-VHVEG0481,Female,0,Yes,No,50,Yes,No,No internet service,Month-to-month,Mailed check,42.35,2206.0,No,v1.0
+7590-VHVEG0482,Female,1,Yes,No,27,No,Fiber optic,No,Two year,Credit card,40.78,1078.0,Yes,v1.0
+7590-VHVEG0483,Male,0,No,No,66,Yes,DSL,No,Two year,Credit card,79.88,5256.0,No,v1.0
+7590-VHVEG0484,Male,0,Yes,Yes,5,Yes,Fiber optic,No,Month-to-month,Electronic check,60.28,313.16,Yes,v1.0
+7590-VHVEG0485,Female,1,No,No,29,Yes,Fiber optic,No,Month-to-month,Electronic check,102.31,3028.51,Yes,v1.0
+7590-VHVEG0486,Female,0,No,Yes,37,Yes,Fiber optic,No internet service,Month-to-month,Mailed check,108.2,3828.21,No,v1.0
+7590-VHVEG0487,Female,0,Yes,No,38,Yes,DSL,No,One year,Electronic check,54.64,,No,v1.0
+7590-VHVEG0488,Female,0,Yes,No,8,Yes,No,No,Month-to-month,Electronic check,43.21,328.69,Yes,v1.0
+7590-VHVEG0489,Male,0,No,No,65,Yes,No,No internet service,Month-to-month,Mailed check,96.49,6354.06,Yes,v1.0
+7590-VHVEG0490,Female,0,Yes,No,17,Yes,Fiber optic,No,One year,Electronic check,46.93,793.65,No,v1.0
+7590-VHVEG0491,Male,0,No,No,71,Yes,No,Yes,Month-to-month,Electronic check,100.62,6882.49,Yes,v1.0
+7590-VHVEG0492,Female,0,Yes,No,45,Yes,DSL,Yes,One year,Bank transfer,61.53,2895.47,No,v1.0
+7590-VHVEG0493,Male,0,No,Yes,4,No,Fiber optic,No internet service,Month-to-month,Credit card,85.42,342.69,Yes,v1.0
+7590-VHVEG0494,Female,0,Yes,No,36,Yes,Fiber optic,No,Month-to-month,Mailed check,29.36,1029.77,No,v1.0
+7590-VHVEG0495,Female,0,Yes,Yes,70,Yes,Fiber optic,No,One year,Bank transfer,81.14,5680.02,No,v1.0
+7590-VHVEG0496,Male,0,No,Yes,31,Yes,No,No,Month-to-month,Credit card,64.27,2028.26,Yes,v1.0
+7590-VHVEG0497,Male,0,No,Yes,19,Yes,DSL,Yes,Two year,Credit card,77.49,1409.88,No,v1.0
+7590-VHVEG0498,Female,0,No,No,61,No,DSL,No,Month-to-month,Credit card,36.47,2174.27,No,v1.0
+7590-VHVEG0499,Male,0,Yes,Yes,54,Yes,Fiber optic,Yes,Month-to-month,Bank transfer,92.21,5132.39,Yes,v1.0
+7590-VHVEG0500,Female,0,Yes,No,39,Yes,DSL,No,One year,Bank transfer,104.55,4061.16,No,v1.0
+7590-VHVEG0501,Male,0,Yes,No,19,No,Fiber optic,No,Month-to-month,Credit card,41.24,787.22,No,v1.0
+7590-VHVEG0502,Female,0,Yes,No,39,Yes,Fiber optic,No,Two year,Electronic check,29.38,1138.12,No,v1.0
+7590-VHVEG0503,Female,0,No,Yes,67,Yes,DSL,No,Month-to-month,Electronic check,22.32,1427.01,Yes,v1.0
+7590-VHVEG0504,Female,0,No,No,45,No,Fiber optic,No internet service,Month-to-month,Bank transfer,82.91,3606.38,No,v1.0
+7590-VHVEG0505,Female,0,Yes,No,13,Yes,No,No,Month-to-month,Bank transfer,79.5,1027.81,Yes,v1.0
+7590-VHVEG0506,Female,0,Yes,No,58,Yes,Fiber optic,Yes,Month-to-month,Bank transfer,73.58,4143.33,Yes,v1.0
+7590-VHVEG0507,Female,0,Yes,No,20,Yes,DSL,Yes,Two year,Credit card,42.73,816.16,Yes,v1.0
+7590-VHVEG0508,Female,1,No,No,61,Yes,Fiber optic,No,Two year,Electronic check,58.31,3679.07,No,v1.0
+7590-VHVEG0509,Female,0,No,Yes,39,Yes,DSL,No internet service,Month-to-month,Bank transfer,78.26,3198.95,Yes,v1.0
+7590-VHVEG0510,Male,0,Yes,No,1,Yes,Fiber optic,No internet service,Month-to-month,Bank transfer,68.68,,No,v1.0
+7590-VHVEG0511,Male,0,No,Yes,3,Yes,Fiber optic,No internet service,Two year,Mailed check,116.8,362.81,Yes,v1.0
+7590-VHVEG0512,Male,0,Yes,No,62,Yes,No,No,Two year,Credit card,33.37,2015.62,No,v1.0
+7590-VHVEG0513,Female,0,Yes,No,63,Yes,Fiber optic,No,Month-to-month,Mailed check,88.12,5807.55,Yes,v1.0
+7590-VHVEG0514,Female,0,No,No,25,Yes,No,No,Month-to-month,Electronic check,59.62,1445.41,No,v1.0
+7590-VHVEG0515,Female,0,No,Yes,56,No,No,Yes,Month-to-month,Mailed check,61.96,3626.6,No,v1.0
+7590-VHVEG0516,Male,0,No,No,33,Yes,Fiber optic,Yes,Two year,Mailed check,90.32,3128.2,Yes,v1.0
+7590-VHVEG0517,Male,1,No,No,38,Yes,Fiber optic,No internet service,Month-to-month,Mailed check,87.86,,No,v1.0
+7590-VHVEG0518,Male,0,Yes,Yes,6,Yes,DSL,Yes,Month-to-month,Credit card,117.14,736.68,Yes,v1.0
+7590-VHVEG0519,Male,0,No,No,58,Yes,No,Yes,One year,Electronic check,32.58,1902.93,No,v1.0
+7590-VHVEG0520,Male,1,No,No,44,Yes,No,Yes,Month-to-month,Mailed check,30.2,1296.97,Yes,v1.0
+7590-VHVEG0521,Female,0,No,No,45,Yes,DSL,No internet service,Month-to-month,Credit card,90.99,4068.54,Yes,v1.0
+7590-VHVEG0522,Male,1,No,Yes,32,Yes,DSL,No,Month-to-month,Electronic check,76.68,2476.78,Yes,v1.0
+7590-VHVEG0523,Female,0,Yes,Yes,45,Yes,Fiber optic,No,Month-to-month,Bank transfer,46.87,2019.01,No,v1.0
+7590-VHVEG0524,Female,0,Yes,Yes,61,Yes,No,No internet service,Month-to-month,Mailed check,27.78,1715.5,Yes,v1.0
+7590-VHVEG0525,Female,0,No,Yes,47,Yes,No,No,Month-to-month,Electronic check,28.39,1398.76,No,v1.0
+7590-VHVEG0526,Male,0,No,No,21,No,Fiber optic,No,Month-to-month,Mailed check,107.63,,Yes,v1.0
+7590-VHVEG0527,Male,1,Yes,No,36,Yes,Fiber optic,Yes,One year,Bank transfer,38.8,1437.78,Yes,v1.0
+7590-VHVEG0528,Female,0,Yes,No,19,Yes,Fiber optic,Yes,Two year,Electronic check,51.69,1022.18,No,v1.0
+7590-VHVEG0529,Male,0,No,No,20,No,Fiber optic,No internet service,One year,Credit card,42.21,,No,v1.0
+7590-VHVEG0530,Male,1,Yes,Yes,57,No,No,No,Month-to-month,Electronic check,54.79,3266.71,No,v1.0
+7590-VHVEG0531,Female,0,Yes,No,18,No,Fiber optic,No,Month-to-month,Credit card,26.8,483.5,No,v1.0
+7590-VHVEG0532,Female,1,Yes,No,47,Yes,Fiber optic,No,Month-to-month,Electronic check,70.87,3489.77,Yes,v1.0
+7590-VHVEG0533,Female,0,Yes,No,49,Yes,Fiber optic,No,Month-to-month,Credit card,26.63,1338.25,Yes,v1.0
+7590-VHVEG0534,Female,0,No,Yes,14,Yes,No,Yes,Month-to-month,Bank transfer,98.43,1331.46,Yes,v1.0
+7590-VHVEG0535,Female,0,Yes,No,15,Yes,DSL,Yes,One year,Bank transfer,42.9,642.07,No,v1.0
+7590-VHVEG0536,Male,0,Yes,No,31,Yes,Fiber optic,Yes,Month-to-month,Bank transfer,72.92,2309.91,Yes,v1.0
+7590-VHVEG0537,Female,0,No,No,1,Yes,Fiber optic,Yes,Month-to-month,Electronic check,106.25,103.56,Yes,v1.0
+7590-VHVEG0538,Male,1,No,Yes,54,Yes,No,No internet service,Month-to-month,Bank transfer,83.79,4588.06,No,v1.0
+7590-VHVEG0539,Male,1,No,Yes,3,Yes,No,Yes,One year,Mailed check,72.23,220.3,Yes,v1.0
+7590-VHVEG0540,Female,0,Yes,No,16,Yes,Fiber optic,Yes,Month-to-month,Bank transfer,51.78,800.61,No,v1.0
+7590-VHVEG0541,Female,0,No,No,57,Yes,Fiber optic,No,One year,Credit card,52.63,3019.68,No,v1.0
+7590-VHVEG0542,Male,1,Yes,Yes,12,Yes,Fiber optic,No internet service,Month-to-month,Credit card,85.61,,Yes,v1.0
+7590-VHVEG0543,Female,0,No,No,16,Yes,Fiber optic,Yes,Two year,Credit card,117.43,1878.6,No,v1.0
+7590-VHVEG0544,Male,0,Yes,No,24,Yes,DSL,Yes,Two year,Electronic check,84.86,1937.28,Yes,v1.0
+7590-VHVEG0545,Female,0,No,No,28,Yes,No,No,Month-to-month,Mailed check,74.66,1987.92,Yes,v1.0
+7590-VHVEG0546,Female,1,No,No,8,Yes,DSL,No,Month-to-month,Bank transfer,91.6,722.35,Yes,v1.0
+7590-VHVEG0547,Male,0,Yes,No,36,Yes,No,No,Month-to-month,Mailed check,65.59,2461.88,No,v1.0
+7590-VHVEG0548,Male,0,No,No,8,No,Fiber optic,No internet service,Month-to-month,Mailed check,25.89,201.53,Yes,v1.0
+7590-VHVEG0549,Female,0,No,No,58,Yes,DSL,No internet service,One year,Credit card,75.11,4414.63,Yes,v1.0
+7590-VHVEG0550,Female,0,No,Yes,60,Yes,DSL,No,Two year,Credit card,113.85,6640.99,No,v1.0
+7590-VHVEG0551,Female,1,No,Yes,50,Yes,Fiber optic,No,One year,Credit card,37.18,1825.83,No,v1.0
+7590-VHVEG0552,Male,1,No,No,28,Yes,Fiber optic,No,Two year,Electronic check,87.62,2538.76,No,v1.0
+7590-VHVEG0553,Female,0,Yes,No,41,Yes,DSL,Yes,Month-to-month,Mailed check,39.69,1664.6,No,v1.0
+7590-VHVEG0554,Female,0,Yes,No,64,Yes,Fiber optic,No internet service,Month-to-month,Mailed check,72.51,4452.95,Yes,v1.0
+7590-VHVEG0555,Female,1,No,No,27,No,Fiber optic,No,One year,Electronic check,29.47,790.13,No,v1.0
+7590-VHVEG0556,Female,0,No,Yes,63,Yes,DSL,Yes,Month-to-month,Electronic check,64.14,3850.35,No,v1.0
+7590-VHVEG0557,Male,0,Yes,No,17,Yes,No,No,One year,Electronic check,94.1,,Yes,v1.0
+7590-VHVEG0558,Male,1,Yes,No,33,No,DSL,Yes,Month-to-month,Mailed check,54.06,1813.03,Yes,v1.0
+7590-VHVEG0559,Male,0,No,No,29,Yes,No,No,Month-to-month,Mailed check,85.16,2375.46,No,v1.0
+7590-VHVEG0560,Female,0,Yes,Yes,13,Yes,Fiber optic,No,Two year,Credit card,97.95,1246.52,No,v1.0
+7590-VHVEG0561,Female,0,No,No,46,Yes,DSL,No,Month-to-month,Credit card,110.86,5047.62,Yes,v1.0
+7590-VHVEG0562,Female,0,No,No,35,No,DSL,No internet service,Two year,Mailed check,42.99,1567.95,No,v1.0
+7590-VHVEG0563,Male,0,No,No,6,No,No,Yes,Two year,Credit card,59.13,372.3,No,v1.0
+7590-VHVEG0564,Male,0,No,No,69,No,Fiber optic,No,One year,Electronic check,34.94,2300.93,No,v1.0
+7590-VHVEG0565,Male,1,Yes,No,47,Yes,DSL,No,One year,Bank transfer,117.26,5655.23,No,v1.0
+7590-VHVEG0566,Male,0,Yes,No,25,Yes,DSL,No,One year,Credit card,110.85,2735.61,Yes,v1.0
+7590-VHVEG0567,Female,0,Yes,No,66,Yes,Fiber optic,No,Two year,Mailed check,72.92,4760.69,No,v1.0
+7590-VHVEG0568,Male,0,No,No,10,Yes,Fiber optic,No,Month-to-month,Credit card,102.52,1051.26,Yes,v1.0
+7590-VHVEG0569,Male,0,Yes,No,56,No,Fiber optic,No,Month-to-month,Credit card,71.05,4145.51,Yes,v1.0
+7590-VHVEG0570,Female,0,No,No,30,Yes,Fiber optic,Yes,One year,Credit card,81.11,2543.07,No,v1.0
+7590-VHVEG0571,Male,0,No,Yes,5,Yes,No,No internet service,Month-to-month,Bank transfer,28.73,144.78,Yes,v1.0
+7590-VHVEG0572,Female,0,Yes,Yes,33,Yes,Fiber optic,No,Month-to-month,Electronic check,94.02,3058.22,Yes,v1.0
+7590-VHVEG0573,Female,0,No,No,65,Yes,Fiber optic,No,Month-to-month,Mailed check,32.52,2174.31,Yes,v1.0
+7590-VHVEG0574,Female,1,No,No,18,Yes,DSL,Yes,One year,Bank transfer,100.95,1771.94,No,v1.0
+7590-VHVEG0575,Female,0,No,No,49,Yes,Fiber optic,Yes,Two year,Mailed check,96.64,4765.64,No,v1.0
+7590-VHVEG0576,Female,0,Yes,Yes,11,Yes,DSL,No,Month-to-month,Mailed check,89.46,970.11,No,v1.0
+7590-VHVEG0577,Male,0,No,Yes,26,Yes,Fiber optic,No internet service,Two year,Mailed check,23.54,621.72,No,v1.0
+7590-VHVEG0578,Male,0,Yes,Yes,63,Yes,No,No,One year,Bank transfer,49.71,3050.22,No,v1.0
+7590-VHVEG0579,Female,0,No,No,59,Yes,No,No internet service,Two year,Electronic check,45.79,2618.01,Yes,v1.0
+7590-VHVEG0580,Male,0,Yes,No,27,No,No,No,One year,Mailed check,55.29,1555.36,No,v1.0
+7590-VHVEG0581,Female,0,No,No,49,Yes,Fiber optic,No,One year,Electronic check,28.59,1345.08,No,v1.0
+7590-VHVEG0582,Male,1,Yes,Yes,33,No,DSL,Yes,Month-to-month,Electronic check,111.82,3692.32,No,v1.0
+7590-VHVEG0583,Male,0,Yes,No,1,Yes,Fiber optic,No internet service,Two year,Credit card,74.27,72.2,No,v1.0
+7590-VHVEG0584,Male,0,No,No,21,Yes,Fiber optic,Yes,Month-to-month,Bank transfer,49.94,1000.41,No,v1.0
+7590-VHVEG0585,Male,0,No,Yes,55,Yes,Fiber optic,No internet service,Two year,Bank transfer,58.9,3089.41,No,v1.0
+7590-VHVEG0586,Male,0,No,No,6,Yes,DSL,No internet service,Two year,Credit card,63.83,370.52,No,v1.0
+7590-VHVEG0587,Male,1,No,Yes,69,Yes,DSL,No internet service,Month-to-month,Credit card,78.86,5640.79,Yes,v1.0
+7590-VHVEG0588,Male,0,Yes,No,5,Yes,DSL,No,Month-to-month,Electronic check,70.54,345.01,Yes,v1.0
+7590-VHVEG0589,Female,0,No,No,3,Yes,Fiber optic,No,One year,Mailed check,110.1,345.18,No,v1.0
+7590-VHVEG0590,Female,0,Yes,No,53,Yes,Fiber optic,No,Month-to-month,Bank transfer,68.7,3670.95,Yes,v1.0
+7590-VHVEG0591,Female,0,No,Yes,23,Yes,DSL,Yes,Two year,Mailed check,117.23,2679.23,No,v1.0
+7590-VHVEG0592,Male,0,Yes,No,53,Yes,Fiber optic,No,Month-to-month,Mailed check,103.44,5526.21,Yes,v1.0
+7590-VHVEG0593,Male,1,Yes,No,37,Yes,DSL,Yes,Month-to-month,Credit card,40.43,1498.56,No,v1.0
+7590-VHVEG0594,Female,0,Yes,Yes,17,Yes,Fiber optic,No,Two year,Mailed check,111.2,1939.29,Yes,v1.0
+7590-VHVEG0595,Female,0,No,No,1,Yes,No,Yes,One year,Electronic check,31.4,30.72,No,v1.0
+7590-VHVEG0596,Male,0,No,No,51,Yes,DSL,Yes,Two year,Credit card,100.11,5030.59,No,v1.0
+7590-VHVEG0597,Female,0,Yes,No,45,No,Fiber optic,No,Month-to-month,Mailed check,57.3,2680.17,No,v1.0
+7590-VHVEG0598,Female,0,Yes,No,4,Yes,Fiber optic,No,One year,Credit card,106.04,443.1,Yes,v1.0
+7590-VHVEG0599,Female,0,Yes,No,62,No,DSL,No,One year,Electronic check,105.07,6770.04,Yes,v1.0
+7590-VHVEG0600,Female,0,Yes,No,65,Yes,No,Yes,One year,Electronic check,98.98,6381.92,No,v1.0
+7590-VHVEG0601,Male,0,Yes,No,32,Yes,Fiber optic,No,One year,Mailed check,302.37,3204.94,No,v1.0
+7590-VHVEG0602,Female,0,No,Yes,34,Yes,Fiber optic,Yes,One year,Credit card,49.86,1691.18,No,v1.0
+7590-VHVEG0603,Female,0,Yes,Yes,39,Yes,No,No,Month-to-month,Mailed check,27.93,1089.01,No,v1.0
+7590-VHVEG0604,Female,0,No,Yes,26,Yes,DSL,No,Month-to-month,Mailed check,59.49,1501.11,Yes,v1.0
+7590-VHVEG0605,Female,0,No,No,34,Yes,Fiber optic,No,One year,Credit card,37.01,1269.65,No,v1.0
+7590-VHVEG0606,Male,1,No,No,54,Yes,DSL,No,Month-to-month,Mailed check,88.11,4608.35,Yes,v1.0
+7590-VHVEG0607,Female,0,Yes,No,3,Yes,Fiber optic,No,One year,Electronic check,53.92,159.03,No,v1.0
+7590-VHVEG0608,Female,0,Yes,No,50,Yes,DSL,No,Month-to-month,Credit card,115.61,5985.71,No,v1.0
+7590-VHVEG0609,Female,0,Yes,No,12,Yes,Fiber optic,No,One year,Credit card,82.82,964.67,No,v1.0
+7590-VHVEG0610,Female,0,Yes,No,65,Yes,No,No,One year,Credit card,100.6,6258.77,No,v1.0
+7590-VHVEG0611,Female,0,No,Yes,54,Yes,DSL,No,Month-to-month,Credit card,32.99,1704.55,No,v1.0
+7590-VHVEG0612,Male,1,No,No,5,Yes,DSL,Yes,Month-to-month,Mailed check,104.48,545.41,No,v1.0
+7590-VHVEG0613,Female,0,No,No,57,No,DSL,No,Month-to-month,Mailed check,110.43,6298.88,Yes,v1.0
+7590-VHVEG0614,Female,0,Yes,No,17,Yes,No,No,One year,Electronic check,67.73,1141.01,Yes,v1.0
+7590-VHVEG0615,Male,0,Yes,Yes,47,Yes,No,No,Two year,Bank transfer,79.41,3848.43,Yes,v1.0
+7590-VHVEG0616,Female,1,Yes,No,23,Yes,DSL,Yes,Month-to-month,Bank transfer,94.95,2257.22,Yes,v1.0
+7590-VHVEG0617,Male,0,Yes,No,14,Yes,DSL,Yes,One year,Electronic check,37.13,511.15,No,v1.0
+7590-VHVEG0618,Female,0,Yes,No,66,Yes,DSL,No internet service,Month-to-month,Bank transfer,69.25,4659.09,No,v1.0
+7590-VHVEG0619,Male,1,Yes,No,51,Yes,DSL,No,Month-to-month,Electronic check,59.07,3094.19,Yes,v1.0
+7590-VHVEG0620,Male,0,No,No,38,No,Fiber optic,Yes,Two year,Mailed check,34.34,1325.28,No,v1.0
+7590-VHVEG0621,Female,1,No,Yes,64,Yes,DSL,No,Month-to-month,Credit card,56.02,3460.27,No,v1.0
+7590-VHVEG0622,Male,0,Yes,Yes,38,Yes,Fiber optic,No,Month-to-month,Credit card,26.68,1051.98,No,v1.0
+7590-VHVEG0623,Female,0,No,No,50,Yes,No,No internet service,Month-to-month,Mailed check,22.53,1130.88,No,v1.0
+7590-VHVEG0624,Male,0,No,Yes,30,Yes,Fiber optic,Yes,Month-to-month,Credit card,33.25,975.69,No,v1.0
+7590-VHVEG0625,Male,0,No,No,51,Yes,No,Yes,Month-to-month,Credit card,114.39,5790.03,Yes,v1.0
+7590-VHVEG0626,Female,0,No,No,63,Yes,DSL,No internet service,Month-to-month,Bank transfer,73.85,4437.64,No,v1.0
+7590-VHVEG0627,Male,0,Yes,No,52,Yes,DSL,Yes,One year,Mailed check,114.65,5739.97,No,v1.0
+7590-VHVEG0628,Female,0,No,Yes,38,Yes,DSL,Yes,Month-to-month,Bank transfer,62.38,2433.57,Yes,v1.0
+7590-VHVEG0629,Male,0,Yes,No,30,Yes,Fiber optic,No internet service,Month-to-month,Bank transfer,50.56,,No,v1.0
+7590-VHVEG0630,Male,0,Yes,No,51,Yes,Fiber optic,No,Month-to-month,Credit card,69.6,3520.08,Yes,v1.0
+7590-VHVEG0631,Female,1,No,No,5,Yes,Fiber optic,Yes,Month-to-month,Credit card,63.07,316.07,Yes,v1.0
+7590-VHVEG0632,Female,1,Yes,No,29,Yes,DSL,Yes,One year,Mailed check,30.36,841.09,No,v1.0
+7590-VHVEG0633,Male,1,No,No,4,Yes,Fiber optic,Yes,Two year,Credit card,82.8,346.87,Yes,v1.0
+7590-VHVEG0634,Female,0,Yes,Yes,10,Yes,DSL,Yes,Month-to-month,Credit card,41.17,400.44,Yes,v1.0
+7590-VHVEG0635,Female,0,Yes,No,56,Yes,Fiber optic,No internet service,Two year,Mailed check,80.72,4431.79,No,v1.0
+7590-VHVEG0636,Male,1,No,Yes,17,Yes,Fiber optic,No,One year,Credit card,83.72,1395.33,No,v1.0
+7590-VHVEG0637,Male,1,No,No,17,Yes,Fiber optic,No,One year,Bank transfer,34.9,577.28,No,v1.0
+7590-VHVEG0638,Female,0,Yes,No,69,Yes,No,No internet service,Month-to-month,Mailed check,26.01,1705.37,Yes,v1.0
+7590-VHVEG0639,Male,0,No,No,34,Yes,DSL,No,Month-to-month,Credit card,96.51,3356.76,Yes,v1.0
+7590-VHVEG0640,Female,0,Yes,No,6,Yes,Fiber optic,Yes,Month-to-month,Electronic check,65.06,408.59,No,v1.0
+7590-VHVEG0641,Female,0,No,No,53,Yes,DSL,No,One year,Mailed check,25.7,1324.55,No,v1.0
+7590-VHVEG0642,Female,0,Yes,No,66,Yes,Fiber optic,No internet service,Month-to-month,Mailed check,117.5,7881.24,Yes,v1.0
+7590-VHVEG0643,Female,0,Yes,No,43,Yes,No,No internet service,Two year,Electronic check,25.66,1130.18,No,v1.0
+7590-VHVEG0644,Female,0,Yes,Yes,23,Yes,DSL,Yes,Month-to-month,Credit card,88.11,2097.22,Yes,v1.0
+7590-VHVEG0645,Female,0,Yes,Yes,55,Yes,Fiber optic,No,Month-to-month,Credit card,116.4,6352.5,No,v1.0
+7590-VHVEG0646,Male,0,Yes,Yes,16,Yes,DSL,No,One year,Mailed check,43.44,681.34,No,v1.0
+7590-VHVEG0647,Female,0,No,Yes,8,Yes,Fiber optic,No internet service,Month-to-month,Mailed check,33.94,266.78,Yes,v1.0
+7590-VHVEG0648,Male,1,Yes,No,4,Yes,No,Yes,Month-to-month,Credit card,31.9,130.3,No,v1.0
+7590-VHVEG0649,Female,0,No,No,4,No,Fiber optic,No,One year,Credit card,49.72,205.18,No,v1.0
+7590-VHVEG0650,Male,0,No,Yes,56,Yes,DSL,No internet service,Two year,Bank transfer,29.9,1621.22,No,v1.0
+7590-VHVEG0651,Male,0,Yes,Yes,25,Yes,Fiber optic,No,One year,Mailed check,87.83,2167.46,Yes,v1.0
+7590-VHVEG0652,Male,0,Yes,No,67,Yes,DSL,No,One year,Mailed check,26.1,1819.31,No,v1.0
+7590-VHVEG0653,Female,0,No,No,67,Yes,DSL,Yes,One year,Electronic check,69.92,4828.55,No,v1.0
+7590-VHVEG0654,Male,0,Yes,No,27,Yes,DSL,Yes,Two year,Bank transfer,117.68,3331.31,No,v1.0
+7590-VHVEG0655,Male,0,Yes,No,32,Yes,DSL,No,Month-to-month,Credit card,99.77,3273.78,No,v1.0
+7590-VHVEG0656,Female,0,No,No,50,Yes,No,No internet service,Month-to-month,Bank transfer,80.29,3971.7,Yes,v1.0
+7590-VHVEG0657,Male,0,No,No,61,Yes,Fiber optic,Yes,Month-to-month,Credit card,50.01,3078.44,No,v1.0
+7590-VHVEG0658,Male,0,No,No,51,Yes,Fiber optic,No,Month-to-month,Credit card,81.14,4204.86,No,v1.0
+7590-VHVEG0659,Female,0,No,Yes,19,Yes,Fiber optic,No,One year,Bank transfer,71.65,1303.96,No,v1.0
+7590-VHVEG0660,Male,1,No,No,21,Yes,No,Yes,One year,Mailed check,61.76,1302.65,No,v1.0
+7590-VHVEG0661,Male,0,No,Yes,5,Yes,Fiber optic,No,One year,Credit card,32.81,167.48,No,v1.0
+7590-VHVEG0662,Female,0,Yes,No,42,Yes,DSL,No,Month-to-month,Bank transfer,106.89,4339.91,Yes,v1.0
+7590-VHVEG0663,Male,0,No,No,61,Yes,DSL,No internet service,One year,Electronic check,64.08,4018.51,No,v1.0
+7590-VHVEG0664,Male,0,No,No,22,Yes,Fiber optic,No,Month-to-month,Bank transfer,39.07,,Yes,v1.0
+7590-VHVEG0665,Male,0,Yes,Yes,21,Yes,Fiber optic,No,One year,Electronic check,56.04,1230.07,No,v1.0
+7590-VHVEG0666,Male,0,Yes,No,70,Yes,Fiber optic,Yes,One year,Credit card,60.58,4046.87,No,v1.0
+7590-VHVEG0667,Female,0,Yes,No,1,No,Fiber optic,No internet service,Month-to-month,Bank transfer,101.1,98.73,No,v1.0
+7590-VHVEG0668,Female,1,Yes,Yes,5,Yes,Fiber optic,Yes,Month-to-month,Bank transfer,91.89,464.14,Yes,v1.0
+7590-VHVEG0669,Female,1,Yes,No,12,Yes,Fiber optic,No,Month-to-month,Electronic check,95.39,1121.41,Yes,v1.0
+7590-VHVEG0670,Female,1,Yes,Yes,46,Yes,No,Yes,Two year,Bank transfer,21.08,990.52,No,v1.0
+7590-VHVEG0671,Male,0,No,No,34,Yes,No,No internet service,Two year,Bank transfer,60.78,2120.15,No,v1.0
+7590-VHVEG0672,Female,0,Yes,No,49,Yes,Fiber optic,No,One year,Credit card,67.17,3160.59,No,v1.0
+7590-VHVEG0673,Female,0,Yes,No,45,Yes,Fiber optic,No,Month-to-month,Bank transfer,21.88,986.0,No,v1.0
+7590-VHVEG0674,Male,0,Yes,No,27,Yes,Fiber optic,Yes,Month-to-month,Mailed check,45.46,1228.56,Yes,v1.0
+7590-VHVEG0675,Male,0,Yes,No,26,Yes,DSL,No,One year,Electronic check,94.51,2425.1,No,v1.0
+7590-VHVEG0676,Male,0,No,No,47,Yes,No,No,One year,Bank transfer,33.44,1639.56,No,v1.0
+7590-VHVEG0677,Female,0,Yes,No,56,Yes,Fiber optic,No,Month-to-month,Electronic check,72.46,4190.68,No,v1.0
+7590-VHVEG0678,Male,0,Yes,No,63,Yes,Fiber optic,Yes,Month-to-month,Electronic check,41.09,2639.71,Yes,v1.0
+7590-VHVEG0679,Male,0,No,No,48,Yes,DSL,No internet service,One year,Electronic check,21.19,1038.81,No,v1.0
+7590-VHVEG0680,Male,0,No,No,61,Yes,DSL,No internet service,Month-to-month,Bank transfer,43.64,2651.71,No,v1.0
+7590-VHVEG0681,Female,0,No,No,26,Yes,Fiber optic,Yes,Month-to-month,Bank transfer,115.64,3133.1,Yes,v1.0
+7590-VHVEG0682,Female,0,Yes,No,36,No,DSL,No internet service,Month-to-month,Electronic check,98.55,3616.86,Yes,v1.0
+7590-VHVEG0683,Female,0,No,No,1,Yes,Fiber optic,No,Month-to-month,Mailed check,114.04,116.65,Yes,v1.0
+7590-VHVEG0684,Female,0,No,Yes,8,Yes,Fiber optic,No,Two year,Electronic check,67.81,562.1,No,v1.0
+7590-VHVEG0685,Female,0,No,No,52,Yes,DSL,No,Two year,Mailed check,30.75,1563.08,No,v1.0
+7590-VHVEG0686,Female,0,Yes,No,47,Yes,No,No,One year,Electronic check,73.7,3570.27,No,v1.0
+7590-VHVEG0687,Female,0,Yes,No,56,Yes,Fiber optic,No,Month-to-month,Credit card,64.53,3503.49,No,v1.0
+7590-VHVEG0688,Male,1,No,No,14,Yes,No,No,Month-to-month,Electronic check,102.75,1416.21,Yes,v1.0
+7590-VHVEG0689,Male,1,Yes,Yes,28,Yes,Fiber optic,No,Month-to-month,Electronic check,29.61,815.51,Yes,v1.0
+7590-VHVEG0690,Male,0,Yes,No,2,Yes,DSL,No,Month-to-month,Bank transfer,67.85,142.19,Yes,v1.0
+7590-VHVEG0691,Female,0,Yes,No,26,Yes,DSL,No,One year,Mailed check,34.7,934.5,No,v1.0
+7590-VHVEG0692,Female,0,Yes,No,14,Yes,No,Yes,Month-to-month,Credit card,51.82,740.05,No,v1.0
+7590-VHVEG0693,Male,0,Yes,No,59,Yes,No,No internet service,Month-to-month,Mailed check,92.26,5566.99,Yes,v1.0
+7590-VHVEG0694,Male,1,No,Yes,56,No,Fiber optic,No,Month-to-month,Credit card,313.78,3755.56,No,v1.0
+7590-VHVEG0695,Female,0,No,No,7,Yes,No,Yes,Month-to-month,Electronic check,56.84,415.65,No,v1.0
+7590-VHVEG0696,Female,1,No,No,3,No,No,Yes,Month-to-month,Bank transfer,58.66,175.91,Yes,v1.0
+7590-VHVEG0697,Female,0,No,No,23,Yes,DSL,No,Month-to-month,Bank transfer,65.03,1477.72,Yes,v1.0
+7590-VHVEG0698,Female,0,Yes,Yes,18,Yes,Fiber optic,No internet service,Two year,Mailed check,96.93,1685.98,No,v1.0
+7590-VHVEG0699,Female,0,No,No,38,Yes,No,No,Month-to-month,Bank transfer,107.42,4198.96,Yes,v1.0
+7590-VHVEG0700,Female,0,No,Yes,15,Yes,No,No,Month-to-month,Mailed check,113.62,1744.3,Yes,v1.0
+7590-VHVEG0701,Female,0,Yes,No,64,Yes,Fiber optic,Yes,Two year,Mailed check,97.12,6143.58,No,v1.0
+7590-VHVEG0702,Female,0,Yes,No,28,Yes,No,No,Two year,Credit card,50.91,1357.79,No,v1.0
+7590-VHVEG0703,Male,0,Yes,Yes,39,Yes,Fiber optic,No internet service,One year,Mailed check,87.44,3525.65,No,v1.0
+7590-VHVEG0704,Female,0,Yes,Yes,57,Yes,Fiber optic,No,Two year,Credit card,62.89,3409.32,No,v1.0
+7590-VHVEG0705,Female,0,No,No,17,Yes,DSL,Yes,Month-to-month,Bank transfer,44.96,779.85,No,v1.0
+7590-VHVEG0706,Female,0,Yes,No,44,Yes,DSL,No,Month-to-month,Mailed check,102.41,4717.73,Yes,v1.0
+7590-VHVEG0707,Male,0,Yes,Yes,25,Yes,DSL,Yes,Month-to-month,Mailed check,23.77,590.44,Yes,v1.0
+7590-VHVEG0708,Male,0,Yes,No,17,Yes,Fiber optic,No,One year,Electronic check,108.37,1793.51,Yes,v1.0
+7590-VHVEG0709,Female,0,Yes,No,13,Yes,No,No,One year,Mailed check,65.22,865.29,No,v1.0
+7590-VHVEG0710,Male,0,Yes,Yes,25,Yes,Fiber optic,No,Month-to-month,Mailed check,82.45,2126.51,No,v1.0
+7590-VHVEG0711,Male,1,Yes,No,68,Yes,Fiber optic,Yes,Month-to-month,Electronic check,84.62,5780.65,Yes,v1.0
+7590-VHVEG0712,Male,0,No,No,10,Yes,Fiber optic,No internet service,One year,Electronic check,107.72,1127.53,No,v1.0
+7590-VHVEG0713,Female,0,No,Yes,67,Yes,DSL,No,Month-to-month,Bank transfer,82.39,5272.88,No,v1.0
+7590-VHVEG0714,Female,0,No,No,18,Yes,No,No,One year,Mailed check,80.17,1443.67,Yes,v1.0
+7590-VHVEG0715,Female,0,Yes,No,34,No,DSL,No,One year,Bank transfer,26.53,921.79,No,v1.0
+7590-VHVEG0716,Female,0,Yes,Yes,8,Yes,No,No,One year,Bank transfer,70.8,586.97,Yes,v1.0
+7590-VHVEG0717,Female,0,No,Yes,40,No,Fiber optic,No,One year,Electronic check,34.72,1344.12,No,v1.0
+7590-VHVEG0718,Female,0,No,Yes,42,Yes,DSL,No,Two year,Credit card,92.27,3991.54,Yes,v1.0
+7590-VHVEG0719,Female,0,No,No,41,No,DSL,No,Month-to-month,Bank transfer,70.2,2893.28,No,v1.0
+7590-VHVEG0720,Male,0,No,Yes,6,Yes,DSL,Yes,One year,Credit card,86.66,514.59,No,v1.0
+7590-VHVEG0721,Female,0,Yes,No,52,Yes,Fiber optic,No internet service,One year,Mailed check,24.08,1206.24,No,v1.0
+7590-VHVEG0722,Female,1,No,Yes,26,Yes,DSL,No,Month-to-month,Electronic check,28.31,762.94,No,v1.0
+7590-VHVEG0723,Female,1,Yes,No,64,Yes,DSL,Yes,Month-to-month,Mailed check,90.2,5574.93,No,v1.0
+7590-VHVEG0724,Female,0,Yes,No,59,Yes,DSL,No,Month-to-month,Mailed check,27.06,1566.42,No,v1.0
+7590-VHVEG0725,Female,0,Yes,No,56,No,DSL,No internet service,Month-to-month,Electronic check,26.98,1479.33,No,v1.0
+7590-VHVEG0726,Female,0,No,No,59,No,Fiber optic,No internet service,One year,Mailed check,21.19,1296.44,No,v1.0
+7590-VHVEG0727,Female,0,No,No,70,Yes,DSL,No,Two year,Electronic check,113.74,8099.1,No,v1.0
+7590-VHVEG0728,Female,0,No,No,33,Yes,Fiber optic,Yes,Month-to-month,Credit card,92.28,3135.44,No,v1.0
+7590-VHVEG0729,Male,0,Yes,No,53,No,No,No,Month-to-month,Mailed check,54.62,2822.55,No,v1.0
+7590-VHVEG0730,Male,0,Yes,No,22,Yes,DSL,Yes,Two year,Electronic check,49.06,1092.81,No,v1.0
+7590-VHVEG0731,Female,0,No,No,21,Yes,Fiber optic,No internet service,Month-to-month,Bank transfer,54.27,1147.87,Yes,v1.0
+7590-VHVEG0732,Female,0,Yes,Yes,70,Yes,No,Yes,Month-to-month,Mailed check,95.92,6937.59,Yes,v1.0
+7590-VHVEG0733,Male,0,No,No,70,Yes,DSL,Yes,One year,Credit card,84.81,6178.1,Yes,v1.0
+7590-VHVEG0734,Female,0,Yes,No,4,Yes,Fiber optic,No,Month-to-month,Electronic check,350.55,145.15,Yes,v1.0
+7590-VHVEG0735,Female,0,Yes,No,62,Yes,DSL,No,Month-to-month,Mailed check,37.06,2337.88,No,v1.0
+7590-VHVEG0736,Male,0,Yes,No,62,Yes,Fiber optic,No,Month-to-month,Mailed check,29.64,1755.49,No,v1.0
+7590-VHVEG0737,Female,1,Yes,No,24,Yes,No,No,Month-to-month,Mailed check,84.71,2042.97,Yes,v1.0
+7590-VHVEG0738,Female,1,Yes,Yes,55,Yes,No,Yes,One year,Credit card,94.91,5109.11,No,v1.0
+7590-VHVEG0739,Female,0,Yes,No,9,Yes,No,Yes,Month-to-month,Electronic check,45.97,405.78,Yes,v1.0
+7590-VHVEG0740,Male,0,Yes,Yes,3,Yes,DSL,No,Month-to-month,Bank transfer,22.05,65.19,Yes,v1.0
+7590-VHVEG0741,Male,0,No,Yes,31,Yes,DSL,Yes,One year,Bank transfer,28.05,880.19,Yes,v1.0
+7590-VHVEG0742,Female,0,Yes,No,40,Yes,DSL,No,Two year,Bank transfer,114.85,4517.77,Yes,v1.0
+7590-VHVEG0743,Male,0,Yes,No,36,Yes,Fiber optic,No,Month-to-month,Electronic check,48.95,,No,v1.0
+7590-VHVEG0744,Male,0,No,No,24,Yes,DSL,No,Month-to-month,Bank transfer,95.38,2267.36,Yes,v1.0
+7590-VHVEG0745,Male,0,No,No,6,Yes,DSL,No internet service,One year,Credit card,81.22,466.27,No,v1.0
+7590-VHVEG0746,Female,0,No,Yes,66,No,Fiber optic,No internet service,Month-to-month,Electronic check,57.43,3897.94,Yes,v1.0
+7590-VHVEG0747,Male,1,No,No,4,Yes,Fiber optic,No internet service,Month-to-month,Mailed check,40.16,157.19,No,v1.0
+7590-VHVEG0748,Male,0,Yes,Yes,6,Yes,No,Yes,One year,Credit card,31.9,190.09,No,v1.0
+7590-VHVEG0749,Male,0,Yes,No,51,Yes,No,Yes,Two year,Mailed check,80.27,4169.75,No,v1.0
+7590-VHVEG0750,Female,0,No,No,62,Yes,Fiber optic,No,Two year,Bank transfer,95.91,5847.04,Yes,v1.0
+7590-VHVEG0751,Male,0,Yes,Yes,57,Yes,Fiber optic,No internet service,One year,Credit card,83.1,4526.81,Yes,v1.0
+7590-VHVEG0752,Male,0,No,No,66,Yes,Fiber optic,No internet service,One year,Electronic check,71.97,4690.11,No,v1.0
+7590-VHVEG0753,Female,0,Yes,No,8,Yes,No,No internet service,Month-to-month,Credit card,24.11,201.46,Yes,v1.0
+7590-VHVEG0754,Male,0,Yes,No,26,Yes,Fiber optic,Yes,One year,Mailed check,114.91,3030.06,No,v1.0
+7590-VHVEG0755,Male,1,Yes,No,51,Yes,DSL,No internet service,Month-to-month,Electronic check,98.27,5097.92,Yes,v1.0
+7590-VHVEG0756,Male,0,Yes,Yes,45,Yes,Fiber optic,No,Month-to-month,Credit card,48.7,2220.33,Yes,v1.0
+7590-VHVEG0757,Female,1,Yes,Yes,44,Yes,DSL,Yes,One year,Credit card,116.04,4951.95,No,v1.0
+7590-VHVEG0758,Female,0,No,Yes,5,Yes,Fiber optic,No,One year,Credit card,78.98,391.7,No,v1.0
+7590-VHVEG0759,Male,0,Yes,No,70,Yes,DSL,Yes,Month-to-month,Credit card,77.08,5530.81,Yes,v1.0
+7590-VHVEG0760,Male,0,Yes,Yes,26,Yes,Fiber optic,No,Two year,Electronic check,93.31,2329.38,No,v1.0
+7590-VHVEG0761,Male,0,Yes,No,68,Yes,DSL,No,Month-to-month,Mailed check,99.55,6619.25,No,v1.0
+7590-VHVEG0762,Male,0,Yes,Yes,19,Yes,Fiber optic,No,Month-to-month,Credit card,84.33,1566.52,Yes,v1.0
+7590-VHVEG0763,Male,0,Yes,No,20,Yes,DSL,No,Month-to-month,Electronic check,32.55,646.64,Yes,v1.0
+7590-VHVEG0764,Male,0,No,Yes,12,Yes,No,No internet service,One year,Mailed check,53.15,668.44,Yes,v1.0
+7590-VHVEG0765,Female,0,Yes,Yes,47,Yes,Fiber optic,No,One year,Credit card,110.95,4989.22,No,v1.0
+7590-VHVEG0766,Male,0,No,Yes,1,Yes,No,No,Month-to-month,Mailed check,42.01,42.09,Yes,v1.0
+7590-VHVEG0767,Male,0,Yes,No,14,Yes,DSL,No internet service,One year,Mailed check,56.47,765.26,No,v1.0
+7590-VHVEG0768,Male,0,Yes,No,64,Yes,Fiber optic,No internet service,Month-to-month,Electronic check,62.34,4177.79,Yes,v1.0
+7590-VHVEG0769,Female,1,No,No,38,Yes,Fiber optic,Yes,One year,Mailed check,63.06,2303.68,No,v1.0
+7590-VHVEG0770,Male,0,Yes,No,37,Yes,Fiber optic,No,Month-to-month,Electronic check,80.07,,Yes,v1.0
+7590-VHVEG0771,Female,0,Yes,No,11,Yes,DSL,Yes,Month-to-month,Credit card,112.42,1266.05,Yes,v1.0
+7590-VHVEG0772,Male,0,No,No,3,Yes,DSL,Yes,Two year,Mailed check,43.59,133.44,No,v1.0
+7590-VHVEG0773,Male,0,Yes,Yes,33,Yes,Fiber optic,No,Month-to-month,Mailed check,31.91,1044.8,No,v1.0
+7590-VHVEG0774,Male,0,No,No,6,Yes,DSL,No internet service,Month-to-month,Bank transfer,39.35,232.49,No,v1.0
+7590-VHVEG0775,Male,0,No,No,50,Yes,No,Yes,One year,Credit card,106.92,5291.2,Yes,v1.0
+7590-VHVEG0776,Male,0,No,No,10,Yes,No,No internet service,Two year,Credit card,83.29,813.26,No,v1.0
+7590-VHVEG0777,Male,0,Yes,Yes,5,Yes,DSL,No internet service,Month-to-month,Bank transfer,48.02,233.02,No,v1.0
+7590-VHVEG0778,Female,0,Yes,No,23,No,No,No internet service,Month-to-month,Bank transfer,99.96,2295.24,Yes,v1.0
+7590-VHVEG0779,Male,1,No,Yes,10,Yes,DSL,Yes,Month-to-month,Electronic check,104.41,1019.97,Yes,v1.0
+7590-VHVEG0780,Male,1,Yes,Yes,44,Yes,Fiber optic,No internet service,Month-to-month,Electronic check,102.96,4433.89,Yes,v1.0
+7590-VHVEG0781,Male,0,No,No,2,Yes,No,No,Month-to-month,Mailed check,110.05,223.56,No,v1.0
+7590-VHVEG0782,Female,0,Yes,No,13,Yes,DSL,No,One year,Mailed check,44.72,608.59,Yes,v1.0
+7590-VHVEG0783,Male,0,No,No,40,Yes,DSL,Yes,Two year,Mailed check,93.99,3798.73,No,v1.0
+7590-VHVEG0784,Female,1,Yes,No,2,Yes,DSL,Yes,Month-to-month,Mailed check,65.13,124.76,Yes,v1.0
+7590-VHVEG0785,Male,0,No,Yes,65,Yes,No,No,Month-to-month,Electronic check,102.52,6380.72,No,v1.0
+7590-VHVEG0786,Male,0,Yes,Yes,63,No,No,No,Month-to-month,Credit card,91.39,6017.62,Yes,v1.0
+7590-VHVEG0787,Female,0,No,No,17,Yes,Fiber optic,Yes,Month-to-month,Mailed check,96.09,1600.45,No,v1.0
+7590-VHVEG0788,Female,0,Yes,No,9,Yes,Fiber optic,Yes,Two year,Credit card,84.3,727.78,No,v1.0
+7590-VHVEG0789,Male,0,No,No,15,Yes,DSL,No,Month-to-month,Mailed check,37.39,566.37,Yes,v1.0
+7590-VHVEG0790,Female,1,Yes,No,24,Yes,DSL,Yes,Month-to-month,Bank transfer,73.41,1783.69,No,v1.0
+7590-VHVEG0791,Female,0,Yes,No,38,Yes,Fiber optic,No internet service,One year,Mailed check,116.5,4492.65,No,v1.0
+7590-VHVEG0792,Male,0,No,No,35,No,DSL,Yes,Month-to-month,Mailed check,111.86,3824.17,Yes,v1.0
+7590-VHVEG0793,Male,0,Yes,Yes,49,Yes,DSL,Yes,One year,Mailed check,24.23,1129.75,No,v1.0
+7590-VHVEG0794,Male,1,Yes,No,69,Yes,Fiber optic,No,Month-to-month,Electronic check,36.15,2610.47,No,v1.0
+7590-VHVEG0795,Female,0,Yes,No,62,No,Fiber optic,No,Two year,Bank transfer,32.91,1989.56,No,v1.0
+7590-VHVEG0796,Male,0,Yes,No,60,Yes,Fiber optic,No,Two year,Mailed check,91.15,5565.03,Yes,v1.0
+7590-VHVEG0797,Male,1,No,No,50,Yes,No,No,One year,Mailed check,100.14,5110.61,No,v1.0
+7590-VHVEG0798,Female,0,Yes,No,9,Yes,Fiber optic,No internet service,Two year,Credit card,40.92,372.37,No,v1.0
+7590-VHVEG0799,Female,0,Yes,No,34,Yes,Fiber optic,No,Month-to-month,Bank transfer,69.57,2321.24,Yes,v1.0
+7590-VHVEG0800,Male,0,No,Yes,35,Yes,DSL,Yes,Month-to-month,Mailed check,102.39,3501.58,Yes,v1.0
+7590-VHVEG0801,Female,1,Yes,Yes,1,Yes,Fiber optic,No,One year,Credit card,91.81,92.71,No,v1.0
+7590-VHVEG0802,Female,1,No,No,40,No,Fiber optic,No internet service,One year,Credit card,73.14,3032.67,No,v1.0
+7590-VHVEG0803,Female,0,Yes,No,64,Yes,Fiber optic,No,Month-to-month,Electronic check,77.85,5205.25,Yes,v1.0
+7590-VHVEG0804,Male,0,No,No,22,Yes,DSL,Yes,Month-to-month,Credit card,69.82,1475.49,No,v1.0
+7590-VHVEG0805,Male,0,Yes,No,60,Yes,DSL,No,Month-to-month,Mailed check,49.16,2847.77,No,v1.0
+7590-VHVEG0806,Male,0,No,No,64,No,Fiber optic,No,Month-to-month,Electronic check,75.37,5038.35,No,v1.0
+7590-VHVEG0807,Female,0,No,Yes,11,Yes,Fiber optic,No,Month-to-month,Electronic check,87.51,985.39,Yes,v1.0
+7590-VHVEG0808,Male,0,No,Yes,14,Yes,No,Yes,One year,Mailed check,105.59,1534.81,Yes,v1.0
+7590-VHVEG0809,Male,0,Yes,No,60,Yes,Fiber optic,Yes,Month-to-month,Bank transfer,82.36,4794.45,No,v1.0
+7590-VHVEG0810,Female,0,No,Yes,30,Yes,Fiber optic,No,Month-to-month,Credit card,94.59,2862.55,No,v1.0
+7590-VHVEG0811,Female,0,Yes,Yes,35,Yes,Fiber optic,Yes,One year,Electronic check,35.69,1274.17,No,v1.0
+7590-VHVEG0812,Male,0,No,No,37,Yes,DSL,No,One year,Bank transfer,65.23,,No,v1.0
+7590-VHVEG0813,Female,0,No,Yes,5,No,DSL,No,Two year,Mailed check,20.91,103.61,Yes,v1.0
+7590-VHVEG0814,Male,1,No,No,26,Yes,Fiber optic,Yes,One year,Credit card,44.17,1092.88,No,v1.0
+7590-VHVEG0815,Male,0,Yes,No,62,Yes,DSL,No internet service,Month-to-month,Credit card,91.19,5700.87,Yes,v1.0
+7590-VHVEG0816,Male,1,Yes,No,4,Yes,Fiber optic,No internet service,Two year,Electronic check,117.2,457.22,Yes,v1.0
+7590-VHVEG0817,Female,0,No,No,42,Yes,Fiber optic,No,Month-to-month,Credit card,29.72,1242.01,No,v1.0
+7590-VHVEG0818,Female,0,No,No,18,No,DSL,Yes,Month-to-month,Credit card,59.35,1117.12,Yes,v1.0
+7590-VHVEG0819,Male,0,No,Yes,40,Yes,Fiber optic,Yes,One year,Credit card,98.41,3896.54,No,v1.0
+7590-VHVEG0820,Male,0,No,Yes,39,Yes,DSL,No,Two year,Credit card,40.0,1612.83,No,v1.0
+7590-VHVEG0821,Male,0,No,No,14,Yes,Fiber optic,Yes,Month-to-month,Mailed check,74.4,1009.14,Yes,v1.0
+7590-VHVEG0822,Male,0,No,Yes,32,Yes,DSL,No internet service,Month-to-month,Bank transfer,91.84,,No,v1.0
+7590-VHVEG0823,Female,0,No,Yes,51,No,Fiber optic,Yes,Month-to-month,Mailed check,80.37,4294.21,No,v1.0
+7590-VHVEG0824,Male,0,No,No,38,Yes,No,No,Month-to-month,Mailed check,38.43,1402.07,No,v1.0
+7590-VHVEG0825,Male,0,Yes,No,23,Yes,Fiber optic,No,Month-to-month,Electronic check,54.83,1199.03,Yes,v1.0
+7590-VHVEG0826,Female,0,No,No,63,Yes,No,No,One year,Credit card,96.81,6058.62,No,v1.0
+7590-VHVEG0827,Male,0,Yes,Yes,15,Yes,Fiber optic,Yes,Month-to-month,Mailed check,74.31,1069.3,Yes,v1.0
+7590-VHVEG0828,Male,0,No,No,25,Yes,DSL,No,Two year,Credit card,20.51,525.55,No,v1.0
+7590-VHVEG0829,Male,0,Yes,No,17,Yes,Fiber optic,Yes,One year,Mailed check,94.58,1674.46,Yes,v1.0
+7590-VHVEG0830,Male,1,Yes,Yes,66,Yes,No,No internet service,One year,Mailed check,23.46,1538.18,No,v1.0
+7590-VHVEG0831,Male,0,No,Yes,53,Yes,Fiber optic,Yes,Two year,Electronic check,93.08,4814.31,No,v1.0
+7590-VHVEG0832,Female,0,Yes,No,51,Yes,Fiber optic,No internet service,Month-to-month,Bank transfer,39.84,2018.67,No,v1.0
+7590-VHVEG0833,Female,0,Yes,No,39,Yes,DSL,No internet service,Month-to-month,Bank transfer,113.89,4541.01,Yes,v1.0
+7590-VHVEG0834,Female,0,No,No,51,Yes,Fiber optic,Yes,One year,Mailed check,56.06,2718.61,No,v1.0
+7590-VHVEG0835,Female,0,No,Yes,70,Yes,Fiber optic,No,Two year,Electronic check,52.04,3675.34,No,v1.0
+7590-VHVEG0836,Male,1,No,No,6,Yes,No,Yes,One year,Credit card,34.59,209.9,No,v1.0
+7590-VHVEG0837,Female,0,Yes,No,67,Yes,No,No internet service,Month-to-month,Credit card,49.95,3392.68,Yes,v1.0
+7590-VHVEG0838,Female,0,No,Yes,7,Yes,Fiber optic,No,Two year,Mailed check,105.91,,No,v1.0
+7590-VHVEG0839,Female,0,Yes,Yes,51,Yes,No,No,Month-to-month,Bank transfer,117.64,6128.1,No,v1.0
+7590-VHVEG0840,Female,0,No,Yes,42,Yes,DSL,No,Two year,Electronic check,56.09,2259.7,No,v1.0
+7590-VHVEG0841,Female,0,No,No,64,Yes,Fiber optic,Yes,Two year,Bank transfer,63.96,3970.58,No,v1.0
+7590-VHVEG0842,Female,0,Yes,No,15,Yes,DSL,No internet service,Month-to-month,Credit card,90.76,1412.83,Yes,v1.0
+7590-VHVEG0843,Female,0,Yes,No,29,Yes,DSL,Yes,One year,Bank transfer,106.85,3172.54,No,v1.0
+7590-VHVEG0844,Female,0,Yes,No,33,Yes,No,No,Month-to-month,Credit card,78.12,2452.55,No,v1.0
+7590-VHVEG0845,Male,0,No,No,27,Yes,Fiber optic,No,Month-to-month,Electronic check,58.37,1536.32,Yes,v1.0
+7590-VHVEG0846,Female,0,No,No,36,Yes,DSL,No internet service,Month-to-month,Electronic check,60.44,2113.59,No,v1.0
+7590-VHVEG0847,Male,0,No,Yes,29,Yes,Fiber optic,Yes,One year,Mailed check,88.17,2498.34,No,v1.0
+7590-VHVEG0848,Female,0,Yes,No,38,Yes,Fiber optic,No,Two year,Mailed check,20.32,752.5,No,v1.0
+7590-VHVEG0849,Female,0,Yes,No,57,Yes,Fiber optic,No,One year,Bank transfer,80.72,4399.74,No,v1.0
+7590-VHVEG0850,Female,0,Yes,Yes,27,Yes,No,No,Month-to-month,Electronic check,54.84,1474.56,Yes,v1.0
+7590-VHVEG0851,Male,0,Yes,No,55,Yes,No,Yes,Two year,Electronic check,97.83,5505.95,No,v1.0
+7590-VHVEG0852,Male,0,No,Yes,33,Yes,DSL,Yes,Two year,Mailed check,29.11,970.99,Yes,v1.0
+7590-VHVEG0853,Female,1,Yes,No,68,Yes,DSL,Yes,Month-to-month,Credit card,77.64,5371.05,Yes,v1.0
+7590-VHVEG0854,Male,0,Yes,No,66,Yes,Fiber optic,No,Two year,Bank transfer,67.14,4245.34,No,v1.0
+7590-VHVEG0855,Female,0,No,No,10,Yes,Fiber optic,Yes,Month-to-month,Bank transfer,82.95,866.93,Yes,v1.0
+7590-VHVEG0856,Male,0,No,No,5,Yes,Fiber optic,No,Two year,Mailed check,26.36,136.24,No,v1.0
+7590-VHVEG0857,Male,0,Yes,No,38,Yes,Fiber optic,Yes,Month-to-month,Electronic check,76.84,3008.94,No,v1.0
+7590-VHVEG0858,Male,1,Yes,Yes,13,Yes,DSL,No internet service,Month-to-month,Mailed check,75.03,1006.83,Yes,v1.0
+7590-VHVEG0859,Female,0,Yes,Yes,31,Yes,DSL,No internet service,Month-to-month,Mailed check,74.94,2423.82,No,v1.0
+7590-VHVEG0860,Male,0,Yes,No,47,Yes,Fiber optic,No,One year,Mailed check,79.14,3736.13,No,v1.0
+7590-VHVEG0861,Male,0,Yes,Yes,52,No,Fiber optic,No,Month-to-month,Mailed check,86.29,4352.79,No,v1.0
+7590-VHVEG0862,Female,0,Yes,Yes,56,Yes,Fiber optic,Yes,Month-to-month,Credit card,98.89,5602.45,Yes,v1.0
+7590-VHVEG0863,Male,0,No,No,15,Yes,Fiber optic,Yes,One year,Credit card,46.44,713.56,Yes,v1.0
+7590-VHVEG0864,Female,0,No,Yes,29,Yes,No,Yes,Two year,Electronic check,100.85,2994.38,No,v1.0
+7590-VHVEG0865,Female,0,No,No,8,Yes,DSL,No,Month-to-month,Mailed check,68.83,551.81,Yes,v1.0
+7590-VHVEG0866,Male,0,No,No,5,Yes,No,No,Month-to-month,Credit card,27.55,131.81,No,v1.0
+7590-VHVEG0867,Female,0,Yes,No,29,No,DSL,No internet service,Month-to-month,Electronic check,25.74,736.78,No,v1.0
+7590-VHVEG0868,Male,0,Yes,No,47,Yes,Fiber optic,No,Month-to-month,Mailed check,52.76,2583.83,No,v1.0
+7590-VHVEG0869,Male,0,Yes,Yes,68,Yes,Fiber optic,No,Two year,Bank transfer,96.92,6646.21,No,v1.0
+7590-VHVEG0870,Female,0,Yes,No,45,Yes,No,No,Two year,Credit card,89.35,4036.29,No,v1.0
+7590-VHVEG0871,Male,0,No,Yes,2,Yes,DSL,No,One year,Electronic check,97.28,190.07,Yes,v1.0
+7590-VHVEG0872,Male,0,Yes,Yes,27,Yes,Fiber optic,Yes,Month-to-month,Bank transfer,70.69,1883.58,Yes,v1.0
+7590-VHVEG0873,Female,0,Yes,No,36,Yes,DSL,No,One year,Mailed check,63.14,2362.89,No,v1.0
+7590-VHVEG0874,Female,0,Yes,Yes,36,Yes,DSL,No,One year,Mailed check,34.45,1260.86,No,v1.0
+7590-VHVEG0875,Male,0,Yes,No,26,Yes,DSL,No,Two year,Mailed check,52.16,1395.21,No,v1.0
+7590-VHVEG0876,Female,0,No,No,43,Yes,No,No internet service,One year,Credit card,62.53,2676.68,No,v1.0
+7590-VHVEG0877,Female,0,Yes,No,27,Yes,DSL,No,One year,Electronic check,28.68,784.52,No,v1.0
+7590-VHVEG0878,Female,1,No,No,69,Yes,DSL,Yes,One year,Bank transfer,41.62,2799.52,No,v1.0
+7590-VHVEG0879,Female,0,Yes,Yes,20,No,Fiber optic,No,Month-to-month,Electronic check,78.63,1604.83,Yes,v1.0
+7590-VHVEG0880,Male,0,Yes,No,11,No,Fiber optic,No,Two year,Credit card,92.09,1005.71,No,v1.0
+7590-VHVEG0881,Male,1,Yes,Yes,38,Yes,Fiber optic,Yes,Month-to-month,Electronic check,117.84,4452.12,Yes,v1.0
+7590-VHVEG0882,Female,0,No,No,6,Yes,Fiber optic,No,One year,Credit card,111.45,678.66,No,v1.0
+7590-VHVEG0883,Male,0,Yes,Yes,23,Yes,DSL,No internet service,Month-to-month,Mailed check,82.97,1991.6,Yes,v1.0
+7590-VHVEG0884,Female,0,Yes,Yes,47,No,DSL,No internet service,One year,Bank transfer,61.28,2754.69,No,v1.0
+7590-VHVEG0885,Female,0,Yes,No,46,Yes,Fiber optic,Yes,One year,Mailed check,82.35,3910.9,No,v1.0
+7590-VHVEG0886,Male,0,No,No,12,Yes,No,No internet service,Month-to-month,Electronic check,96.99,1139.76,No,v1.0
+7590-VHVEG0887,Male,0,No,No,13,Yes,Fiber optic,No,Month-to-month,Mailed check,31.6,408.46,Yes,v1.0
+7590-VHVEG0888,Male,0,Yes,No,62,Yes,Fiber optic,No,One year,Bank transfer,60.17,3552.23,No,v1.0
+7590-VHVEG0889,Male,0,No,No,60,Yes,Fiber optic,No,One year,Mailed check,102.3,6015.92,No,v1.0
+7590-VHVEG0890,Female,1,Yes,No,43,Yes,Fiber optic,No internet service,Month-to-month,Bank transfer,57.62,2478.12,No,v1.0
+7590-VHVEG0891,Female,0,Yes,No,68,Yes,Fiber optic,No,Month-to-month,Bank transfer,76.04,4941.46,Yes,v1.0
+7590-VHVEG0892,Male,1,No,Yes,5,Yes,DSL,No,One year,Mailed check,77.6,387.66,No,v1.0
+7590-VHVEG0893,Female,1,Yes,No,37,Yes,Fiber optic,No,Month-to-month,Credit card,38.08,1469.09,No,v1.0
+7590-VHVEG0894,Male,0,Yes,No,31,Yes,No,No,Month-to-month,Electronic check,55.5,1652.58,No,v1.0
+7590-VHVEG0895,Male,1,No,Yes,9,Yes,Fiber optic,Yes,Month-to-month,Credit card,52.78,487.6,Yes,v1.0
+7590-VHVEG0896,Male,0,No,Yes,51,Yes,Fiber optic,No internet service,Month-to-month,Credit card,22.57,1140.53,Yes,v1.0
+7590-VHVEG0897,Female,1,No,Yes,29,Yes,Fiber optic,No,Month-to-month,Mailed check,22.37,658.82,Yes,v1.0
+7590-VHVEG0898,Female,0,No,No,40,No,DSL,No,Month-to-month,Electronic check,101.51,3962.9,Yes,v1.0
+7590-VHVEG0899,Male,0,Yes,No,41,Yes,Fiber optic,Yes,Month-to-month,Electronic check,46.76,,Yes,v1.0
+7590-VHVEG0900,Male,0,Yes,No,11,Yes,No,No,Month-to-month,Credit card,70.77,752.06,Yes,v1.0
+7590-VHVEG0901,Male,0,Yes,No,23,Yes,DSL,Yes,Month-to-month,Mailed check,49.28,1084.65,No,v1.0
+7590-VHVEG0902,Male,0,Yes,No,1,Yes,DSL,Yes,Month-to-month,Electronic check,112.19,108.66,Yes,v1.0
+7590-VHVEG0903,Female,1,Yes,Yes,46,Yes,DSL,No,Month-to-month,Credit card,45.41,2123.21,No,v1.0
+7590-VHVEG0904,Female,0,Yes,Yes,21,Yes,Fiber optic,No,Two year,Electronic check,62.11,1354.02,Yes,v1.0
+7590-VHVEG0905,Male,0,Yes,No,36,Yes,Fiber optic,No,Month-to-month,Mailed check,105.53,3918.33,Yes,v1.0
+7590-VHVEG0906,Male,0,Yes,No,54,Yes,Fiber optic,Yes,Month-to-month,Mailed check,102.51,5637.99,Yes,v1.0
+7590-VHVEG0907,Female,0,No,No,57,Yes,DSL,No,Month-to-month,Mailed check,38.24,2094.65,Yes,v1.0
+7590-VHVEG0908,Male,0,Yes,No,1,Yes,Fiber optic,Yes,Month-to-month,Electronic check,98.66,96.58,No,v1.0
+7590-VHVEG0909,Female,0,Yes,No,63,Yes,Fiber optic,No internet service,One year,Bank transfer,64.9,4011.08,No,v1.0
+7590-VHVEG0910,Female,0,Yes,No,54,No,No,No,One year,Electronic check,67.33,3544.96,No,v1.0
+7590-VHVEG0911,Male,0,Yes,Yes,55,Yes,Fiber optic,No,Two year,Bank transfer,33.08,1822.19,No,v1.0
+7590-VHVEG0912,Female,0,Yes,No,40,Yes,No,No,One year,Mailed check,27.9,1119.93,No,v1.0
+7590-VHVEG0913,Female,0,No,Yes,15,Yes,DSL,Yes,Two year,Credit card,91.34,1350.46,No,v1.0
+7590-VHVEG0914,Female,0,No,No,21,Yes,Fiber optic,No internet service,Month-to-month,Bank transfer,68.65,,No,v1.0
+7590-VHVEG0915,Female,0,No,Yes,47,Yes,Fiber optic,Yes,Month-to-month,Mailed check,62.81,3049.13,No,v1.0
+7590-VHVEG0916,Male,0,Yes,No,53,No,Fiber optic,No,Month-to-month,Mailed check,91.49,4989.35,No,v1.0
+7590-VHVEG0917,Female,1,Yes,No,9,Yes,DSL,No,Month-to-month,Bank transfer,95.02,838.75,No,v1.0
+7590-VHVEG0918,Female,0,Yes,No,52,Yes,DSL,Yes,Month-to-month,Credit card,35.57,1926.34,Yes,v1.0
+7590-VHVEG0919,Female,0,Yes,No,57,Yes,DSL,No internet service,One year,Mailed check,79.8,,No,v1.0
+7590-VHVEG0920,Male,0,No,No,26,Yes,No,No,Month-to-month,Bank transfer,33.26,849.9,No,v1.0
+7590-VHVEG0921,Male,0,No,Yes,41,Yes,DSL,Yes,Two year,Credit card,93.63,3783.14,No,v1.0
+7590-VHVEG0922,Male,0,Yes,No,35,No,Fiber optic,Yes,Two year,Credit card,84.38,2955.02,No,v1.0
+7590-VHVEG0923,Female,0,Yes,No,63,Yes,Fiber optic,Yes,Month-to-month,Mailed check,113.75,7482.25,No,v1.0
+7590-VHVEG0924,Male,0,No,Yes,25,Yes,No,No internet service,Month-to-month,Electronic check,26.76,694.12,Yes,v1.0
+7590-VHVEG0925,Male,0,No,No,38,Yes,Fiber optic,No,Month-to-month,Electronic check,25.59,933.82,No,v1.0
+7590-VHVEG0926,Male,0,No,No,2,No,Fiber optic,Yes,Month-to-month,Mailed check,47.65,94.29,No,v1.0
+7590-VHVEG0927,Female,0,No,No,7,Yes,DSL,Yes,Month-to-month,Credit card,45.65,321.24,Yes,v1.0
+7590-VHVEG0928,Male,0,No,No,34,Yes,Fiber optic,No,Month-to-month,Mailed check,44.2,1503.4,No,v1.0
+7590-VHVEG0929,Male,0,No,Yes,17,Yes,No,No,Month-to-month,Bank transfer,108.81,1793.19,No,v1.0
+7590-VHVEG0930,Male,1,No,No,43,Yes,DSL,No,Month-to-month,Electronic check,44.46,1980.18,Yes,v1.0
+7590-VHVEG0931,Female,0,Yes,No,59,Yes,Fiber optic,No,Two year,Bank transfer,46.65,2801.11,No,v1.0
+7590-VHVEG0932,Female,0,Yes,Yes,51,Yes,No,Yes,One year,Mailed check,94.42,,No,v1.0
+7590-VHVEG0933,Male,0,No,No,54,Yes,Fiber optic,No,Two year,Mailed check,64.07,3584.16,No,v1.0
+7590-VHVEG0934,Male,0,Yes,No,24,Yes,Fiber optic,No internet service,Month-to-month,Credit card,96.12,2364.11,Yes,v1.0
+7590-VHVEG0935,Male,1,No,Yes,25,Yes,Fiber optic,Yes,Month-to-month,Credit card,26.41,656.13,No,v1.0
+7590-VHVEG0936,Female,0,Yes,Yes,71,Yes,Fiber optic,No,One year,Credit card,67.78,4865.72,No,v1.0
+7590-VHVEG0937,Female,0,No,No,52,Yes,DSL,No,Month-to-month,Bank transfer,23.29,1170.16,No,v1.0
+7590-VHVEG0938,Male,0,Yes,Yes,70,Yes,Fiber optic,No,Month-to-month,Credit card,26.14,1861.57,No,v1.0
+7590-VHVEG0939,Female,0,No,No,33,Yes,Fiber optic,Yes,One year,Mailed check,108.83,3476.23,No,v1.0
+7590-VHVEG0940,Male,0,Yes,No,49,Yes,Fiber optic,No internet service,One year,Credit card,33.65,1680.63,No,v1.0
+7590-VHVEG0941,Female,0,Yes,No,29,Yes,DSL,No,Month-to-month,Electronic check,72.18,2036.54,Yes,v1.0
+7590-VHVEG0942,Male,0,No,No,63,No,No,No,Month-to-month,Credit card,60.29,3652.85,No,v1.0
+7590-VHVEG0943,Female,0,No,No,22,Yes,Fiber optic,No,Month-to-month,Bank transfer,54.04,1149.08,No,v1.0
+7590-VHVEG0944,Male,0,No,No,26,Yes,Fiber optic,Yes,Month-to-month,Electronic check,108.18,2672.7,Yes,v1.0
+7590-VHVEG0945,Female,1,Yes,No,28,Yes,Fiber optic,Yes,Month-to-month,Electronic check,22.14,633.44,Yes,v1.0
+7590-VHVEG0946,Male,0,Yes,No,49,Yes,Fiber optic,No,Month-to-month,Electronic check,85.05,4264.37,Yes,v1.0
+7590-VHVEG0947,Male,0,Yes,No,71,Yes,DSL,Yes,Month-to-month,Bank transfer,114.41,8135.43,No,v1.0
+7590-VHVEG0948,Male,0,Yes,No,49,Yes,DSL,No,Two year,Mailed check,74.9,3545.65,No,v1.0
+7590-VHVEG0949,Male,0,No,Yes,20,Yes,Fiber optic,No,One year,Credit card,111.81,2143.05,No,v1.0
+7590-VHVEG0950,Female,0,No,No,63,Yes,Fiber optic,No,One year,Electronic check,25.12,1506.54,No,v1.0
+7590-VHVEG0951,Male,0,Yes,No,61,Yes,Fiber optic,No,Month-to-month,Electronic check,61.04,3599.09,Yes,v1.0
+7590-VHVEG0952,Female,0,No,No,49,Yes,DSL,No,Month-to-month,Electronic check,45.5,,No,v1.0
+7590-VHVEG0953,Female,0,No,Yes,71,Yes,Fiber optic,Yes,Month-to-month,Mailed check,91.62,6336.92,Yes,v1.0
+7590-VHVEG0954,Male,0,No,No,1,No,No,No,Month-to-month,Mailed check,116.17,114.47,No,v1.0
+7590-VHVEG0955,Male,0,No,No,13,Yes,DSL,No,Month-to-month,Bank transfer,45.14,563.66,Yes,v1.0
+7590-VHVEG0956,Male,0,Yes,No,51,Yes,Fiber optic,No,One year,Mailed check,84.11,4170.47,No,v1.0
+7590-VHVEG0957,Male,0,No,No,56,Yes,DSL,Yes,One year,Credit card,39.41,2211.4,No,v1.0
+7590-VHVEG0958,Female,0,No,No,62,No,No,No,Month-to-month,Bank transfer,75.4,4725.32,Yes,v1.0
+7590-VHVEG0959,Female,0,No,No,32,Yes,DSL,Yes,Month-to-month,Bank transfer,65.47,2041.55,Yes,v1.0
+7590-VHVEG0960,Female,0,Yes,No,30,Yes,Fiber optic,Yes,Two year,Credit card,115.26,3304.77,No,v1.0
+7590-VHVEG0961,Female,0,No,Yes,29,Yes,Fiber optic,Yes,Month-to-month,Credit card,79.64,2284.27,Yes,v1.0
+7590-VHVEG0962,Male,0,Yes,No,49,Yes,No,No internet service,Month-to-month,Credit card,54.25,2587.67,No,v1.0
+7590-VHVEG0963,Female,0,Yes,Yes,45,Yes,DSL,Yes,Month-to-month,Bank transfer,31.18,1363.81,No,v1.0
+7590-VHVEG0964,Male,1,No,No,30,Yes,DSL,Yes,One year,Bank transfer,34.82,1092.71,No,v1.0
+7590-VHVEG0965,Male,0,No,Yes,16,Yes,No,Yes,Two year,Bank transfer,42.08,681.13,No,v1.0
+7590-VHVEG0966,Female,0,Yes,No,40,Yes,No,Yes,Month-to-month,Credit card,44.59,1793.94,No,v1.0
+7590-VHVEG0967,Female,0,Yes,No,19,Yes,No,No,Two year,Credit card,103.36,1947.31,No,v1.0
+7590-VHVEG0968,Female,0,Yes,No,18,Yes,Fiber optic,Yes,Two year,Electronic check,75.0,1340.4,No,v1.0
+7590-VHVEG0969,Female,1,Yes,No,1,Yes,DSL,Yes,Month-to-month,Mailed check,71.29,71.58,Yes,v1.0
+7590-VHVEG0970,Female,0,No,No,47,Yes,DSL,No,Month-to-month,Electronic check,31.25,1497.47,Yes,v1.0
+7590-VHVEG0971,Female,0,Yes,Yes,66,Yes,DSL,No,Month-to-month,Credit card,104.29,7022.53,No,v1.0
+7590-VHVEG0972,Male,0,No,No,38,Yes,DSL,No,Two year,Bank transfer,90.84,3338.44,No,v1.0
+7590-VHVEG0973,Male,1,No,No,51,Yes,Fiber optic,No,Month-to-month,Credit card,26.63,1358.22,No,v1.0
+7590-VHVEG0974,Male,0,Yes,Yes,63,Yes,DSL,Yes,One year,Mailed check,89.37,5580.6,Yes,v1.0
+7590-VHVEG0975,Female,0,No,Yes,4,Yes,DSL,No,Month-to-month,Electronic check,73.27,303.93,No,v1.0
+7590-VHVEG0976,Male,0,Yes,Yes,1,Yes,Fiber optic,Yes,One year,Electronic check,28.01,28.38,No,v1.0
+7590-VHVEG0977,Male,1,Yes,Yes,8,Yes,DSL,No,Month-to-month,Bank transfer,64.91,521.0,Yes,v1.0
+7590-VHVEG0978,Male,1,Yes,No,29,Yes,Fiber optic,No,One year,Electronic check,67.5,1882.22,No,v1.0
+7590-VHVEG0979,Male,1,No,Yes,55,Yes,Fiber optic,Yes,Two year,Electronic check,36.25,2014.58,No,v1.0
+7590-VHVEG0980,Male,1,No,No,3,Yes,Fiber optic,No,Two year,Credit card,112.68,325.1,No,v1.0
+7590-VHVEG0981,Male,0,Yes,Yes,32,Yes,Fiber optic,No internet service,Two year,Electronic check,103.3,3251.71,Yes,v1.0
+7590-VHVEG0982,Female,1,No,Yes,10,Yes,DSL,No internet service,Month-to-month,Electronic check,85.56,825.08,Yes,v1.0
+7590-VHVEG0983,Female,1,No,No,34,Yes,DSL,No,One year,Electronic check,65.3,2263.02,No,v1.0
+7590-VHVEG0984,Female,0,No,No,55,Yes,DSL,No,Month-to-month,Bank transfer,348.91,3221.91,Yes,v1.0
+7590-VHVEG0985,Male,0,No,Yes,32,Yes,No,Yes,Month-to-month,Bank transfer,83.8,2652.46,Yes,v1.0
+7590-VHVEG0986,Female,0,No,No,50,Yes,Fiber optic,Yes,Month-to-month,Credit card,73.45,3817.93,No,v1.0
+7590-VHVEG0987,Female,1,Yes,Yes,7,Yes,Fiber optic,No,Month-to-month,Electronic check,26.1,177.32,Yes,v1.0
+7590-VHVEG0988,Male,1,No,Yes,8,Yes,No,No,Month-to-month,Bank transfer,70.23,562.24,Yes,v1.0
+7590-VHVEG0989,Female,1,No,Yes,65,Yes,Fiber optic,No internet service,Two year,Bank transfer,99.03,6384.83,Yes,v1.0
+7590-VHVEG0990,Male,1,Yes,No,57,No,No,No,Month-to-month,Credit card,65.01,3526.76,No,v1.0
+7590-VHVEG0991,Female,1,No,No,67,Yes,No,No,One year,Mailed check,25.09,1730.36,No,v1.0
+7590-VHVEG0992,Male,0,No,No,59,Yes,DSL,No,Month-to-month,Electronic check,97.06,5479.49,No,v1.0
+7590-VHVEG0993,Male,0,No,No,54,Yes,No,No internet service,Month-to-month,Bank transfer,39.73,2140.09,No,v1.0
+7590-VHVEG0994,Female,0,Yes,No,67,No,Fiber optic,No,Month-to-month,Credit card,45.34,3056.54,Yes,v1.0
+7590-VHVEG0995,Male,0,No,No,51,Yes,Fiber optic,No,Two year,Credit card,36.14,1866.87,No,v1.0
+7590-VHVEG0996,Female,0,No,No,8,Yes,DSL,No,Two year,Credit card,52.36,,No,v1.0
+7590-VHVEG0997,Male,1,Yes,No,34,Yes,Fiber optic,No internet service,Two year,Bank transfer,94.16,3122.51,No,v1.0
+7590-VHVEG0998,Female,0,Yes,Yes,35,Yes,No,Yes,Two year,Electronic check,70.9,2359.9,Yes,v1.0
+7590-VHVEG0999,Female,0,No,No,32,Yes,Fiber optic,No internet service,Month-to-month,Mailed check,40.08,1311.16,Yes,v1.0
+7590-VHVEG1000,Male,0,Yes,No,46,Yes,DSL,No,Month-to-month,Electronic check,106.03,4894.65,Yes,v1.0
+7590-VHVEG1001,Female,0,Yes,No,16,Yes,DSL,No,One year,Credit card,106.2,1756.3,Yes,v1.0
+7590-VHVEG1002,Female,0,Yes,No,68,Yes,DSL,No,Month-to-month,Credit card,105.32,7391.7,Yes,v1.0
+7590-VHVEG1003,Female,0,No,No,37,Yes,Fiber optic,No,Month-to-month,Mailed check,43.4,1661.01,Yes,v1.0
+7590-VHVEG1004,Male,0,No,No,54,Yes,Fiber optic,Yes,Month-to-month,Electronic check,64.22,3462.79,No,v1.0
+7590-VHVEG1005,Male,0,Yes,Yes,14,Yes,No,No internet service,One year,Credit card,116.53,1604.26,No,v1.0
+7590-VHVEG1006,Female,0,Yes,No,55,No,Fiber optic,No,One year,Credit card,95.66,5414.54,Yes,v1.0
+7590-VHVEG1007,Female,0,Yes,No,48,Yes,No,No,Month-to-month,Electronic check,22.66,1082.5,Yes,v1.0
+7590-VHVEG1008,Male,0,Yes,No,7,No,DSL,Yes,Month-to-month,Credit card,26.39,178.88,No,v1.0
+7590-VHVEG1009,Male,0,No,No,7,Yes,DSL,No,One year,Electronic check,65.47,474.52,Yes,v1.0
+7590-VHVEG1010,Female,0,Yes,Yes,33,No,DSL,No,One year,Credit card,109.1,3738.16,No,v1.0
+7590-VHVEG1011,Male,0,No,No,23,Yes,Fiber optic,No,Month-to-month,Electronic check,72.79,1668.59,Yes,v1.0
+7590-VHVEG1012,Male,1,Yes,No,19,Yes,DSL,No,One year,Mailed check,68.79,1251.47,No,v1.0
+7590-VHVEG1013,Female,0,No,No,19,Yes,No,No,Month-to-month,Credit card,30.34,569.93,Yes,v1.0
+7590-VHVEG1014,Male,0,No,No,36,Yes,Fiber optic,No internet service,Month-to-month,Mailed check,84.36,3129.31,Yes,v1.0
+7590-VHVEG1015,Male,0,Yes,Yes,29,Yes,No,No,One year,Credit card,100.57,3033.59,Yes,v1.0
+7590-VHVEG1016,Male,0,No,Yes,60,Yes,DSL,No internet service,One year,Credit card,57.28,3334.96,No,v1.0
+7590-VHVEG1017,Female,0,No,No,2,No,Fiber optic,Yes,Month-to-month,Bank transfer,96.01,183.7,Yes,v1.0
+7590-VHVEG1018,Male,0,No,No,1,No,Fiber optic,No,One year,Electronic check,114.52,,No,v1.0
+7590-VHVEG1019,Female,0,Yes,No,47,No,No,No,One year,Mailed check,39.97,1857.77,No,v1.0
+7590-VHVEG1020,Male,0,No,No,69,No,Fiber optic,No,One year,Mailed check,71.29,4939.3,Yes,v1.0
+7590-VHVEG1021,Male,0,No,Yes,20,Yes,No,No internet service,One year,Mailed check,48.14,1007.86,No,v1.0
+7590-VHVEG1022,Female,0,Yes,Yes,11,No,No,Yes,One year,Electronic check,97.7,1028.12,No,v1.0
+7590-VHVEG1023,Female,0,Yes,No,2,Yes,Fiber optic,Yes,Month-to-month,Bank transfer,76.6,155.48,No,v1.0
+7590-VHVEG1024,Female,1,No,No,67,Yes,Fiber optic,No internet service,Month-to-month,Mailed check,82.19,5272.14,No,v1.0
+7590-VHVEG1025,Female,0,No,No,12,Yes,DSL,Yes,Month-to-month,Electronic check,98.2,1163.67,Yes,v1.0
+7590-VHVEG1026,Male,0,Yes,No,20,No,Fiber optic,No,Month-to-month,Credit card,58.81,1211.83,No,v1.0
+7590-VHVEG1027,Female,0,Yes,No,5,Yes,DSL,No,One year,Mailed check,109.68,544.75,No,v1.0
+7590-VHVEG1028,Female,1,No,Yes,37,Yes,Fiber optic,No internet service,Month-to-month,Mailed check,72.24,2805.65,No,v1.0
+7590-VHVEG1029,Female,0,No,No,38,Yes,DSL,Yes,Month-to-month,Bank transfer,35.48,1356.19,No,v1.0
+7590-VHVEG1030,Male,0,Yes,Yes,9,Yes,DSL,Yes,Month-to-month,Mailed check,88.2,779.59,Yes,v1.0
+7590-VHVEG1031,Male,0,Yes,No,53,No,Fiber optic,No,Month-to-month,Mailed check,97.74,5035.21,Yes,v1.0
+7590-VHVEG1032,Female,0,No,No,44,Yes,Fiber optic,No internet service,Month-to-month,Credit card,51.04,2212.31,No,v1.0
+7590-VHVEG1033,Female,0,No,No,24,Yes,Fiber optic,No,One year,Electronic check,104.0,2464.27,No,v1.0
+7590-VHVEG1034,Female,0,Yes,Yes,30,Yes,Fiber optic,No,Month-to-month,Electronic check,108.8,3123.29,Yes,v1.0
+7590-VHVEG1035,Female,0,No,No,59,Yes,DSL,No,One year,Bank transfer,47.14,2744.79,No,v1.0
+7590-VHVEG1036,Male,0,No,No,14,Yes,No,No internet service,Two year,Credit card,116.39,1623.56,No,v1.0
+7590-VHVEG1037,Female,0,No,Yes,9,Yes,Fiber optic,No internet service,Month-to-month,Electronic check,33.79,310.88,No,v1.0
+7590-VHVEG1038,Male,0,No,Yes,40,No,DSL,No internet service,Month-to-month,Credit card,39.8,1616.85,Yes,v1.0
+7590-VHVEG1039,Female,0,Yes,No,66,Yes,DSL,Yes,Month-to-month,Electronic check,38.05,2564.0,No,v1.0
+7590-VHVEG1040,Female,0,Yes,No,25,Yes,Fiber optic,Yes,One year,Credit card,107.61,2558.01,No,v1.0
+7590-VHVEG1041,Male,1,No,No,22,No,Fiber optic,No,One year,Bank transfer,84.12,1798.4,No,v1.0
+7590-VHVEG1042,Female,0,No,Yes,4,Yes,No,No internet service,Month-to-month,Mailed check,34.91,141.88,No,v1.0
+7590-VHVEG1043,Female,1,No,No,26,Yes,DSL,Yes,Month-to-month,Bank transfer,63.15,1639.32,Yes,v1.0
+7590-VHVEG1044,Female,0,No,Yes,58,Yes,DSL,Yes,Two year,Electronic check,80.3,4426.96,No,v1.0
+7590-VHVEG1045,Female,0,Yes,No,29,Yes,DSL,No,Month-to-month,Bank transfer,28.18,842.09,No,v1.0
+7590-VHVEG1046,Male,0,No,No,37,Yes,Fiber optic,Yes,Month-to-month,Mailed check,106.48,4047.12,Yes,v1.0
+7590-VHVEG1047,Female,0,No,No,70,No,DSL,No,Two year,Bank transfer,98.75,6946.19,No,v1.0
+7590-VHVEG1048,Female,0,Yes,No,18,Yes,DSL,No,One year,Electronic check,69.51,1196.94,No,v1.0
+7590-VHVEG1049,Male,0,Yes,Yes,42,Yes,DSL,No,Two year,Electronic check,114.78,4949.17,No,v1.0
+7590-VHVEG1050,Female,0,No,Yes,41,Yes,Fiber optic,No,One year,Bank transfer,60.94,2519.48,No,v1.0
+7590-VHVEG1051,Male,0,Yes,No,38,Yes,Fiber optic,No,Two year,Mailed check,116.44,4549.59,No,v1.0
+7590-VHVEG1052,Female,0,Yes,Yes,34,Yes,Fiber optic,No,Month-to-month,Bank transfer,85.46,2978.65,Yes,v1.0
+7590-VHVEG1053,Female,0,No,No,17,Yes,No,No,One year,Mailed check,82.2,1439.7,No,v1.0
+7590-VHVEG1054,Female,0,No,Yes,37,Yes,Fiber optic,No,Two year,Credit card,36.26,1344.17,No,v1.0
+7590-VHVEG1055,Male,0,Yes,No,25,No,DSL,No,One year,Mailed check,106.43,2565.02,Yes,v1.0
+7590-VHVEG1056,Male,1,No,No,27,No,Fiber optic,Yes,Month-to-month,Credit card,61.89,1699.74,Yes,v1.0
+7590-VHVEG1057,Female,0,Yes,Yes,57,Yes,Fiber optic,Yes,Month-to-month,Bank transfer,35.9,2070.89,Yes,v1.0
+7590-VHVEG1058,Male,0,Yes,No,31,Yes,DSL,Yes,Month-to-month,Mailed check,21.24,674.25,No,v1.0
+7590-VHVEG1059,Female,1,Yes,No,6,Yes,DSL,Yes,Month-to-month,Credit card,74.86,434.31,Yes,v1.0
+7590-VHVEG1060,Male,0,No,No,40,Yes,DSL,No,Month-to-month,Credit card,71.69,2779.94,No,v1.0
+7590-VHVEG1061,Female,0,No,No,12,Yes,Fiber optic,No internet service,One year,Credit card,90.5,1128.36,Yes,v1.0
+7590-VHVEG1062,Male,1,Yes,No,53,Yes,DSL,No,One year,Electronic check,107.25,5826.09,No,v1.0
+7590-VHVEG1063,Female,0,Yes,No,71,Yes,Fiber optic,No,Month-to-month,Bank transfer,27.78,2053.03,No,v1.0
+7590-VHVEG1064,Male,0,No,No,10,Yes,Fiber optic,No,One year,Credit card,91.69,940.59,Yes,v1.0
+7590-VHVEG1065,Male,0,Yes,Yes,45,Yes,DSL,No,Month-to-month,Mailed check,38.37,1743.26,Yes,v1.0
+7590-VHVEG1066,Male,0,Yes,No,17,Yes,Fiber optic,No,Month-to-month,Credit card,104.1,1797.0,Yes,v1.0
+7590-VHVEG1067,Male,1,No,No,26,Yes,Fiber optic,Yes,Month-to-month,Electronic check,100.27,2708.42,Yes,v1.0
+7590-VHVEG1068,Female,0,No,Yes,62,Yes,DSL,Yes,Month-to-month,Bank transfer,73.0,4561.53,No,v1.0
+7590-VHVEG1069,Female,0,No,No,46,Yes,DSL,No,Month-to-month,Electronic check,89.6,4176.34,Yes,v1.0
+7590-VHVEG1070,Male,0,No,No,64,Yes,No,No internet service,Month-to-month,Electronic check,50.81,3139.9,Yes,v1.0
+7590-VHVEG1071,Female,0,Yes,Yes,2,Yes,Fiber optic,Yes,Month-to-month,Electronic check,66.17,132.0,Yes,v1.0
+7590-VHVEG1072,Male,0,No,Yes,54,No,Fiber optic,Yes,Two year,Mailed check,100.52,5545.57,No,v1.0
+7590-VHVEG1073,Female,1,No,Yes,65,Yes,Fiber optic,No,Month-to-month,Bank transfer,65.01,,Yes,v1.0
+7590-VHVEG1074,Male,0,Yes,No,51,Yes,No,Yes,One year,Bank transfer,55.06,2724.66,No,v1.0
+7590-VHVEG1075,Female,0,Yes,No,53,Yes,DSL,No internet service,One year,Mailed check,68.43,3559.42,No,v1.0
+7590-VHVEG1076,Female,1,Yes,No,36,Yes,DSL,No,One year,Bank transfer,101.17,3547.92,Yes,v1.0
+7590-VHVEG1077,Male,0,No,Yes,26,Yes,Fiber optic,No internet service,Two year,Electronic check,52.85,1334.94,No,v1.0
+7590-VHVEG1078,Male,1,Yes,No,29,Yes,DSL,No,Month-to-month,Bank transfer,37.03,1065.76,Yes,v1.0
+7590-VHVEG1079,Male,0,No,No,21,Yes,Fiber optic,No,Month-to-month,Mailed check,89.78,1962.22,Yes,v1.0
+7590-VHVEG1080,Male,0,Yes,No,11,Yes,DSL,No,Two year,Electronic check,100.95,1111.19,Yes,v1.0
+7590-VHVEG1081,Male,0,No,No,40,No,No,No,Month-to-month,Mailed check,29.86,1157.22,No,v1.0
+7590-VHVEG1082,Female,1,Yes,No,11,Yes,No,No,One year,Credit card,43.51,458.34,No,v1.0
+7590-VHVEG1083,Male,0,No,No,36,Yes,DSL,Yes,One year,Electronic check,33.91,1244.83,No,v1.0
+7590-VHVEG1084,Female,0,No,No,59,Yes,DSL,No,One year,Electronic check,54.1,3154.39,No,v1.0
+7590-VHVEG1085,Male,0,Yes,No,39,Yes,No,No,Two year,Bank transfer,64.13,2581.74,No,v1.0
+7590-VHVEG1086,Female,0,Yes,Yes,54,No,DSL,No internet service,Two year,Electronic check,93.38,5123.23,No,v1.0
+7590-VHVEG1087,Female,0,No,No,55,Yes,Fiber optic,No,One year,Mailed check,83.81,4746.24,Yes,v1.0
+7590-VHVEG1088,Male,1,Yes,No,24,Yes,DSL,No,Month-to-month,Bank transfer,80.85,1896.17,Yes,v1.0
+7590-VHVEG1089,Male,1,No,Yes,22,Yes,Fiber optic,Yes,Two year,Credit card,54.53,1222.8,No,v1.0
+7590-VHVEG1090,Female,0,No,Yes,69,Yes,DSL,No,Month-to-month,Mailed check,102.46,6903.06,No,v1.0
+7590-VHVEG1091,Female,0,No,No,56,Yes,DSL,No,Month-to-month,Credit card,66.19,3869.16,Yes,v1.0
+7590-VHVEG1092,Male,0,Yes,Yes,33,Yes,DSL,No internet service,Two year,Credit card,115.95,3878.61,No,v1.0
+7590-VHVEG1093,Female,0,No,No,36,Yes,Fiber optic,No internet service,Month-to-month,Credit card,82.15,2905.36,No,v1.0
+7590-VHVEG1094,Female,0,No,No,20,Yes,Fiber optic,Yes,Month-to-month,Electronic check,32.37,632.56,Yes,v1.0
+7590-VHVEG1095,Female,1,No,No,62,Yes,DSL,No internet service,Month-to-month,Mailed check,86.27,5183.15,Yes,v1.0
+7590-VHVEG1096,Female,1,No,Yes,26,Yes,No,Yes,Two year,Mailed check,51.86,1374.61,Yes,v1.0
+7590-VHVEG1097,Female,0,Yes,No,66,Yes,DSL,No,Month-to-month,Electronic check,87.26,5597.17,Yes,v1.0
+7590-VHVEG1098,Female,0,Yes,Yes,40,Yes,Fiber optic,No,One year,Bank transfer,26.82,1083.22,No,v1.0
+7590-VHVEG1099,Male,0,No,No,17,Yes,No,Yes,Month-to-month,Credit card,37.14,616.49,No,v1.0
+7590-VHVEG1100,Male,0,Yes,Yes,1,Yes,No,No,One year,Mailed check,103.86,105.54,No,v1.0
+7590-VHVEG1101,Male,0,Yes,No,61,Yes,Fiber optic,Yes,One year,Electronic check,42.26,2659.27,No,v1.0
+7590-VHVEG1102,Male,1,No,Yes,43,Yes,Fiber optic,Yes,Month-to-month,Credit card,102.03,4509.27,Yes,v1.0
+7590-VHVEG1103,Female,1,Yes,Yes,42,Yes,DSL,No,Month-to-month,Bank transfer,47.37,2041.4,No,v1.0
+7590-VHVEG1104,Male,1,Yes,Yes,25,Yes,No,No,Month-to-month,Bank transfer,83.0,2010.26,Yes,v1.0
+7590-VHVEG1105,Female,1,Yes,No,39,Yes,No,No internet service,Two year,Credit card,88.03,3291.73,No,v1.0
+7590-VHVEG1106,Female,0,Yes,No,35,Yes,No,No,One year,Bank transfer,70.24,2507.32,No,v1.0
+7590-VHVEG1107,Male,0,Yes,Yes,3,Yes,DSL,No,Two year,Mailed check,49.92,147.79,Yes,v1.0
+7590-VHVEG1108,Male,0,Yes,No,44,No,DSL,No,Month-to-month,Mailed check,40.84,1784.77,No,v1.0
+7590-VHVEG1109,Female,0,No,Yes,51,Yes,Fiber optic,Yes,One year,Mailed check,23.25,1130.28,No,v1.0
+7590-VHVEG1110,Male,0,Yes,No,12,Yes,Fiber optic,Yes,One year,Bank transfer,49.79,583.08,No,v1.0
+7590-VHVEG1111,Male,0,No,Yes,19,Yes,DSL,No,One year,Mailed check,84.01,1521.76,No,v1.0
+7590-VHVEG1112,Female,0,No,No,44,Yes,DSL,No,Two year,Electronic check,111.95,5112.76,No,v1.0
+7590-VHVEG1113,Female,0,No,No,59,Yes,DSL,No,Month-to-month,Mailed check,105.38,6057.77,Yes,v1.0
+7590-VHVEG1114,Female,0,Yes,No,49,Yes,DSL,No,Month-to-month,Mailed check,95.07,4685.35,No,v1.0
+7590-VHVEG1115,Female,0,Yes,Yes,61,Yes,Fiber optic,No,One year,Bank transfer,97.27,5659.8,Yes,v1.0
+7590-VHVEG1116,Female,0,No,Yes,17,No,DSL,Yes,One year,Mailed check,85.17,1472.02,No,v1.0
+7590-VHVEG1117,Female,0,No,No,57,Yes,Fiber optic,Yes,One year,Credit card,45.51,2548.06,No,v1.0
+7590-VHVEG1118,Male,0,No,Yes,55,Yes,Fiber optic,No internet service,Month-to-month,Electronic check,108.91,6228.13,Yes,v1.0
+7590-VHVEG1119,Male,0,Yes,No,47,Yes,DSL,No,Month-to-month,Bank transfer,85.73,4185.78,Yes,v1.0
+7590-VHVEG1120,Male,0,Yes,Yes,12,Yes,DSL,No internet service,Month-to-month,Electronic check,74.92,883.37,No,v1.0
+7590-VHVEG1121,Female,0,Yes,Yes,62,Yes,No,Yes,Month-to-month,Credit card,30.88,1991.13,No,v1.0
+7590-VHVEG1122,Female,0,No,Yes,8,Yes,Fiber optic,No internet service,One year,Bank transfer,63.81,535.82,No,v1.0
+7590-VHVEG1123,Male,1,Yes,No,21,Yes,DSL,Yes,One year,Bank transfer,65.12,,Yes,v1.0
+7590-VHVEG1124,Male,0,Yes,No,70,Yes,Fiber optic,Yes,Month-to-month,Mailed check,104.73,7583.73,No,v1.0
+7590-VHVEG1125,Male,1,No,No,25,Yes,Fiber optic,No internet service,Month-to-month,Electronic check,73.57,1793.12,Yes,v1.0
+7590-VHVEG1126,Female,1,Yes,Yes,12,Yes,No,Yes,Month-to-month,Credit card,57.28,692.62,Yes,v1.0
+7590-VHVEG1127,Male,1,No,No,15,Yes,DSL,No,Month-to-month,Credit card,115.73,1660.78,No,v1.0
+7590-VHVEG1128,Male,0,Yes,No,59,No,No,Yes,One year,Bank transfer,30.85,1746.45,No,v1.0
+7590-VHVEG1129,Male,0,No,No,26,Yes,Fiber optic,No,Two year,Mailed check,61.41,1676.31,No,v1.0
+7590-VHVEG1130,Female,0,Yes,Yes,26,Yes,No,No internet service,Month-to-month,Bank transfer,24.12,616.21,No,v1.0
+7590-VHVEG1131,Male,0,No,No,47,No,Fiber optic,No,One year,Bank transfer,92.51,4455.91,No,v1.0
+7590-VHVEG1132,Male,0,Yes,No,32,Yes,No,No,Two year,Bank transfer,109.97,3627.01,No,v1.0
+7590-VHVEG1133,Female,1,No,No,10,Yes,Fiber optic,Yes,Two year,Bank transfer,47.44,491.42,No,v1.0
+7590-VHVEG1134,Female,1,No,Yes,16,Yes,Fiber optic,No,Month-to-month,Credit card,104.12,1748.78,No,v1.0
+7590-VHVEG1135,Female,0,Yes,Yes,71,Yes,DSL,No,Two year,Credit card,48.64,3363.99,Yes,v1.0
+7590-VHVEG1136,Female,0,Yes,Yes,17,Yes,No,Yes,Month-to-month,Bank transfer,109.26,1771.97,Yes,v1.0
+7590-VHVEG1137,Female,1,No,No,23,Yes,Fiber optic,No,Month-to-month,Bank transfer,93.89,2140.25,Yes,v1.0
+7590-VHVEG1138,Male,0,Yes,No,26,No,Fiber optic,Yes,Month-to-month,Mailed check,98.88,2475.8,Yes,v1.0
+7590-VHVEG1139,Male,0,No,No,7,Yes,No,No internet service,Month-to-month,Bank transfer,21.76,145.08,No,v1.0
+7590-VHVEG1140,Female,0,No,No,14,Yes,Fiber optic,No,Month-to-month,Credit card,114.36,1578.63,Yes,v1.0
+7590-VHVEG1141,Female,0,Yes,No,7,Yes,Fiber optic,Yes,Month-to-month,Electronic check,91.21,656.61,Yes,v1.0
+7590-VHVEG1142,Female,0,Yes,No,9,Yes,Fiber optic,No,Month-to-month,Credit card,49.87,451.76,No,v1.0
+7590-VHVEG1143,Female,0,Yes,No,48,Yes,Fiber optic,No,Two year,Mailed check,101.28,4770.46,No,v1.0
+7590-VHVEG1144,Male,0,No,No,59,Yes,No,No,Two year,Credit card,47.59,2851.09,No,v1.0
+7590-VHVEG1145,Male,0,No,No,39,Yes,DSL,No internet service,Month-to-month,Electronic check,105.53,4005.37,No,v1.0
+7590-VHVEG1146,Female,0,Yes,No,18,Yes,DSL,No,Two year,Bank transfer,31.03,531.47,No,v1.0
+7590-VHVEG1147,Female,0,No,No,59,No,No,No internet service,Two year,Electronic check,88.96,,Yes,v1.0
+7590-VHVEG1148,Female,0,No,No,17,Yes,DSL,No,One year,Bank transfer,72.99,1256.16,No,v1.0
+7590-VHVEG1149,Female,0,Yes,No,14,Yes,Fiber optic,Yes,Month-to-month,Bank transfer,29.46,423.26,Yes,v1.0
+7590-VHVEG1150,Male,0,No,Yes,31,Yes,Fiber optic,No,One year,Credit card,43.71,1292.41,Yes,v1.0
+7590-VHVEG1151,Female,0,No,No,24,Yes,Fiber optic,No,Two year,Credit card,21.22,526.34,No,v1.0
+7590-VHVEG1152,Female,0,No,Yes,60,Yes,Fiber optic,No,One year,Credit card,65.94,4003.64,No,v1.0
+7590-VHVEG1153,Male,1,Yes,Yes,45,Yes,No,No internet service,Month-to-month,Mailed check,49.52,2242.71,No,v1.0
+7590-VHVEG1154,Female,1,Yes,No,3,Yes,DSL,No,Month-to-month,Credit card,78.64,238.86,Yes,v1.0
+7590-VHVEG1155,Male,1,No,No,37,Yes,Fiber optic,No internet service,One year,Mailed check,49.13,1884.03,No,v1.0
+7590-VHVEG1156,Female,0,Yes,No,43,Yes,DSL,No,Month-to-month,Credit card,49.39,2142.32,Yes,v1.0
+7590-VHVEG1157,Female,0,No,No,40,Yes,DSL,No,Month-to-month,Bank transfer,92.83,3743.38,Yes,v1.0
+7590-VHVEG1158,Male,1,Yes,Yes,55,Yes,No,No,Month-to-month,Mailed check,24.72,1426.2,No,v1.0
+7590-VHVEG1159,Female,1,No,Yes,39,Yes,No,No,Two year,Electronic check,108.48,4339.48,No,v1.0
+7590-VHVEG1160,Male,1,No,No,15,Yes,DSL,No internet service,Two year,Mailed check,103.52,1543.87,No,v1.0
+7590-VHVEG1161,Male,0,No,No,4,No,DSL,No,Month-to-month,Mailed check,85.44,348.87,No,v1.0
+7590-VHVEG1162,Male,0,No,Yes,25,Yes,DSL,Yes,Two year,Electronic check,78.14,,Yes,v1.0
+7590-VHVEG1163,Female,0,Yes,No,13,Yes,DSL,No,Month-to-month,Mailed check,107.45,,Yes,v1.0
+7590-VHVEG1164,Female,0,No,No,33,Yes,Fiber optic,No,One year,Bank transfer,38.16,1271.55,No,v1.0
+7590-VHVEG1165,Male,0,No,No,16,No,Fiber optic,Yes,One year,Credit card,27.74,462.83,No,v1.0
+7590-VHVEG1166,Female,0,Yes,No,42,Yes,DSL,Yes,Two year,Electronic check,43.47,1904.18,Yes,v1.0
+7590-VHVEG1167,Female,0,Yes,No,66,Yes,Fiber optic,No,Two year,Credit card,97.87,6357.21,No,v1.0
+7590-VHVEG1168,Female,0,No,No,55,No,Fiber optic,No,Month-to-month,Bank transfer,23.4,1290.43,No,v1.0
+7590-VHVEG1169,Male,0,No,No,42,Yes,DSL,No,Two year,Electronic check,77.12,3145.44,No,v1.0
+7590-VHVEG1170,Male,0,Yes,Yes,34,Yes,Fiber optic,Yes,Month-to-month,Credit card,117.55,4194.89,No,v1.0
+7590-VHVEG1171,Female,1,No,No,30,Yes,DSL,Yes,One year,Credit card,103.86,3265.65,Yes,v1.0
+7590-VHVEG1172,Male,0,No,No,13,Yes,DSL,No,One year,Bank transfer,71.1,938.14,No,v1.0
+7590-VHVEG1173,Female,0,No,Yes,13,Yes,No,No,One year,Credit card,26.24,351.46,No,v1.0
+7590-VHVEG1174,Female,1,No,Yes,18,Yes,DSL,Yes,Month-to-month,Bank transfer,101.47,1865.83,Yes,v1.0
+7590-VHVEG1175,Female,0,No,No,32,Yes,Fiber optic,No,Two year,Mailed check,78.7,,No,v1.0
+7590-VHVEG1176,Male,0,No,No,39,Yes,DSL,No,Month-to-month,Bank transfer,31.26,1164.81,Yes,v1.0
+7590-VHVEG1177,Male,0,No,No,46,Yes,No,Yes,Month-to-month,Mailed check,29.2,1337.03,No,v1.0
+7590-VHVEG1178,Female,0,No,Yes,29,Yes,No,Yes,One year,Electronic check,109.14,3220.48,No,v1.0
+7590-VHVEG1179,Male,0,No,No,62,Yes,Fiber optic,Yes,Month-to-month,Credit card,85.58,5400.26,Yes,v1.0
+7590-VHVEG1180,Female,0,Yes,No,62,Yes,Fiber optic,No internet service,Two year,Bank transfer,101.27,6199.08,No,v1.0
+7590-VHVEG1181,Male,0,Yes,Yes,57,Yes,No,No,Month-to-month,Bank transfer,106.14,6317.2,Yes,v1.0
+7590-VHVEG1182,Male,0,Yes,No,16,Yes,Fiber optic,No,Month-to-month,Credit card,76.03,1176.07,Yes,v1.0
+7590-VHVEG1183,Male,0,No,Yes,56,Yes,DSL,No,Two year,Credit card,70.71,3959.89,No,v1.0
+7590-VHVEG1184,Female,0,No,Yes,10,Yes,Fiber optic,No,Month-to-month,Electronic check,62.18,633.69,Yes,v1.0
+7590-VHVEG1185,Female,0,No,No,30,Yes,Fiber optic,No,Month-to-month,Electronic check,51.06,1562.02,No,v1.0
+7590-VHVEG1186,Female,0,Yes,No,25,Yes,Fiber optic,No,One year,Bank transfer,62.59,1588.02,No,v1.0
+7590-VHVEG1187,Male,0,Yes,Yes,5,Yes,Fiber optic,Yes,Month-to-month,Electronic check,95.84,468.43,Yes,v1.0
+7590-VHVEG1188,Female,0,No,No,65,Yes,DSL,No,One year,Mailed check,78.99,4957.74,No,v1.0
+7590-VHVEG1189,Female,0,Yes,Yes,49,Yes,No,No,Month-to-month,Electronic check,107.47,5337.48,No,v1.0
+7590-VHVEG1190,Female,0,Yes,Yes,3,Yes,Fiber optic,No,Two year,Electronic check,318.62,192.24,No,v1.0
+7590-VHVEG1191,Female,0,No,No,45,Yes,No,No,Two year,Bank transfer,79.49,3462.56,Yes,v1.0
+7590-VHVEG1192,Male,0,No,No,14,Yes,Fiber optic,Yes,One year,Mailed check,81.87,1169.67,No,v1.0
+7590-VHVEG1193,Male,0,Yes,Yes,30,Yes,DSL,No,Month-to-month,Electronic check,77.99,2329.1,Yes,v1.0
+7590-VHVEG1194,Female,0,No,No,68,Yes,Fiber optic,No,Two year,Mailed check,88.86,6143.72,No,v1.0
+7590-VHVEG1195,Male,0,Yes,Yes,18,Yes,No,No internet service,One year,Mailed check,43.27,805.11,No,v1.0
+7590-VHVEG1196,Male,0,Yes,No,62,Yes,DSL,No,One year,Mailed check,70.21,4209.35,No,v1.0
+7590-VHVEG1197,Male,0,Yes,No,37,Yes,DSL,No,Month-to-month,Credit card,346.36,1064.16,No,v1.0
+7590-VHVEG1198,Male,0,No,No,25,Yes,No,No,Two year,Credit card,57.68,1482.3,Yes,v1.0
+7590-VHVEG1199,Male,0,Yes,Yes,48,Yes,DSL,No internet service,One year,Credit card,67.79,3289.68,No,v1.0
+7590-VHVEG0012,Female,0,No,Yes,64,Yes,DSL,No,One year,Credit card,65.81,4117.55,No,v1.0
+7590-VHVEG0045,Male,0,No,Yes,8,No,Fiber optic,No internet service,Month-to-month,Bank transfer,46.03,365.35,Yes,v1.0
+7590-VHVEG0098,Male,0,No,No,65,Yes,Fiber optic,Yes,Month-to-month,Credit card,116.16,7811.09,No,v1.0
+7590-VHVEG0120,Male,0,Yes,No,59,Yes,DSL,No internet service,One year,Electronic check,80.85,4599.65,No,v1.0

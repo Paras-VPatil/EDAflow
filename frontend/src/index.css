@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-main: #f8fafc;
+    --text-primary: #0f172a;
+    --text-muted: #64748b;
+    --panel-bg: rgba(255, 255, 255, 0.95);
+    --panel-border: #e2e8f0;
+    --card-bg: rgba(255, 255, 255, 0.9);
+    --card-border: #e2e8f0;
+    --inner-bg: #f1f5f9;
+    --inner-border: #cbd5e1;
+    --input-bg: #ffffff;
+  }
+
+  .dark {
+    --bg-main: #070c18;
+    --text-primary: #f8fafc;
+    --text-muted: #94a3b8;
+    --panel-bg: rgba(19, 28, 46, 0.75);
+    --panel-border: rgba(255, 255, 255, 0.08);
+    --card-bg: rgba(30, 41, 59, 0.55);
+    --card-border: rgba(255, 255, 255, 0.06);
+    --inner-bg: rgba(15, 23, 42, 0.85);
+    --inner-border: #1e293b;
+    --input-bg: #0f172a;
+  }
+
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+}
+
+/* Custom modern scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Glassmorphism utilities adaptable to light/dark */
+.glass-panel {
+  background: var(--panel-bg);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--panel-border);
+  box-shadow: 0 4px 25px -4px rgba(0, 0, 0, 0.05);
+}
+
+.dark .glass-panel {
+  box-shadow: 0 8px 30px -4px rgba(0, 0, 0, 0.5);
+}
+
+.glass-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--card-border);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+}
+
+.dark .glass-card {
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.3);
+}
+
+.glass-card:hover {
+  border-color: rgba(99, 102, 241, 0.4);
+  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.1);
+}
+
+.dark .glass-card:hover {
+  border-color: rgba(99, 102, 241, 0.4);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Dynamic Recharts tooltips for both themes */
+.recharts-default-tooltip {
+  background-color: var(--panel-bg) !important;
+  border: 1px solid var(--panel-border) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.15) !important;
+  color: var(--text-primary) !important;
+}
+
+.dark .recharts-default-tooltip {
+  background-color: #0f172a !important;
+  border-color: #334155 !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.6) !important;
+}
+
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line {
+  stroke: var(--card-border) !important;
+  stroke-dasharray: 3 3;
+}
+
+.recharts-text {
+  fill: var(--text-muted) !important;
+  font-size: 11px;
+}
