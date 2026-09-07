@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { ColumnProfile } from '../../types/eda';
-import { Search, Hash, Type, Calendar, ToggleLeft, Key, Lock } from 'lucide-react';
+import { Search, Hash, Type, Calendar, ToggleLeft, Key, Lock, FileText, MapPin, ExternalLink } from 'lucide-react';
 import { Badge } from '../common/Badge';
 
 interface SchemaTableProps {
   columns: ColumnProfile[];
+  onColumnClick?: (column: ColumnProfile) => void;
 }
 
-export const SchemaTable: React.FC<SchemaTableProps> = ({ columns }) => {
+export const SchemaTable: React.FC<SchemaTableProps> = ({ columns, onColumnClick }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [typeFilter, setTypeFilter] = useState<string>('all');
 
@@ -31,6 +32,10 @@ export const SchemaTable: React.FC<SchemaTableProps> = ({ columns }) => {
         return <Key className="w-3.5 h-3.5 text-amber-500 dark:text-amber-400" />;
       case 'constant':
         return <Lock className="w-3.5 h-3.5 text-rose-500 dark:text-rose-400" />;
+      case 'free_text':
+        return <FileText className="w-3.5 h-3.5 text-fuchsia-500 dark:text-fuchsia-400" />;
+      case 'geo':
+        return <MapPin className="w-3.5 h-3.5 text-cyan-500 dark:text-cyan-400" />;
       default:
         return <Type className="w-3.5 h-3.5 text-slate-500 dark:text-slate-400" />;
     }
@@ -50,6 +55,10 @@ export const SchemaTable: React.FC<SchemaTableProps> = ({ columns }) => {
         return 'warning';
       case 'constant':
         return 'danger';
+      case 'free_text':
+        return 'neutral';
+      case 'geo':
+        return 'primary';
       default:
         return 'neutral';
     }
@@ -64,7 +73,7 @@ export const SchemaTable: React.FC<SchemaTableProps> = ({ columns }) => {
             Dataset Schema & Semantic Type Inference
           </h3>
           <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
-            Auto-classified {columns.length} columns based on cardinality, dtypes, and value patterns.
+            Auto-classified {columns.length} columns based on cardinality, dtypes, and value patterns. Click any column for drill-down.
           </p>
         </div>
 
@@ -92,6 +101,8 @@ export const SchemaTable: React.FC<SchemaTableProps> = ({ columns }) => {
             <option value="categorical">Categorical</option>
             <option value="boolean">Boolean</option>
             <option value="datetime">Datetime</option>
+            <option value="free_text">Free Text</option>
+            <option value="geo">Geo Coordinate</option>
             <option value="id_like">ID / Key</option>
             <option value="constant">Constant</option>
           </select>
@@ -109,12 +120,17 @@ export const SchemaTable: React.FC<SchemaTableProps> = ({ columns }) => {
               <th className="pb-3 px-3 text-right">Unique Values</th>
               <th className="pb-3 px-3 text-right">Missing Count (%)</th>
               <th className="pb-3 px-3">Sample Values</th>
+              <th className="pb-3 px-3 text-center">Action</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-slate-100 dark:divide-slate-800/60 font-sans">
             {filteredColumns.map((col) => (
-              <tr key={col.name} className="hover:bg-slate-50 dark:hover:bg-slate-800/30 transition-colors">
-                <td className="py-3 px-3 font-semibold text-slate-900 dark:text-white">
+              <tr
+                key={col.name}
+                onClick={() => onColumnClick && onColumnClick(col)}
+                className="hover:bg-slate-50 dark:hover:bg-slate-800/30 transition-colors cursor-pointer group"
+              >
+                <td className="py-3 px-3 font-semibold text-slate-900 dark:text-white group-hover:text-primary-400">
                   {col.name}
                 </td>
                 <td className="py-3 px-3 font-mono text-slate-500 dark:text-slate-400">
@@ -157,6 +173,17 @@ export const SchemaTable: React.FC<SchemaTableProps> = ({ columns }) => {
                       </span>
                     ))}
                   </div>
+                </td>
+                <td className="py-3 px-3 text-center">
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      if (onColumnClick) onColumnClick(col);
+                    }}
+                    className="p-1 rounded text-text-muted hover:text-primary-400 hover:bg-surface-border/50"
+                  >
+                    <ExternalLink className="w-3.5 h-3.5" />
+                  </button>
                 </td>
               </tr>
             ))}

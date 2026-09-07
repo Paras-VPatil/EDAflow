@@ -4,6 +4,8 @@ import {
   Target,
   Sparkles,
   CheckCircle2,
+  Trophy,
+  Cpu
 } from 'lucide-react';
 import { Badge } from '../common/Badge';
 import {
@@ -53,6 +55,8 @@ export const TargetSection: React.FC<TargetSectionProps> = ({
     }
   };
 
+  const baseline = targetResult?.baseline_model;
+
   return (
     <div className="space-y-6 animate-in fade-in duration-200">
       {/* 1. Target Selector Header */}
@@ -66,7 +70,7 @@ export const TargetSection: React.FC<TargetSectionProps> = ({
               </h3>
             </div>
             <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
-              Select your predictive target variable to evaluate class balance, feature importance proxies, and ML mitigations.
+              Select your predictive target variable to evaluate class balance, baseline ML benchmark, and feature importance rankings.
             </p>
           </div>
 
@@ -132,6 +136,66 @@ export const TargetSection: React.FC<TargetSectionProps> = ({
 
       {targetResult && (
         <>
+          {/* Baseline ML Model "Score to Beat" & Feature Importance */}
+          {baseline && !baseline.error && (
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+              {/* Left Score to Beat */}
+              <div className="glass-panel rounded-2xl p-6 bg-gradient-to-br from-indigo-950/20 via-surface-card to-surface-card border-indigo-500/30">
+                <div className="flex items-center gap-2 text-indigo-400 text-xs font-bold uppercase tracking-wider mb-2">
+                  <Trophy className="w-4 h-4 text-amber-400" />
+                  Automated Baseline Benchmark ("Score to Beat")
+                </div>
+                <h4 className="text-xl font-extrabold text-white mt-1">
+                  {baseline.score_to_beat}
+                </h4>
+                <p className="text-xs text-text-muted mt-2">
+                  Evaluated with 5-Fold Cross-Validation using <strong className="text-slate-200">{baseline.model_name}</strong> on {baseline.n_samples.toLocaleString()} samples and {baseline.n_features} features.
+                </p>
+
+                <div className="mt-4 pt-4 border-t border-surface-border/60 space-y-2 text-xs">
+                  {Object.entries(baseline.metrics).map(([key, val]) => (
+                    <div key={key} className="flex justify-between items-center text-text-secondary">
+                      <span className="capitalize">{key.replace(/_/g, ' ')}:</span>
+                      <span className="font-mono font-bold text-white">{typeof val === 'number' ? val.toFixed(4) : val}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Right Feature Importance Ranking */}
+              <div className="lg:col-span-2 glass-panel rounded-2xl p-6">
+                <div className="flex items-center gap-2 mb-3">
+                  <Cpu className="w-4 h-4 text-primary-400" />
+                  <h4 className="text-sm font-bold text-white">
+                    Feature Importance Proxies (Mutual Information)
+                  </h4>
+                </div>
+
+                <div className="space-y-2.5">
+                  {baseline.feature_importance.slice(0, 6).map((item) => (
+                    <div key={item.feature} className="space-y-1">
+                      <div className="flex justify-between text-xs">
+                        <span className="font-medium text-white truncate max-w-[220px]">{item.feature}</span>
+                        <span className="font-mono text-primary-400 font-bold">{item.importance_score.toFixed(4)}</span>
+                      </div>
+                      <div className="w-full h-1.5 bg-surface-muted rounded-full overflow-hidden">
+                        <div
+                          className="h-full bg-gradient-to-r from-primary-500 to-accent-indigo rounded-full"
+                          style={{
+                            width: `${Math.min(
+                              (item.importance_score / (baseline.feature_importance[0]?.importance_score || 1)) * 100,
+                              100
+                            )}%`,
+                          }}
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
+
           {/* 2. Class Distribution / Regression Stats & Mitigations */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {/* Left: Visual Distribution */}
@@ -226,41 +290,10 @@ export const TargetSection: React.FC<TargetSectionProps> = ({
               </div>
 
               <div className="mt-4 p-3 rounded-lg bg-indigo-500/10 border border-indigo-500/20 text-[11px] text-indigo-700 dark:text-indigo-300">
-                🚀 <strong>Modeling Tip:</strong> Verify baseline benchmark performance against a Dummy / Zero-Rule Classifier before complex models.
+                🚀 <strong>Modeling Tip:</strong> Compare your trained models against this baseline score to guarantee positive feature transfer.
               </div>
             </div>
           </div>
-
-          {/* 3. Cross-Feature Breakdown */}
-          {targetResult.feature_correlations.length > 0 && (
-            <div className="glass-panel rounded-2xl p-6">
-              <h4 className="text-sm font-bold text-slate-900 dark:text-white tracking-tight mb-4">
-                Feature Association with Target (Linear Correlation Proxy)
-              </h4>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                {targetResult.feature_correlations.slice(0, 9).map((fc, idx) => (
-                  <div
-                    key={idx}
-                    className="p-3 rounded-xl bg-slate-50 dark:bg-dark-900/60 border border-slate-200 dark:border-slate-800 flex items-center justify-between text-xs"
-                  >
-                    <span className="font-semibold text-slate-800 dark:text-slate-200">
-                      {fc.feature}
-                    </span>
-                    <span
-                      className={`font-mono font-bold px-2 py-0.5 rounded ${
-                        fc.correlation > 0
-                          ? 'bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/30'
-                          : 'bg-rose-500/10 text-rose-600 dark:text-rose-400 border border-rose-500/30'
-                      }`}
-                    >
-                      r = {fc.correlation > 0 ? `+${fc.correlation}` : fc.correlation}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
         </>
       )}
     </div>

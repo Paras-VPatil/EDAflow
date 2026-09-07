@@ -5,7 +5,7 @@ import {
   runAnalysis,
   runTargetAnalysis,
 } from './api/client';
-import { FullEDAReport, SampleDatasetMeta, TargetAnalysisResult } from './types/eda';
+import { FullEDAReport, SampleDatasetMeta, ColumnProfile } from './types/eda';
 import { Navbar } from './components/common/Navbar';
 import { Dropzone } from './components/upload/Dropzone';
 import { SampleDatasetSelector } from './components/upload/SampleDatasetSelector';
@@ -17,7 +17,9 @@ import { CorrelationsSection } from './components/correlations/CorrelationsSecti
 import { CategoricalSection } from './components/categorical/CategoricalSection';
 import { TargetSection } from './components/target/TargetSection';
 import { InsightsSection } from './components/insights/InsightsSection';
+import { DriftSection } from './components/drift/DriftSection';
 import { ExportModal } from './components/export/ExportModal';
+import { ColumnDetailModal } from './components/common/ColumnDetailModal';
 import {
   LayoutDashboard,
   AlertCircle,
@@ -27,7 +29,9 @@ import {
   Type,
   Target,
   Lightbulb,
+  GitCompare,
   X,
+  Sparkles
 } from 'lucide-react';
 
 type TabKey =
@@ -38,7 +42,8 @@ type TabKey =
   | 'correlations'
   | 'categorical'
   | 'target'
-  | 'insights';
+  | 'insights'
+  | 'drift';
 
 export const App: React.FC = () => {
   const [theme, setTheme] = useState<'dark' | 'light'>(() => {
@@ -54,6 +59,7 @@ export const App: React.FC = () => {
   const [isUploadOpen, setIsUploadOpen] = useState<boolean>(false);
   const [isExportOpen, setIsExportOpen] = useState<boolean>(false);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
+  const [selectedColumn, setSelectedColumn] = useState<ColumnProfile | null>(null);
 
   // Apply theme class to <html>
   useEffect(() => {
@@ -152,7 +158,7 @@ export const App: React.FC = () => {
     if (!report) return;
     try {
       setIsLoading(true);
-      setLoadingMsg(`Computing Target Intelligence for '${targetColumn}'...`);
+      setLoadingMsg(`Computing Target Intelligence and Baseline Model for '${targetColumn}'...`);
       const targetRes = await runTargetAnalysis(report.dataset_id, targetColumn);
       
       setReport({
@@ -176,6 +182,7 @@ export const App: React.FC = () => {
     { key: 'correlations', label: 'Correlations', icon: GitCommit, badge: report?.correlations.strong_pairs_count ? `${report.correlations.strong_pairs_count} pairs` : undefined },
     { key: 'categorical', label: 'Categorical Intelligence', icon: Type },
     { key: 'target', label: 'Target & ML Prep', icon: Target, badge: report?.target ? report.target.target_type.replace('_', ' ') : undefined },
+    { key: 'drift', label: 'Dataset Drift', icon: GitCompare, badge: 'New', badgeColor: 'bg-primary-500/20 text-primary-400 border-primary-500/30' },
     {
       key: 'insights',
       label: 'Smart Insights',
@@ -219,7 +226,19 @@ export const App: React.FC = () => {
         </div>
       )}
 
-      {/* 3. Main Body */}
+      {/* 3. Sampling Notice if dataset was sampled */}
+      {report?.is_sampled && (
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-3 w-full">
+          <div className="p-3 rounded-xl bg-primary-500/10 border border-primary-500/30 text-primary-300 text-xs flex items-center gap-2">
+            <Sparkles className="w-4 h-4 text-primary-400 shrink-0" />
+            <span>
+              <strong>Large Dataset Sampled:</strong> Analysis was performed on a statistically representative sample of {report.profiler.rows_count.toLocaleString()} rows (from {report.original_rows?.toLocaleString() || 'all'} total rows) to deliver instant sub-second response times.
+            </span>
+          </div>
+        </div>
+      )}
+
+      {/* 4. Main Body */}
       <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
         {/* Upload Modal / Overlay if open or if no report */}
         {(isUploadOpen || !report) && (
@@ -241,7 +260,7 @@ export const App: React.FC = () => {
                 Upload Any Tabular Dataset for Instant Intelligence
               </h2>
               <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
-                Drop your CSV, Excel, Parquet, or JSON file. We automatically profile types, detect statistical anomalies, model correlations, and generate ML recommendations.
+                Drop CSV, TSV, Excel, Parquet, or JSON. Features auto-encoding detection, delimiter sniffing, bad-line tolerance, and anomaly scoring.
               </p>
             </div>
 
@@ -299,7 +318,12 @@ export const App: React.FC = () => {
 
             {/* Active Tab View Content */}
             <div className="mt-6">
-              {activeTab === 'overview' && <OverviewSection report={report} />}
+              {activeTab === 'overview' && (
+                <OverviewSection
+                  report={report}
+                  onColumnClick={(col) => setSelectedColumn(col)}
+                />
+              )}
               {activeTab === 'missing' && (
                 <MissingSection
                   missing={report.missing}
@@ -327,6 +351,13 @@ export const App: React.FC = () => {
                   isLoading={isLoading}
                 />
               )}
+              {activeTab === 'drift' && (
+                <DriftSection
+                  currentDatasetId={report.dataset_id}
+                  currentDatasetName={report.filename}
+                  sampleDatasets={samples}
+                />
+              )}
               {activeTab === 'insights' && (
                 <InsightsSection insightsResult={report.insights} />
               )}
@@ -335,7 +366,16 @@ export const App: React.FC = () => {
         )}
       </main>
 
-      {/* 4. Export Artifact Modal */}
+      {/* 5. Column Drill-down Modal */}
+      {report && (
+        <ColumnDetailModal
+          column={selectedColumn}
+          report={report}
+          onClose={() => setSelectedColumn(null)}
+        />
+      )}
+
+      {/* 6. Export Artifact Modal */}
       {report && (
         <ExportModal
           isOpen={isExportOpen}
@@ -344,7 +384,7 @@ export const App: React.FC = () => {
         />
       )}
 
-      {/* 5. Clean Footer */}
+      {/* 7. Clean Footer */}
       <footer className="w-full border-t border-slate-200 dark:border-slate-800/60 bg-white/60 dark:bg-dark-950/60 py-6 mt-12 transition-colors">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 dark:text-slate-400">
           <div>

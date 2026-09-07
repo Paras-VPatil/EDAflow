@@ -8,6 +8,12 @@ def analyze_correlations(df: pd.DataFrame, numeric_columns: Optional[List[str]] 
 
     # Filter out columns that have 0 variance
     valid_cols = [c for c in numeric_columns if df[c].dropna().nunique() > 1]
+    
+    # Cap to top 100 columns by variance if wide dataset to protect performance
+    max_cols = 100
+    if len(valid_cols) > max_cols:
+        variances = df[valid_cols].var().sort_values(ascending=False)
+        valid_cols = variances.head(max_cols).index.tolist()
 
     if len(valid_cols) < 2:
         return {

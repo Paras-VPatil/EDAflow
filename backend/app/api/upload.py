@@ -1,18 +1,36 @@
 import time
 from pathlib import Path
-from fastapi import APIRouter, UploadFile, File, HTTPException, status
+from typing import Optional
+from fastapi import APIRouter, UploadFile, File, Form, HTTPException, status
 from ..config import MAX_UPLOAD_SIZE_BYTES, ALLOWED_EXTENSIONS
-from ..utils.storage import storage
+from ..utils.storage import storage, sanitize_filename
 from ..services.profiler import profile_dataset
 
 router = APIRouter(tags=["Upload"])
 
+@router.post("/excel-sheets")
+async def get_excel_sheets(file: UploadFile = File(...)):
+    """Inspect sheet names in an uploaded Excel workbook."""
+    filename = file.filename or "workbook.xlsx"
+    ext = Path(filename).suffix.lower()
+    if ext not in [".xlsx", ".xls"]:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="File must be an Excel spreadsheet (.xlsx, .xls)."
+        )
+    content = await file.read()
+    sheets = storage.inspect_excel_sheets(content)
+    return {"filename": sanitize_filename(filename), "sheets": sheets}
+
 @router.post("/upload")
-async def upload_file(file: UploadFile = File(...)):
+async def upload_file(
+    file: UploadFile = File(...),
+    sheet_name: Optional[str] = Form(None)
+):
     start_time = time.time()
     
-    filename = file.filename or "uploaded_dataset.csv"
-    ext = Path(filename).suffix.lower()
+    raw_filename = file.filename or "uploaded_dataset.csv"
+    ext = Path(raw_filename).suffix.lower()
 
     if ext not in ALLOWED_EXTENSIONS:
         raise HTTPException(
@@ -20,7 +38,6 @@ async def upload_file(file: UploadFile = File(...)):
             detail=f"Unsupported file extension '{ext}'. Allowed extensions: {', '.join(sorted(ALLOWED_EXTENSIONS))}"
         )
 
-    # Read content with size check
     content = await file.read()
     if len(content) > MAX_UPLOAD_SIZE_BYTES:
         raise HTTPException(
@@ -35,7 +52,7 @@ async def upload_file(file: UploadFile = File(...)):
         )
 
     try:
-        df, dataset_id = storage.parse_file(content, filename)
+        df, dataset_id, parse_warnings = storage.parse_file(content, raw_filename, sheet_name=sheet_name)
     except Exception as e:
         raise HTTPException(
             status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
@@ -52,13 +69,16 @@ async def upload_file(file: UploadFile = File(...)):
         "status": "ok",
         "data": {
             "dataset_id": dataset_id,
-            "filename": filename,
+            "filename": meta_info.get("filename", raw_filename),
             "rows": len(df),
             "columns": len(df.columns),
+            "is_sampled": meta_info.get("is_sampled", False),
+            "original_rows": meta_info.get("original_rows", len(df)),
+            "sample_rate": meta_info.get("sample_rate", 1.0),
             "profile": profile,
             "metadata": meta_info
         },
-        "warnings": [],
+        "warnings": parse_warnings,
         "meta": {
             "duration_ms": duration_ms
         }

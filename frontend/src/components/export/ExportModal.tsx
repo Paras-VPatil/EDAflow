@@ -8,8 +8,15 @@ import {
   Copy,
   Check,
   ExternalLink,
+  BookOpen,
+  FileText,
 } from 'lucide-react';
-import { getDeduplicatedDownloadUrl, getHtmlReportUrl } from '../../api/client';
+import {
+  getDeduplicatedDownloadUrl,
+  getHtmlReportUrl,
+  getNotebookReportUrl,
+  getMarkdownReportUrl,
+} from '../../api/client';
 
 interface ExportModalProps {
   isOpen: boolean;
@@ -57,7 +64,7 @@ export const ExportModal: React.FC<ExportModalProps> = ({
               Export Center & Report Artifacts
             </h3>
             <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
-              Choose your delivery format for {report.filename}
+              Choose delivery format for {report.filename}
             </p>
           </div>
           <button
@@ -69,9 +76,63 @@ export const ExportModal: React.FC<ExportModalProps> = ({
         </div>
 
         {/* Options */}
-        <div className="py-5 space-y-3.5">
-          {/* Option 1: Standalone HTML Report */}
-          <div className="p-4 rounded-xl bg-slate-50 dark:bg-dark-950/80 border border-slate-200 dark:border-slate-800 flex items-center justify-between">
+        <div className="py-5 space-y-3">
+          {/* Option 1: Jupyter Notebook (.ipynb) */}
+          <div className="p-3.5 rounded-xl bg-slate-50 dark:bg-dark-950/80 border border-slate-200 dark:border-slate-800 flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <div className="p-2.5 rounded-xl bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20">
+                <BookOpen className="w-5 h-5" />
+              </div>
+              <div>
+                <h4 className="text-xs font-bold text-slate-900 dark:text-white flex items-center gap-1.5">
+                  Jupyter Notebook (.ipynb)
+                  <span className="text-[10px] px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-400 font-semibold">New</span>
+                </h4>
+                <p className="text-[11px] text-slate-500 dark:text-slate-400">
+                  Executable Pandas, Matplotlib, and Seaborn code reproducing all analysis.
+                </p>
+              </div>
+            </div>
+
+            <a
+              href={getNotebookReportUrl(report.dataset_id)}
+              download
+              className="px-3 py-1.5 rounded-lg bg-amber-600 hover:bg-amber-500 text-white font-semibold text-xs flex items-center gap-1.5 transition-colors"
+            >
+              <Download className="w-3.5 h-3.5" />
+              <span>.ipynb</span>
+            </a>
+          </div>
+
+          {/* Option 2: Markdown Summary (.md) */}
+          <div className="p-3.5 rounded-xl bg-slate-50 dark:bg-dark-950/80 border border-slate-200 dark:border-slate-800 flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <div className="p-2.5 rounded-xl bg-purple-500/10 text-purple-600 dark:text-purple-400 border border-purple-500/20">
+                <FileText className="w-5 h-5" />
+              </div>
+              <div>
+                <h4 className="text-xs font-bold text-slate-900 dark:text-white flex items-center gap-1.5">
+                  GitHub Markdown Report (.md)
+                  <span className="text-[10px] px-1.5 py-0.5 rounded bg-purple-500/20 text-purple-400 font-semibold">New</span>
+                </h4>
+                <p className="text-[11px] text-slate-500 dark:text-slate-400">
+                  Formatted Markdown report ready for GitHub README or project documentation.
+                </p>
+              </div>
+            </div>
+
+            <a
+              href={getMarkdownReportUrl(report.dataset_id)}
+              download
+              className="px-3 py-1.5 rounded-lg bg-purple-600 hover:bg-purple-500 text-white font-semibold text-xs flex items-center gap-1.5 transition-colors"
+            >
+              <Download className="w-3.5 h-3.5" />
+              <span>.md</span>
+            </a>
+          </div>
+
+          {/* Option 3: Standalone HTML Report */}
+          <div className="p-3.5 rounded-xl bg-slate-50 dark:bg-dark-950/80 border border-slate-200 dark:border-slate-800 flex items-center justify-between">
             <div className="flex items-center gap-3">
               <div className="p-2.5 rounded-xl bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 border border-indigo-500/20">
                 <FileCode className="w-5 h-5" />
@@ -81,7 +142,7 @@ export const ExportModal: React.FC<ExportModalProps> = ({
                   Standalone Executive HTML Report
                 </h4>
                 <p className="text-[11px] text-slate-500 dark:text-slate-400">
-                  Self-contained HTML file ready for email or browser presentation.
+                  Self-contained HTML file ready for browser viewing or Print to PDF.
                 </p>
               </div>
             </div>
@@ -97,8 +158,8 @@ export const ExportModal: React.FC<ExportModalProps> = ({
             </a>
           </div>
 
-          {/* Option 2: Cleaned Deduplicated CSV */}
-          <div className="p-4 rounded-xl bg-slate-50 dark:bg-dark-950/80 border border-slate-200 dark:border-slate-800 flex items-center justify-between">
+          {/* Option 4: Cleaned Deduplicated CSV */}
+          <div className="p-3.5 rounded-xl bg-slate-50 dark:bg-dark-950/80 border border-slate-200 dark:border-slate-800 flex items-center justify-between">
             <div className="flex items-center gap-3">
               <div className="p-2.5 rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
                 <FileSpreadsheet className="w-5 h-5" />
@@ -123,8 +184,8 @@ export const ExportModal: React.FC<ExportModalProps> = ({
             </a>
           </div>
 
-          {/* Option 3: Full JSON Report */}
-          <div className="p-4 rounded-xl bg-slate-50 dark:bg-dark-950/80 border border-slate-200 dark:border-slate-800 flex items-center justify-between">
+          {/* Option 5: Full JSON Report */}
+          <div className="p-3.5 rounded-xl bg-slate-50 dark:bg-dark-950/80 border border-slate-200 dark:border-slate-800 flex items-center justify-between">
             <div className="flex items-center gap-3">
               <div className="p-2.5 rounded-xl bg-brand-500/10 text-brand-600 dark:text-brand-400 border border-brand-500/20">
                 <Download className="w-5 h-5" />

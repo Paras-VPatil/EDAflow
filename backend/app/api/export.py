@@ -1,5 +1,6 @@
 import io
 import json
+from pathlib import Path
 from fastapi import APIRouter, HTTPException, status
 from fastapi.responses import StreamingResponse, HTMLResponse
 from ..utils.storage import storage
@@ -379,3 +380,85 @@ async def export_html_report(dataset_id: str):
 </html>
 """
     return HTMLResponse(content=html_content)
+
+@router.get("/export-notebook/{dataset_id}")
+async def export_jupyter_notebook(dataset_id: str):
+    df = storage.get_dataframe(dataset_id)
+    if df is None:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Dataset '{dataset_id}' not found."
+        )
+
+    from ..services.notebook_generator import generate_eda_notebook
+    meta = storage.get_metadata(dataset_id) or {}
+    filename = meta.get("filename", "dataset.csv")
+    profile = profile_dataset(df)
+
+    notebook_content = generate_eda_notebook(filename, profile)
+    base_name = Path(filename).stem
+    download_filename = f"{base_name}_edaflow_analysis.ipynb"
+
+    return StreamingResponse(
+        io.StringIO(notebook_content),
+        media_type="application/x-ipynb+json",
+        headers={"Content-Disposition": f'attachment; filename="{download_filename}"'}
+    )
+
+@router.get("/export-markdown/{dataset_id}")
+async def export_markdown_report(dataset_id: str):
+    df = storage.get_dataframe(dataset_id)
+    if df is None:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Dataset '{dataset_id}' not found."
+        )
+
+    meta = storage.get_metadata(dataset_id) or {}
+    filename = meta.get("filename", "dataset.csv")
+
+    profile = profile_dataset(df)
+    missing = analyze_missingness(df)
+    duplicates = analyze_duplicates(df)
+    distributions = analyze_distributions(df, numeric_columns=profile["numeric_columns"])
+    outliers = analyze_outliers(df, numeric_columns=profile["numeric_columns"])
+    correlations = analyze_correlations(df, numeric_columns=profile["numeric_columns"])
+    categorical = analyze_categorical(df, categorical_columns=profile["categorical_columns"])
+    insights = generate_insights_and_quality(profile, missing, duplicates, distributions, outliers, correlations, categorical)
+
+    q = insights["quality_score"]
+
+    md_lines = [
+        f"# EDAflow Intelligence Report: `{filename}`",
+        f"\n**Data Quality Score:** `{q['final_score']}/100` (Grade {q['grade']})",
+        f"> {q['summary']}\n",
+        "## Summary Metrics",
+        f"- **Total Rows:** {profile['rows_count']:,}",
+        f"- **Total Columns:** {profile['columns_count']}",
+        f"- **Missing Values:** {missing['overall_missing_percentage']}%",
+        f"- **Duplicate Rows:** {duplicates['duplicate_rows_count']:,} ({duplicates['duplicate_percentage']}%)",
+        f"- **Memory Footprint:** {profile['total_memory_formatted']}\n",
+        "## Top Actionable Insights & Recommendations",
+    ]
+
+    for idx, ins in enumerate(insights.get("insights", [])[:8], 1):
+        md_lines.append(f"{idx}. **[{ins['severity'].upper()}] {ins['title']}**")
+        md_lines.append(f"   - {ins['description']}")
+        md_lines.append(f"   - *Action:* {ins['recommendation']}\n")
+
+    md_lines.append("## Column Schema")
+    md_lines.append("| Feature | Type | Inferred | Null Count (%) | Unique Count |")
+    md_lines.append("|---|---|---|---|---|")
+    for col in profile.get("columns", []):
+        md_lines.append(f"| `{col['name']}` | `{col['dtype']}` | `{col['inferred_type']}` | {col['null_count']} ({col['null_ratio']*100:.1f}%) | {col['unique_count']} |")
+
+    md_content = "\n".join(md_lines)
+    base_name = Path(filename).stem
+    download_filename = f"{base_name}_edaflow_summary.md"
+
+    return StreamingResponse(
+        io.StringIO(md_content),
+        media_type="text/markdown",
+        headers={"Content-Disposition": f'attachment; filename="{download_filename}"'}
+    )
+

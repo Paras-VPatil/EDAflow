@@ -20,6 +20,8 @@ def infer_column_type(series: pd.Series, total_rows: int) -> Dict[str, Any]:
     null_ratio = null_count / total_rows if total_rows > 0 else 1.0
 
     dtype_str = str(series.dtype)
+    col_name_lower = str(series.name).lower() if series.name else ""
+
     is_constant = (unique_count <= 1 and total_rows > 0 and null_count == 0)
     is_all_null = (null_count == total_rows)
     is_boolean = False
@@ -27,16 +29,18 @@ def infer_column_type(series: pd.Series, total_rows: int) -> Dict[str, Any]:
     is_numeric = False
     is_id_like = False
     is_categorical = False
+    is_free_text = False
+    is_geo = False
     inferred_type = "categorical"
 
-    # All-null or constant check
+    # 1. All-null or constant check
     if is_all_null:
         inferred_type = "constant"
         is_constant = True
     elif is_constant:
         inferred_type = "constant"
-    
-    # Boolean check
+
+    # 2. Boolean check
     elif pd.api.types.is_bool_dtype(series):
         is_boolean = True
         inferred_type = "boolean"
@@ -46,7 +50,7 @@ def infer_column_type(series: pd.Series, total_rows: int) -> Dict[str, Any]:
             is_boolean = True
             inferred_type = "boolean"
 
-    # Datetime check
+    # 3. Datetime check
     elif pd.api.types.is_datetime64_any_dtype(series):
         is_datetime = True
         inferred_type = "datetime"
@@ -54,27 +58,56 @@ def infer_column_type(series: pd.Series, total_rows: int) -> Dict[str, Any]:
         sample = non_null_series.head(50)
         try:
             converted = pd.to_datetime(sample, errors='coerce')
-            if converted.notnull().mean() > 0.85 and not sample.str.isnumeric().all():
+            if converted.notnull().mean() > 0.85 and not sample.astype(str).str.isnumeric().all():
                 is_datetime = True
                 inferred_type = "datetime"
         except Exception:
             pass
 
-    # Numeric check
+    # 4. Geo check (Latitude / Longitude coordinates)
     if not is_boolean and not is_datetime and not is_constant and not is_all_null:
         if pd.api.types.is_numeric_dtype(series):
+            is_lat = any(k in col_name_lower for k in ["latitude", "lat_deg"]) or col_name_lower == "lat"
+            is_lon = any(k in col_name_lower for k in ["longitude", "lon_deg", "lng"]) or col_name_lower in ["lon", "lng"]
+            if not non_null_series.empty:
+                min_val = float(non_null_series.min())
+                max_val = float(non_null_series.max())
+                if is_lat and -90.0 <= min_val and max_val <= 90.0:
+                    is_geo = True
+                    inferred_type = "geo"
+                elif is_lon and -180.0 <= min_val and max_val <= 180.0:
+                    is_geo = True
+                    inferred_type = "geo"
+
+    # 5. Free-text vs Categorical vs Numeric check
+    if not is_boolean and not is_datetime and not is_constant and not is_all_null and not is_geo:
+        if pd.api.types.is_numeric_dtype(series):
             is_numeric = True
-            if unique_ratio > 0.95 and total_rows >= 20 and (series.name and any(k in str(series.name).lower() for k in ["id", "uuid", "guid", "key", "index"])):
+            if unique_ratio > 0.95 and total_rows >= 20 and any(k in col_name_lower for k in ["id", "uuid", "guid", "key", "index"]):
                 is_id_like = True
                 inferred_type = "id_like"
             else:
                 inferred_type = "numeric"
-        elif unique_ratio > 0.95 and total_rows >= 20:
-            is_id_like = True
-            inferred_type = "id_like"
         else:
-            is_categorical = True
-            inferred_type = "categorical"
+            # String/Object analysis
+            if not non_null_series.empty:
+                str_sample = non_null_series.astype(str).head(100)
+                avg_length = str_sample.str.len().mean()
+                space_count = str_sample.str.count(" ").mean()
+                
+                # If long prose/free-form text with multiple words or substantial sentence length
+                if (avg_length > 40 or space_count >= 3) and (unique_ratio > 0.10 or avg_length > 60):
+                    is_free_text = True
+                    inferred_type = "free_text"
+                elif unique_ratio > 0.95 and total_rows >= 20 and any(k in col_name_lower for k in ["id", "uuid", "guid", "key"]):
+                    is_id_like = True
+                    inferred_type = "id_like"
+                else:
+                    is_categorical = True
+                    inferred_type = "categorical"
+            else:
+                is_categorical = True
+                inferred_type = "categorical"
 
     # Sample values (safe extraction)
     samples = []
@@ -90,7 +123,9 @@ def infer_column_type(series: pd.Series, total_rows: int) -> Dict[str, Any]:
             elif isinstance(v, (bool, np.bool_)):
                 samples.append(bool(v))
             else:
-                samples.append(str(v))
+                # Truncate long strings for preview
+                s_val = str(v)
+                samples.append(s_val[:80] + "..." if len(s_val) > 80 else s_val)
 
     memory_bytes = int(series.memory_usage(deep=True))
 
@@ -104,6 +139,8 @@ def infer_column_type(series: pd.Series, total_rows: int) -> Dict[str, Any]:
         "is_boolean": is_boolean,
         "is_constant": is_constant,
         "is_id_like": is_id_like,
+        "is_free_text": is_free_text,
+        "is_geo": is_geo,
         "unique_count": unique_count,
         "unique_ratio": round(unique_ratio, 4),
         "null_count": null_count,
@@ -125,6 +162,8 @@ def profile_dataset(df: pd.DataFrame) -> Dict[str, Any]:
     boolean_columns = []
     constant_columns = []
     id_like_columns = []
+    free_text_columns = []
+    geo_columns = []
 
     for col in df.columns:
         col_prof = infer_column_type(df[col], rows_count)
@@ -143,6 +182,10 @@ def profile_dataset(df: pd.DataFrame) -> Dict[str, Any]:
             constant_columns.append(col_prof["name"])
         elif inferred == "id_like":
             id_like_columns.append(col_prof["name"])
+        elif inferred == "free_text":
+            free_text_columns.append(col_prof["name"])
+        elif inferred == "geo":
+            geo_columns.append(col_prof["name"])
 
     return {
         "rows_count": rows_count,
@@ -155,5 +198,7 @@ def profile_dataset(df: pd.DataFrame) -> Dict[str, Any]:
         "datetime_columns": datetime_columns,
         "boolean_columns": boolean_columns,
         "constant_columns": constant_columns,
-        "id_like_columns": id_like_columns
+        "id_like_columns": id_like_columns,
+        "free_text_columns": free_text_columns,
+        "geo_columns": geo_columns
     }

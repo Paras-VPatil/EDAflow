@@ -1,13 +1,15 @@
 export interface ColumnProfile {
   name: string;
   dtype: string;
-  inferred_type: 'numeric' | 'categorical' | 'boolean' | 'datetime' | 'constant' | 'id_like';
+  inferred_type: 'numeric' | 'categorical' | 'boolean' | 'datetime' | 'constant' | 'id_like' | 'free_text' | 'geo';
   is_numeric: boolean;
   is_categorical: boolean;
   is_datetime: boolean;
   is_boolean: boolean;
   is_constant: boolean;
   is_id_like: boolean;
+  is_free_text?: boolean;
+  is_geo?: boolean;
   unique_count: number;
   unique_ratio: number;
   null_count: number;
@@ -28,6 +30,8 @@ export interface ProfilerResult {
   boolean_columns: string[];
   constant_columns: string[];
   id_like_columns: string[];
+  free_text_columns?: string[];
+  geo_columns?: string[];
 }
 
 export interface ColumnMissing {
@@ -163,6 +167,23 @@ export interface TargetCrossCatRate {
   cross_tab: Record<string, Record<string, number>>;
 }
 
+export interface FeatureImportanceItem {
+  feature: string;
+  importance_score: number;
+}
+
+export interface BaselineModelResult {
+  task_type: string;
+  model_name: string;
+  target_column: string;
+  n_samples: number;
+  n_features: number;
+  score_to_beat: string;
+  metrics: Record<string, number>;
+  feature_importance: FeatureImportanceItem[];
+  error?: string;
+}
+
 export interface TargetAnalysisResult {
   target_column: string;
   target_type: 'binary_classification' | 'multiclass_classification' | 'regression';
@@ -174,6 +195,7 @@ export interface TargetAnalysisResult {
   feature_correlations: { feature: string; correlation: number; abs_correlation: number }[];
   numeric_cross_breakdown: TargetCrossStats[];
   categorical_cross_breakdown: TargetCrossCatRate[];
+  baseline_model?: BaselineModelResult;
 }
 
 export interface InsightFinding {
@@ -208,6 +230,9 @@ export interface InsightsResult {
 export interface FullEDAReport {
   dataset_id: string;
   filename: string;
+  is_sampled?: boolean;
+  original_rows?: number;
+  sample_rate?: number;
   profiler: ProfilerResult;
   missing: MissingnessResult;
   duplicates: DuplicatesResult;
@@ -225,5 +250,46 @@ export interface SampleDatasetMeta {
   rows: number;
   columns: number;
   is_sample: boolean;
+  is_sampled?: boolean;
   description: string;
+}
+
+export interface NumericDriftItem {
+  column: string;
+  ks_statistic: number;
+  p_value: number;
+  psi: number;
+  has_drift: boolean;
+  severity: 'high' | 'moderate' | 'none';
+  baseline_mean: number;
+  comparison_mean: number;
+  baseline_std: number;
+  comparison_std: number;
+}
+
+export interface MissingDriftItem {
+  column: string;
+  baseline_missing_pct: number;
+  comparison_missing_pct: number;
+  shift_pct: number;
+  status: 'increased' | 'decreased' | 'unchanged';
+}
+
+export interface DriftReport {
+  baseline_summary: { rows: number; columns: number };
+  comparison_summary: { rows: number; columns: number };
+  schema_drift: {
+    common_columns_count: number;
+    added_columns: string[];
+    removed_columns: string[];
+    type_mismatches: { column: string; baseline_type: string; comparison_type: string }[];
+  };
+  missingness_drift: MissingDriftItem[];
+  numeric_drift: NumericDriftItem[];
+  drift_summary: {
+    drift_score_pct: number;
+    drifted_features_count: number;
+    total_numeric_evaluated: number;
+    overall_status: string;
+  };
 }

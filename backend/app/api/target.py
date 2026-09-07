@@ -3,6 +3,7 @@ from pydantic import BaseModel
 from fastapi import APIRouter, HTTPException, status
 from ..utils.storage import storage
 from ..services.target import analyze_target
+from ..services.baseline import fit_baseline_model
 
 router = APIRouter(tags=["Target Intelligence"])
 
@@ -29,6 +30,8 @@ async def run_target_analysis(payload: TargetRequest):
 
     try:
         result = analyze_target(df, payload.target_column)
+        baseline = fit_baseline_model(df, payload.target_column, task_type=result.get("task_type"))
+        result["baseline_model"] = baseline
     except Exception as e:
         raise HTTPException(
             status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,

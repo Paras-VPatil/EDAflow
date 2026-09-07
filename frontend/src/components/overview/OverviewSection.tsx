@@ -1,5 +1,5 @@
 import React from 'react';
-import { FullEDAReport } from '../../types/eda';
+import { FullEDAReport, ColumnProfile } from '../../types/eda';
 import { QualityGauge } from '../common/QualityGauge';
 import { StatCard } from '../common/StatCard';
 import { SchemaTable } from './SchemaTable';
@@ -14,9 +14,10 @@ import {
 
 interface OverviewSectionProps {
   report: FullEDAReport;
+  onColumnClick?: (column: ColumnProfile) => void;
 }
 
-export const OverviewSection: React.FC<OverviewSectionProps> = ({ report }) => {
+export const OverviewSection: React.FC<OverviewSectionProps> = ({ report, onColumnClick }) => {
   const { profiler, missing, duplicates, outliers, insights } = report;
 
   return (
@@ -84,7 +85,7 @@ export const OverviewSection: React.FC<OverviewSectionProps> = ({ report }) => {
       </div>
 
       {/* 3. Schema & Feature Typing Table */}
-      <SchemaTable columns={profiler.columns} />
+      <SchemaTable columns={profiler.columns} onColumnClick={onColumnClick} />
     </div>
   );
 };
