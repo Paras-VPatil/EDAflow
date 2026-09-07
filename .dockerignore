@@ -1,0 +1,16 @@
+.git
+.github
+node_modules
+frontend/node_modules
+frontend/dist
+backend/storage/*
+!backend/storage/.gitkeep
+backend/sample_data/*
+!backend/sample_data/.gitkeep
+__pycache__
+*.pyc
+.pytest_cache
+.env
+.env.local
+.DS_Store
+Thumbs.db

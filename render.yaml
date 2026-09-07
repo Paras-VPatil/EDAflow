@@ -1,0 +1,27 @@
+services:
+  # FastAPI Backend Service
+  - type: web
+    name: edaflow-api
+    env: python
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: uvicorn app.main:app --app-dir backend --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.8
+      - key: ENV
+        value: production
+      - key: MAX_UPLOAD_SIZE_MB
+        value: 100
+      - key: STORAGE_RETENTION_HOURS
+        value: 24
+
+  # React Frontend Static Site
+  - type: web
+    name: edaflow-frontend
+    env: static
+    buildCommand: cd frontend && npm install && npm run build
+    staticPublishPath: ./frontend/dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
