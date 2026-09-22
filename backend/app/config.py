@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 from typing import Set, List
-from pydantic_settings import BaseSettings
+from pydantic_settings import BaseSettings, SettingsConfigDict
 
 # Base directories
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -43,10 +43,11 @@ class Settings(BaseSettings):
     RATE_LIMIT_UPLOAD: str = "30/minute"
     RATE_LIMIT_ANALYZE: str = "60/minute"
 
-    class Config:
-        env_file = ".env"
-        env_file_encoding = "utf-8"
-        extra = "ignore"
+    model_config = SettingsConfigDict(
+        env_file=".env",
+        env_file_encoding="utf-8",
+        extra="ignore",
+    )
 
 settings = Settings()
 
