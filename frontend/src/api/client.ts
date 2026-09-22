@@ -1,8 +1,12 @@
 import axios from 'axios';
 import { FullEDAReport, SampleDatasetMeta, TargetAnalysisResult, DriftReport } from '../types/eda';
 
+export const API_BASE = import.meta.env.VITE_API_URL
+  ? `${import.meta.env.VITE_API_URL.replace(/\/+$/, '')}/api`
+  : '/api';
+
 const api = axios.create({
-  baseURL: '/api',
+  baseURL: API_BASE,
   headers: {
     'Content-Type': 'application/json',
   },
@@ -77,17 +81,17 @@ export const runDriftAnalysis = async (
 };
 
 export const getDeduplicatedDownloadUrl = (datasetId: string): string => {
-  return `/api/download-deduplicated/${datasetId}`;
+  return `${API_BASE}/download-deduplicated/${datasetId}`;
 };
 
 export const getHtmlReportUrl = (datasetId: string): string => {
-  return `/api/export-report/${datasetId}`;
+  return `${API_BASE}/export-report/${datasetId}`;
 };
 
 export const getNotebookReportUrl = (datasetId: string): string => {
-  return `/api/export-notebook/${datasetId}`;
+  return `${API_BASE}/export-notebook/${datasetId}`;
 };
 
 export const getMarkdownReportUrl = (datasetId: string): string => {
-  return `/api/export-markdown/${datasetId}`;
+  return `${API_BASE}/export-markdown/${datasetId}`;
 };
