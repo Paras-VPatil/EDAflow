@@ -1,10 +1,20 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import {
   getSampleDatasets,
   uploadDataset,
   runAnalysis,
   runTargetAnalysis,
 } from './api/client';
+import {
+  parseCSV,
+  profileDatasetClient,
+  FALLBACK_SAMPLE_DATASETS,
+} from './services/clientProfiler';
+import {
+  CHURN_CSV_SAMPLE,
+  TITANIC_CSV_SAMPLE,
+  HOUSING_CSV_SAMPLE,
+} from './services/demoDatasets';
 import { FullEDAReport, SampleDatasetMeta, ColumnProfile } from './types/eda';
 import { Navbar } from './components/common/Navbar';
 import { Dropzone } from './components/upload/Dropzone';
@@ -51,7 +61,7 @@ export const App: React.FC = () => {
     return saved === 'light' ? 'light' : 'dark';
   });
 
-  const [samples, setSamples] = useState<SampleDatasetMeta[]>([]);
+  const [samples, setSamples] = useState<SampleDatasetMeta[]>(FALLBACK_SAMPLE_DATASETS);
   const [report, setReport] = useState<FullEDAReport | null>(null);
   const [activeTab, setActiveTab] = useState<TabKey>('overview');
   const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -60,6 +70,7 @@ export const App: React.FC = () => {
   const [isExportOpen, setIsExportOpen] = useState<boolean>(false);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [selectedColumn, setSelectedColumn] = useState<ColumnProfile | null>(null);
+  const clientRowsRef = useRef<{ headers: string[]; rows: Record<string, any>[] } | null>(null);
 
   // Apply theme class to <html>
   useEffect(() => {
@@ -78,28 +89,51 @@ export const App: React.FC = () => {
     setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'));
   };
 
-  // 1. Initial Load: Fetch sample datasets and load customer churn by default
+  // Helper to load client sample
+  const loadClientSample = (sampleId: string) => {
+    let csvText = CHURN_CSV_SAMPLE;
+    let filename = 'customer_churn.csv';
+    let target = 'Churn';
+
+    if (sampleId.includes('titanic')) {
+      csvText = TITANIC_CSV_SAMPLE;
+      filename = 'titanic_survival.csv';
+      target = 'Survived';
+    } else if (sampleId.includes('housing')) {
+      csvText = HOUSING_CSV_SAMPLE;
+      filename = 'california_housing.csv';
+      target = 'MedianHouseValue';
+    }
+
+    const { headers, rows } = parseCSV(csvText);
+    clientRowsRef.current = { headers, rows };
+    const clientReport = profileDatasetClient(filename, headers, rows, target);
+    setReport(clientReport);
+  };
+
+  // 1. Initial Load: Fetch sample datasets from backend, or fallback to instant client-side profile
   useEffect(() => {
     const initApp = async () => {
       try {
         setIsLoading(true);
         setLoadingMsg('Loading demonstration datasets...');
         const sampleList = await getSampleDatasets();
-        setSamples(sampleList);
-
-        if (sampleList.length > 0) {
+        if (sampleList && sampleList.length > 0) {
+          setSamples(sampleList);
           const firstSample = sampleList[0];
           setLoadingMsg(`Running statistical analysis on ${firstSample.filename}...`);
           const initialReport = await runAnalysis(firstSample.dataset_id, 'Churn');
           setReport(initialReport);
+          return;
         }
       } catch (err: any) {
-        setErrorMessage(
-          err?.response?.data?.detail || 'Failed to initialize demonstration datasets.'
-        );
+        console.warn('Backend unavailable, activating in-browser client analytics engine:', err);
       } finally {
         setIsLoading(false);
       }
+
+      // Seamless fallback to built-in client engine if backend is not linked or cold-starting
+      loadClientSample('sample_churn');
     };
 
     initApp();
@@ -123,9 +157,9 @@ export const App: React.FC = () => {
       setReport(res);
       setActiveTab('overview');
     } catch (err: any) {
-      setErrorMessage(
-        err?.response?.data?.detail || 'Failed to load sample dataset.'
-      );
+      console.warn('Backend sample load failed, using client engine:', err);
+      loadClientSample(sampleId);
+      setActiveTab('overview');
     } finally {
       setIsLoading(false);
     }
@@ -142,12 +176,29 @@ export const App: React.FC = () => {
       setLoadingMsg('Computing statistical distributions, multi-method outliers, and insights...');
       const fullReport = await runAnalysis(datasetId);
       setReport(fullReport);
+      clientRowsRef.current = null;
       setIsUploadOpen(false);
       setActiveTab('overview');
     } catch (err: any) {
-      setErrorMessage(
-        err?.response?.data?.detail || 'Failed to upload or analyze dataset.'
-      );
+      console.warn('Backend upload failed, parsing client-side:', err);
+      try {
+        setLoadingMsg(`Parsing ${file.name} directly in browser...`);
+        const text = await file.text();
+        const { headers, rows } = parseCSV(text);
+        if (headers.length === 0 || rows.length === 0) {
+          throw new Error('Unable to parse tabular columns from file.');
+        }
+        clientRowsRef.current = { headers, rows };
+        const clientReport = profileDatasetClient(file.name, headers, rows);
+        setReport(clientReport);
+        setIsUploadOpen(false);
+        setActiveTab('overview');
+        setErrorMessage(null);
+      } catch (parseErr: any) {
+        setErrorMessage(
+          parseErr?.message || 'Failed to parse tabular file format. Please upload a valid CSV.'
+        );
+      }
     } finally {
       setIsLoading(false);
     }
@@ -159,16 +210,28 @@ export const App: React.FC = () => {
     try {
       setIsLoading(true);
       setLoadingMsg(`Computing Target Intelligence and Baseline Model for '${targetColumn}'...`);
-      const targetRes = await runTargetAnalysis(report.dataset_id, targetColumn);
       
-      setReport({
-        ...report,
-        target: targetRes,
-      });
+      if (clientRowsRef.current) {
+        const { headers, rows } = clientRowsRef.current;
+        const updatedReport = profileDatasetClient(report.filename, headers, rows, targetColumn);
+        setReport(updatedReport);
+      } else {
+        const targetRes = await runTargetAnalysis(report.dataset_id, targetColumn);
+        setReport({
+          ...report,
+          target: targetRes,
+        });
+      }
     } catch (err: any) {
-      setErrorMessage(
-        err?.response?.data?.detail || `Target analysis failed for '${targetColumn}'.`
-      );
+      if (clientRowsRef.current) {
+        const { headers, rows } = clientRowsRef.current;
+        const updatedReport = profileDatasetClient(report.filename, headers, rows, targetColumn);
+        setReport(updatedReport);
+      } else {
+        setErrorMessage(
+          err?.response?.data?.detail || `Target analysis failed for '${targetColumn}'.`
+        );
+      }
     } finally {
       setIsLoading(false);
     }
